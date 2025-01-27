@@ -197,15 +197,7 @@ namespace GraphicsLabor.Scripts.Editor.Utility.Reflection
         public static GUIContent GetLabel(SerializedProperty property)
         {
             LabelAttribute labelAttribute = GetAttribute<LabelAttribute>(property);
-            GUIContent label;
-            if (labelAttribute != null)
-            {
-                label = new GUIContent(labelAttribute.Label);
-                return label;                
-            }
-
-            label = new GUIContent(property.displayName);
-            return label;
+            return labelAttribute != null ? new GUIContent(labelAttribute.Label) : new GUIContent(property.displayName);
         }
         
         #endregion
@@ -369,6 +361,10 @@ namespace GraphicsLabor.Scripts.Editor.Utility.Reflection
 
                     enabled |= isVisible;
                 }
+            }
+            else
+            {
+                enabled = true;
             }
 
             ShowPropertyAttribute showPropertyAttribute = GetAttribute<ShowPropertyAttribute>(methodInfo);

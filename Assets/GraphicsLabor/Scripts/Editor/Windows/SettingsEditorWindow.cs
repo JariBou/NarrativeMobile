@@ -1,4 +1,7 @@
-﻿using GraphicsLabor.Scripts.Editor.Utility;
+﻿using System.Collections.Generic;
+using GraphicsLabor.Scripts.Core.Settings;
+using GraphicsLabor.Scripts.Core.Utility;
+using GraphicsLabor.Scripts.Editor.Utility;
 using GraphicsLabor.Scripts.Editor.Utility.GUI;
 using UnityEditor;
 using UnityEngine;
@@ -24,6 +27,13 @@ namespace GraphicsLabor.Scripts.Editor.Windows
             {
                 TagGenerator.CreateTagEnumFile();
             }
+            currentRect.y += LaborerGUIUtility.SingleLineHeight;
+            if (GUI.Button(currentRect, "Save Tags2"))
+            {
+                TagGenerator.CreateTagEnumFile();
+            }
+
+            _totalDrawnHeight += LaborerGUIUtility.SingleLineHeight * 2.5f;
         }
     }
 }

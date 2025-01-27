@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
@@ -137,6 +138,18 @@ namespace GraphicsLabor.Scripts.Editor.Utility.GUI
             }
         }
 
+        public static TEnum DrawEnumPopup<TEnum>(Rect rect, TEnum enumValue, string tooltipText = null) where TEnum : Enum
+        {
+            TEnum value = (TEnum)EditorGUI.EnumPopup(rect, enumValue);
+
+            if (tooltipText != null)
+            {
+                EditorGUI.LabelField(rect, new GUIContent("", tooltipText));
+            }
+
+            return value;
+        }
+        
         #endregion
 
         #region Properties
@@ -418,7 +431,7 @@ namespace GraphicsLabor.Scripts.Editor.Utility.GUI
         }
 
         #endregion
-        
+
         /// <summary>
         /// Draws an horizontal line in the editor
         /// </summary>
@@ -474,5 +487,7 @@ namespace GraphicsLabor.Scripts.Editor.Utility.GUI
 
             return indentLength;
         }
+
+       
     }
 }

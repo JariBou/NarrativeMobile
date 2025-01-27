@@ -14,6 +14,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tempScriptableObjectsPath: Assets/GraphicsLabor/Generated/ScriptableObjects
   _tagsPath: Assets/GraphicsLabor/Scripts/Core/Tags
+  _defaultEnumsPath: Assets/GraphicsLabor/Generated/Enums
   _tags:
   - Entity
   - Player
+  _enums:
+  - _enumClassName: 
+    _enumSpace: 
+    _isFlag: 0
+    _enumNamesAndValues:
+      _serializedKeyValues: []
+      _drawStyle: 0
+  - _enumClassName: 
+    _enumSpace: 
+    _isFlag: 0
+    _enumNamesAndValues:
+      _serializedKeyValues:
+      - Key: 
+        Value: 0
+      - Key: 
+        Value: 0
+      _drawStyle: 0
+  _test2:
+    _serializedKeyValues:
+    - Key: 
+      Value:
+        _test: 
+        _test2: 0
+        _test3: 0
+    - Key: 
+      Value:
+        _test: 
+        _test2: 0
+        _test3: 0
+    - Key: 
+      Value:
+        _test: 
+        _test2: 0
+        _test3: 0
+    _drawStyle: 1
+  _test21:
+    _serializedKeyValues:
+    - Key: 
+      Value:
+      - 
+      - 
+    - Key: 
+      Value:
+      - 
+      - 
+      - 
+    - Key: 
+      Value: []
+    _drawStyle: 0
+  _test3:
+  - _serializedKeyValues:
+    - Key: 
+      Value:
+        _test: 
+        _test2: 0
+        _test3: 0
+    - Key: 
+      Value:
+        _test: 
+        _test2: 0
+        _test3: 0
+    _drawStyle: 0
+  - _serializedKeyValues: []
+    _drawStyle: 0
+  _test4:
+    _test:
+      _serializedKeyValues:
+      - Key: 
+        Value:
+          _test: 
+          _test2: 0
+          _test3: 0
+      _drawStyle: 0

@@ -1,7 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using UnityEditor;
+using Object = UnityEngine.Object;
 
 namespace GraphicsLabor.Scripts.Core.Utility
 {
+    /// <summary>
+    /// Collection of helper methods
+    /// </summary>
     public static class GHelpers
     {
         /// <summary>
@@ -34,5 +40,23 @@ namespace GraphicsLabor.Scripts.Core.Utility
 
             return concatenatedList;
         }
+        
+        public static bool AreKeysEqual<TKey>(TKey key, object otherKey)
+        {
+            return (object)key == otherKey || key.Equals(otherKey);
+        }
+        
+        public static bool IsKeyValid(object key)
+        {
+            try
+            {
+                return !(key == null || (key is Object unityObject && unityObject == null));
+            }
+            catch
+            {
+                return false;
+            }
+        }
+      
     }
 }

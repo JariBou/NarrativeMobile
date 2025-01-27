@@ -2,7 +2,6 @@
 using System.IO;
 using System.Text;
 using GraphicsLabor.Scripts.Core.Settings;
-using GraphicsLabor.Scripts.Core.Utility;
 using UnityEditor;
 
 namespace GraphicsLabor.Scripts.Editor.Utility
@@ -14,7 +13,6 @@ namespace GraphicsLabor.Scripts.Editor.Utility
         /// </summary>
         public static void CreateTagEnumFile()
         {
-            
             GraphicsLaborSettings settings = AssetDatabase.LoadAssetAtPath<GraphicsLaborSettings>("Assets/GraphicsLabor/Scripts/Core/Settings/GraphicsLaborSettings.asset");
             
             StringBuilder content = new();
@@ -49,6 +47,24 @@ namespace GraphicsLabor.Scripts.Editor.Utility
             File.WriteAllText(settings._tagsPath + "/LaborTags.cs", content.ToString());
             
             AssetDatabase.Refresh();
+        }
+
+        public static void GenerateTagEnumFile()
+        {
+            GraphicsLaborSettings settings = AssetDatabase.LoadAssetAtPath<GraphicsLaborSettings>("Assets/GraphicsLabor/Scripts/Core/Settings/GraphicsLaborSettings.asset");
+
+            List<string> enumNames = settings._tags;
+            
+            Dictionary<string, int> dict = new()
+            {
+                ["Null"] = 0
+            };
+            foreach (string enumName in enumNames)
+            {
+                dict[enumName] = 1;
+            }
+            
+            EnumGenerator.GenerateEnum(dict, "LaborTags", true, "GraphicsLabor.Scripts.Core.Tags", settings._tagsPath);
         }
     }
 }
