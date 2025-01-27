@@ -1,0 +1,19 @@
+{
+    "name": "TextPackageEditorAssemblyDefinition",
+    "rootNamespace": "",
+    "references": [
+        "GUID:34e5f489533db3e4d85d55adf8951431",
+        "GUID:21b0c8d1703a94250bfac916590cea4f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
