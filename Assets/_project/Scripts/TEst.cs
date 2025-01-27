@@ -42,23 +42,68 @@ public class DateTimeDrawer : PropertyDrawer
     
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
-        _bool = EditorGUI.BeginFoldoutHeaderGroup(position, _bool, property.displayName);
+        EditorGUI.BeginProperty(position, label, property);
+        // _bool = EditorGUI.BeginFoldoutHeaderGroup(position, _bool, property.displayName);
+        position.height = EditorGUIUtility.singleLineHeight;
+        property.isExpanded = EditorGUI.Foldout(position, property.isExpanded, label);
         SerializedProperty year = property.FindPropertyRelative("year");
+        SerializedProperty month = property.FindPropertyRelative("month");
+        SerializedProperty day = property.FindPropertyRelative("day");
+        
+        SerializedProperty hour = property.FindPropertyRelative("hour");
+        SerializedProperty minute = property.FindPropertyRelative("minute");
+        SerializedProperty second = property.FindPropertyRelative("second");
 
-        float width = position.width / 3f;
+        float width = position.width / 6f;
         Rect dateRect = new Rect(position.x, position.y + EditorGUIUtility.singleLineHeight, width, EditorGUIUtility.singleLineHeight);
-
-        if (_bool)
+        
+        if (property.isExpanded)
         {
-            EditorGUI.PropertyField(dateRect, year, new GUIContent(year.displayName));
+            // EditorGUI.BeginProperty(dateRect, new GUIContent(year.displayName), year);
+            // EditorGUI.PropertyField(dateRect, year, new GUIContent(year.displayName));
+            EditorGUI.LabelField(dateRect, new GUIContent(year.displayName));
+            dateRect.x += width;
+            year.intValue = EditorGUI.IntField(dateRect, year.intValue);
+            dateRect.x += width;
+            
+            EditorGUI.LabelField(dateRect, new GUIContent(month.displayName));
+            dateRect.x += width;
+            month.intValue = EditorGUI.IntField(dateRect, month.intValue);
+            dateRect.x += width;
+            
+            EditorGUI.LabelField(dateRect, new GUIContent(day.displayName));
+            dateRect.x += width;
+            day.intValue = EditorGUI.IntField(dateRect, day.intValue);
+            dateRect.x += width;
+            
+            dateRect.x = position.x;
+            dateRect.y += EditorGUIUtility.singleLineHeight;
+            
+            EditorGUI.LabelField(dateRect, new GUIContent(hour.displayName));
+            dateRect.x += width;
+            hour.intValue = EditorGUI.IntField(dateRect, hour.intValue);
+            dateRect.x += width;
+            
+            EditorGUI.LabelField(dateRect, new GUIContent(minute.displayName));
+            dateRect.x += width;
+            minute.intValue = EditorGUI.IntField(dateRect, minute.intValue);
+            dateRect.x += width;
+            
+            EditorGUI.LabelField(dateRect, new GUIContent(second.displayName));
+            dateRect.x += width;
+            second.intValue = EditorGUI.IntField(dateRect, second.intValue);
+            dateRect.x += width;
+            // EditorGUI.EndProperty();
         }
+        
+        EditorGUI.EndProperty();
         
         // base.OnGUI(position, property, label);
     }
 
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
-        return _bool ? EditorGUIUtility.singleLineHeight * 3 : EditorGUIUtility.singleLineHeight;
+        return property.isExpanded ? EditorGUIUtility.singleLineHeight * 3 : EditorGUIUtility.singleLineHeight;
     }
 }
     
