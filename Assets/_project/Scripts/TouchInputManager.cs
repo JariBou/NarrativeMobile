@@ -7,8 +7,11 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class TouchInputManager : MonoBehaviour
 {
-    
+    [Header("Touch Input Options")]
     [SerializeField] private float _touchRadius;
+    
+    [SerializeField] private float _minSwipeDistance = 100;
+    [SerializeField] private float _minSwipeTime = 0.5f;
     
     [Header("Developper")]
     [SerializeField] private GameObject touchGameObject;
@@ -17,10 +20,17 @@ public class TouchInputManager : MonoBehaviour
     //DraggableElement
     private Vector3 _posDifference;
     private DraggableElement _draggableElement;
+    
+    private float _touchStartTime;
 
     public void OnTouch(InputAction.CallbackContext callbackContext)
     {
         TouchState touchState = callbackContext.ReadValue<TouchState>();
+
+        if (_touchStartTime <= 0 && touchState.phase == TouchPhase.Began)
+        {
+            _touchStartTime = Time.time;
+        }
 
         Vector3 touchWorldPosition = Camera.main.ScreenToWorldPoint(touchState.position);
         Collider2D overlappedCollider = Physics2D.OverlapCircle(touchWorldPosition, _touchRadius, clickDetectionMask);
@@ -55,6 +65,7 @@ public class TouchInputManager : MonoBehaviour
                     else if (touchState.phase == TouchPhase.Ended)
                     {
                         _draggableElement = null;
+                        return;
                     }
                 }
             }
@@ -63,6 +74,23 @@ public class TouchInputManager : MonoBehaviour
         if (_draggableElement != null && touchState.phase != TouchPhase.Ended)
         {
             _draggableElement.transform.position = touchWorldPosition + _posDifference;
+        }
+        else if (_draggableElement == null && TouchPhase.Ended == touchState.phase && _touchStartTime > 0)
+        {
+            float xposDiff = touchState.position.x - touchState.startPosition.x;
+            if (Mathf.Abs(xposDiff) > _minSwipeDistance && (Time.time - _touchStartTime) < _minSwipeTime)
+            {
+                if (xposDiff > 0)
+                {
+                    Debug.Log("Swipe Right");
+                }
+                else
+                {
+                    Debug.Log("Swipe Left");
+                }
+            }
+
+            _touchStartTime = -1;
         }
     }
 

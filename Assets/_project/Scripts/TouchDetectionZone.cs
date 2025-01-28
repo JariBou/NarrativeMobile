@@ -11,4 +11,9 @@ public class TouchDetectionZone : MonoBehaviour
     {
         _onTouchDetected?.Invoke();
     }
+
+    public void DebugLog(string message)
+    {
+        Debug.Log(message);
+    }
 }
