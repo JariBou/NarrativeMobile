@@ -58,11 +58,15 @@ public class TouchInputManager : MonoBehaviour
                     if (touchState.phase == TouchPhase.Began)
                     {
                         //Set posDifference (more smooth grab)
-                        _posDifference = draggableElement.transform.position - touchWorldPosition;
-                        _draggableElement = draggableElement;
+                        if (draggableElement.CanBeDragged())
+                        {
+                            _posDifference = draggableElement.transform.position - touchWorldPosition;
+                            _draggableElement = draggableElement;
+                        }
                     }
                     else if (touchState.phase == TouchPhase.Ended)
                     {
+                        if (_draggableElement!=null) _draggableElement.Drop();
                         _draggableElement = null;
                         return;
                     }
