@@ -18,9 +18,7 @@ public class ReferenceManager : MonoBehaviour
             if (m_instance == null)
             {
                 m_instance = new GameObject("ReferenceManager").AddComponent<ReferenceManager>();
-                // #if !UNITY_EDITOR
                 DontDestroyOnLoad(m_instance.gameObject);
-                // #endif          
             }
             m_instance.Initialize();
             return m_instance;
@@ -34,7 +32,8 @@ public class ReferenceManager : MonoBehaviour
 
     public void Initialize()
     {
-        m_referenceDataBanks.Clear();
+        Debug.Log("Initializing reference manager");
+        m_referenceDataBanks = new List<ReferenceDataBank>();
         
         foreach (ReferenceDataBank referenceDataBank in GetAvailableDataBanks())
         {
@@ -43,6 +42,7 @@ public class ReferenceManager : MonoBehaviour
 
         if (m_referenceDataBanks.Count == 0)
         {
+            Debug.LogWarning("No reference data banks found!");
             m_instance.RecordHolder(m_instance.gameObject.AddComponent<ReferenceDataBank>());
         }
     }

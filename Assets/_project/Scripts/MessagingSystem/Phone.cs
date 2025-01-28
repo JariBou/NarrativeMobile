@@ -52,6 +52,7 @@ namespace _project.Scripts.MessagingSystem
 
         public void AddMessage(Message message, string conversationUserId)
         {
+            _conversationDictionnary[conversationUserId].AddMessage(message);
             // _conversationDictionnary[conversationUserId].Add(message);
             // _hasNotification = true;
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText(message._content);
@@ -68,6 +69,7 @@ namespace _project.Scripts.MessagingSystem
             foreach (string key in _conversationDictionnary.Keys)
             {
                 _conversationDictionnary[key].gameObject.SetActive(key == userId);
+                if (key == userId) _conversationDictionnary[key].RefreshSizes();
             }
             // List<Message> messages = _conversationDictionnary[_phoneUsers[contactIndex].UserId];
             

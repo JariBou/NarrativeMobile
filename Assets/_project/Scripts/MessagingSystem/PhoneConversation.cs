@@ -10,7 +10,7 @@ namespace _project.Scripts.MessagingSystem
         [SerializeField] private Transform _contentPanel;
         [SerializeField] private ScrollRect _scrollRect;
         [SerializeField] private GameObject _messagePrefab;
-        List<Message> _messages = new();
+        List<MessageScript> _messages = new();
         private PhoneUser _userTarget;
         private Button _linkedButton;
 
@@ -18,14 +18,18 @@ namespace _project.Scripts.MessagingSystem
 
         public void AddMessage(Message message)
         {
-            _messages.Add(message);
-            Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText(message._content);
+            TextAnchor textAnchor = message._user.UserId == "player_user" ? TextAnchor.MiddleRight : TextAnchor.MiddleLeft;
+            MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
+            messageScript.SetText(message._content, textAnchor);
+            _messages.Add(messageScript);
             _scrollRect.normalizedPosition = new Vector2(0, 0); // maybe put when you pull up your phone or smth like that
         }
         
         public void AddMessageTest(string message, TextAnchor textAnchor = TextAnchor.MiddleLeft)
         {
-            Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText(message, textAnchor);
+            MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
+            messageScript.SetText(message, textAnchor);
+            _messages.Add(messageScript);
             _scrollRect.normalizedPosition = new Vector2(0, 0); // maybe put when you pull up your phone or smth like that
         }
 
@@ -47,6 +51,14 @@ namespace _project.Scripts.MessagingSystem
         private void OnDisable()
         {
             _linkedButton.image.color = Color.red;
+        }
+
+        public void RefreshSizes()
+        {
+            foreach (MessageScript messageScript in _messages)
+            {
+                messageScript.RefreshSize();
+            }
         }
     }
 }
