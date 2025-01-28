@@ -14,4 +14,12 @@ public class TouchDetectionZone : MonoBehaviour
     {
         Debug.Log(message);
     }
+
+    public void MoveTo(SceneElement sceneElement)
+    {
+        if (SceneManager.Instance != null)
+        {
+            SceneManager.Instance.MoveTo(sceneElement);
+        }
+    }
 }

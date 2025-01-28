@@ -11,9 +11,12 @@ public class SceneManager : MonoBehaviour
     
     [SerializeField] private List<RoomScene> _roomScenes;
     [SerializeField] private int _currentRoomSceneIndex;
-    private RoomScene _errorScene = new RoomScene("Error", -1);
+    private RoomScene _errorRoomScene = new RoomScene("Error", -1);
     
     private SceneUI _sceneUI;
+
+    private float _cameraDefaultZ;
+    private SceneElement _currentSceneElement;
 
     public void SetupSceneUI(SceneUI sceneUI)
     {
@@ -28,6 +31,8 @@ public class SceneManager : MonoBehaviour
         {
             Instance = this;
         }
+        
+        _cameraDefaultZ = Camera.main.transform.position.z;
     }
 
     //UnlockScene, if selected scene can now be accessible, returns true
@@ -60,7 +65,10 @@ public class SceneManager : MonoBehaviour
         RoomScene roomScene = GetSceneByIndex(nextIndex);
         if (roomScene.CanAccess())
         {
-            //Change Scene
+            //Change Scene Animation
+            
+            Vector3 targetPos = roomScene.SceneElement.GetPosition();
+            Camera.main.transform.position = new Vector3(targetPos.x, targetPos.y, Camera.main.transform.position.z);
             
             Debug.Log(roomScene.SceneName);
             
@@ -81,13 +89,19 @@ public class SceneManager : MonoBehaviour
         {
             return _roomScenes.Find(x => x.SceneName == sceneName);
         }
-        return _errorScene;
+        return _errorRoomScene;
     }
 
     private RoomScene GetSceneByIndex(int sceneIndex)
     {
-        if (sceneIndex < 0 || sceneIndex > _roomScenes.Count) return _errorScene;
+        if (sceneIndex < 0 || sceneIndex > _roomScenes.Count) return _errorRoomScene;
         return _roomScenes[sceneIndex];
+    }
+
+    public void MoveTo(SceneElement sceneElement)
+    {
+        Vector3 targetPos = sceneElement.GetPosition();
+        Camera.main.transform.position = new Vector3(targetPos.x, targetPos.y, _cameraDefaultZ);
     }
 }
 
@@ -98,12 +112,15 @@ public struct RoomScene : IEquatable<RoomScene>
     {
         SceneName = sceneName;
         LockAmount = lockAmount;
+        SceneElement = null;
     }
     
     public string SceneName;
     
     public int LockAmount;
-
+    
+    [SerializeField] public SceneElement SceneElement;
+    
     public bool CanAccess()
     {
         return LockAmount <= 0;
@@ -111,7 +128,7 @@ public struct RoomScene : IEquatable<RoomScene>
 
     public bool Equals([NotNull] RoomScene other)
     {
-        return SceneName == other.SceneName && LockAmount == other.LockAmount;
+        return SceneName == other.SceneName;
     }
 
     public override bool Equals(object obj)
