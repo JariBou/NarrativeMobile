@@ -21,12 +21,9 @@ namespace _project.Scripts.MessagingSystem
         
     }
 
-    public class Phone : MonoBehaviour
-    {
-        public Dictionary<string, List<Message>> _conversationDictionnary = new();
-        public Texture2D _bg;
-    }
 
+
+    [CreateAssetMenu(fileName = "Message0", menuName = "MessagingSystem/Message")]
     public class Message : ScriptableObject
     {
         public FDateTime _sentDateTime;
@@ -39,17 +36,5 @@ namespace _project.Scripts.MessagingSystem
             _content = content;
             _user = user;
         }
-    }
-
-    
-    public class PhoneUser : ScriptableObject
-    {
-        [SerializeField] private string _userId;
-        [SerializeField] private Texture2D _icon;
-        [SerializeField] private string _name;
-
-        public Texture2D Icon => _icon;
-        public string Name => _name;
-        public string UserId => _userId;
     }
 }
