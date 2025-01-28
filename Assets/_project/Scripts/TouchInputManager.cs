@@ -81,10 +81,12 @@ public class TouchInputManager : MonoBehaviour
             {
                 if (xposDiff > 0)
                 {
+                    if (SceneManager.Instance != null) SceneManager.Instance.MoveScene(false);
                     Debug.Log("Swipe Right");
                 }
                 else
                 {
+                    if (SceneManager.Instance != null) SceneManager.Instance.MoveScene(true);
                     Debug.Log("Swipe Left");
                 }
             }

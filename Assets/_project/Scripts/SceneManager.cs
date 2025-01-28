@@ -2,14 +2,33 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
+    public static SceneManager Instance;
+    
     [SerializeField] private List<RoomScene> _roomScenes;
     [SerializeField] private int _currentRoomSceneIndex;
     private RoomScene _errorScene = new RoomScene("Error", -1);
     
+    private SceneUI _sceneUI;
+
+    public void SetupSceneUI(SceneUI sceneUI)
+    {
+        _sceneUI = sceneUI;
+        sceneUI.SetupUI(_roomScenes);
+        sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);
+    }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
 
     //UnlockScene, if selected scene can now be accessible, returns true
     public bool UnlockScene(string sceneName)
@@ -19,6 +38,11 @@ public class SceneManager : MonoBehaviour
         if (roomScene.SceneName != sceneName) return false;
         
         roomScene.LockAmount -= 1;
+
+        int roomIndex = _roomScenes.IndexOf(roomScene);
+
+        if (_sceneUI != null) _sceneUI.ChangeLockAmountOfRoom(roomScene.LockAmount, roomIndex);
+        
         if (roomScene.CanAccess()) return true;
         return false;
     }
@@ -41,6 +65,7 @@ public class SceneManager : MonoBehaviour
             Debug.Log(roomScene.SceneName);
             
             _currentRoomSceneIndex = nextIndex;
+            if (_sceneUI != null) _sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);
             return true;
         }
         else
@@ -67,7 +92,7 @@ public class SceneManager : MonoBehaviour
 }
 
 [Serializable]
-public struct RoomScene
+public struct RoomScene : IEquatable<RoomScene>
 {
     public RoomScene(string sceneName, int lockAmount)
     {
@@ -84,4 +109,18 @@ public struct RoomScene
         return LockAmount <= 0;
     }
 
+    public bool Equals([NotNull] RoomScene other)
+    {
+        return SceneName == other.SceneName && LockAmount == other.LockAmount;
+    }
+
+    public override bool Equals(object obj)
+    {
+        return obj is RoomScene other && Equals(other);
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(SceneName, LockAmount);
+    }
 }
