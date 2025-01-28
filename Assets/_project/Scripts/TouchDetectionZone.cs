@@ -1,8 +1,6 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem.LowLevel;
-using UnityEngine.Serialization;
 
 public class TouchDetectionZone : MonoBehaviour
 {

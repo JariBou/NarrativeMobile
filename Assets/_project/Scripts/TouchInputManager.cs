@@ -14,7 +14,6 @@ public class TouchInputManager : MonoBehaviour
     [SerializeField] private float _minSwipeTime = 0.5f;
     
     [Header("Developper")]
-    [SerializeField] private GameObject touchGameObject;
     [SerializeField] private LayerMask clickDetectionMask;
     
     //DraggableElement
@@ -92,10 +91,5 @@ public class TouchInputManager : MonoBehaviour
 
             _touchStartTime = -1;
         }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(touchGameObject.transform.position, _touchRadius);
     }
 }
