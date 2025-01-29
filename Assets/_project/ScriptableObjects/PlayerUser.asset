@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd12c4705d646e9bb34624828ad3b18, type: 3}
-  m_Name: testUser
+  m_Name: PlayerUser
   m_EditorClassIdentifier: 
-  _userId: test_user
-  _icon: {fileID: 3700593426120589194, guid: f35a23e7adc4fca47ad2c7cd8a2c7ba1, type: 3}
-  _name: Her
+  _userId: player_user
+  _icon: {fileID: 0}
+  _name: 

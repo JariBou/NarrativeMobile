@@ -6,10 +6,10 @@ namespace _project.Scripts.MessagingSystem
     public class PhoneUser : ScriptableObject
     {
         [SerializeField] private string _userId;
-        [SerializeField] private Texture2D _icon;
+        [SerializeField] private Sprite _icon;
         [SerializeField] private string _name;
 
-        public Texture2D Icon => _icon;
+        public Sprite Icon => _icon;
         public string Name => _name;
         public string UserId => _userId;
     }

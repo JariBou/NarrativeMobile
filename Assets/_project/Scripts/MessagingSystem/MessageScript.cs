@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -11,6 +12,9 @@ namespace _project.Scripts.MessagingSystem
         [SerializeField] private TMP_Text _text;
         [SerializeField] private RectTransform _bgRectTransform;
         [SerializeField] private VerticalLayoutGroup _verticalLayoutGroup;
+        [SerializeField] private Image _bgImage;
+        [SerializeField] private Sprite _leftMsgSprite;
+        [SerializeField] private Sprite _rightMsgSprite;
 
         public void SetText(string text, TextAnchor textAnchor = TextAnchor.MiddleLeft)
         {
@@ -18,21 +22,43 @@ namespace _project.Scripts.MessagingSystem
             _verticalLayoutGroup.childAlignment = textAnchor;
             _verticalLayoutGroup.padding.left = textAnchor == TextAnchor.MiddleRight ? 100 : 10;
             _verticalLayoutGroup.padding.right = textAnchor == TextAnchor.MiddleLeft ? 100 : 10;
+            switch (textAnchor)
+            {
+                case TextAnchor.MiddleLeft:
+                    _bgImage.sprite = _leftMsgSprite;
+                    break;
+                case TextAnchor.MiddleRight:
+                    _bgImage.sprite = _rightMsgSprite;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(textAnchor), textAnchor, null);
+            }
             
-            StartCoroutine(UpdateSize());
+            // StartCoroutine(UpdateSize());
+        }
+
+        // private void OnEnable()
+        // {
+        //     StartCoroutine(UpdateSize());
+        // }
+
+        public void RefreshSize()
+        {
+            RectTransform rectTransform = GetComponent<RectTransform>();
+            Rect rect = rectTransform.rect;
+            rect.height =  _bgRectTransform.rect.height;
+            // rectTransform.rect.Set(rect.x, rect.y, rect.width, rect.height);
+            rectTransform.sizeDelta = new Vector2(rect.width, rect.height);
         }
 
         public IEnumerator UpdateSize()
         {
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(.3f);
             RectTransform rectTransform = GetComponent<RectTransform>();
             Rect rect = rectTransform.rect;
             rect.height =  _bgRectTransform.rect.height;
-            Debug.Log(rect.height);
-            Debug.Log(rectTransform.rect.height);
             // rectTransform.rect.Set(rect.x, rect.y, rect.width, rect.height);
             rectTransform.sizeDelta = new Vector2(rect.width, rect.height);
-            Debug.Log(rectTransform.rect.height);
         }
     }
 }

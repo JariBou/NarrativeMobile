@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2892175d8a24d80418dfbf7c18a1a156, type: 3}
+  m_Name: TestGraph
+  m_EditorClassIdentifier: 
+  _graphId: a06cc303-51a3-49d9-8d29-48a433ab5c7f
+  m_nodes:
+  - rid: 1550498954628300980
+  - rid: 1550498954628300981
+  - rid: 1550498954628300982
+  - rid: 1550498954628300983
+  - rid: 1550498954628301200
+  m_connections:
+  - inputPort:
+      nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+      portIndex: 1
+    outputPort:
+      nodeId: 88d380f9-66e6-40ef-8859-222902be0edd
+      portIndex: 0
+  - inputPort:
+      nodeId: 790dcb57-844c-49a1-a984-c4a6b1dc7384
+      portIndex: 1
+    outputPort:
+      nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+      portIndex: 0
+  - inputPort:
+      nodeId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+      portIndex: 1
+    outputPort:
+      nodeId: 790dcb57-844c-49a1-a984-c4a6b1dc7384
+      portIndex: 0
+  m_exposedProperties: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1550498954628300980
+      type: {class: StartNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
+      data:
+        m_guid: 8e5248d7-c12c-4133-984a-fa9b03bba0fb
+        m_position:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_isPure: 0
+        typename: NodeSystem.Runtime.Nodes.StartNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+    - rid: 1550498954628300981
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
+      data:
+        m_guid: 88d380f9-66e6-40ef-8859-222902be0edd
+        m_position:
+          serializedVersion: 2
+          x: -9
+          y: -295
+          width: 194
+          height: 98
+        m_isPure: 0
+        typename: NodeSystem.Runtime.Nodes.GameObjectSourceNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: cc35e689-de5a-4bc4-8215-83fb1c3ae7f0
+    - rid: 1550498954628300982
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+        m_position:
+          serializedVersion: 2
+          x: 233
+          y: -295
+          width: 332
+          height: 125
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: test_user_2
+        MessageToSend: {fileID: 11400000, guid: 4b26cae056d13544ca7c6054ba605b99, type: 2}
+    - rid: 1550498954628300983
+      type: {class: DebugLogNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
+      data:
+        m_guid: 790dcb57-844c-49a1-a984-c4a6b1dc7384
+        m_position:
+          serializedVersion: 2
+          x: 677
+          y: -295
+          width: 303
+          height: 101
+        m_isPure: 0
+        typename: NodeSystem.Runtime.Nodes.DebugLogNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: logMessage
+          _ownerId: 790dcb57-844c-49a1-a984-c4a6b1dc7384
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        logMessage: sent message
+    - rid: 1550498954628301200
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+        m_position:
+          serializedVersion: 2
+          x: 1062
+          y: -295
+          width: 332
+          height: 125
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: test_user_2
+        MessageToSend: {fileID: 11400000, guid: b4c86de4e7c2a9c44ae63ab40982119a, type: 2}

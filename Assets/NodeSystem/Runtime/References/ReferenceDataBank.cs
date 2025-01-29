@@ -9,16 +9,16 @@ public class ReferenceDataBank : MonoBehaviour
 
     private void OnEnable()
     {
-        // I don't liek this one bit
-        ReferenceManager refManager = ReferenceManager.Instance;
-        if (refManager == null)
-        {
-            GameObject refManagerGo = Instantiate(new GameObject("ReferenceManager"));
-            DontDestroyOnLoad(refManagerGo);
-            refManager = refManagerGo.AddComponent<ReferenceManager>();
-        }
-
-        refManager.RecordHolder(this);
+        // // I don't liek this one bit
+        // ReferenceManager refManager = ReferenceManager.Instance;
+        // if (refManager == null)
+        // {
+        //     GameObject refManagerGo = Instantiate(new GameObject("ReferenceManager"));
+        //     DontDestroyOnLoad(refManagerGo);
+        //     refManager = refManagerGo.AddComponent<ReferenceManager>();
+        // }
+        //
+        // refManager.RecordHolder(this);
     }
 
     private void OnDisable()
