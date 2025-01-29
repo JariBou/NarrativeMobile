@@ -72,6 +72,7 @@ namespace _project.Scripts.MessagingSystem
             //     messageScript.RefreshSize();
             //     messageScript.gameObject.SetActive(true);
             // }
+            if (!gameObject.activeSelf) return;
             if (_startCoroutine != null) StopCoroutine(_startCoroutine);
             _startCoroutine = StartCoroutine(RefreshSizesRoutine());
         }
