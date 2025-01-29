@@ -808,7 +808,6 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: NodeSystemImplemented
     Standalone: NodeSystemImplemented
-    iPhone: NodeSystemImplemented
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

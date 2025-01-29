@@ -58,11 +58,15 @@ public class TouchInputManager : MonoBehaviour
                     if (touchState.phase == TouchPhase.Began)
                     {
                         //Set posDifference (more smooth grab)
-                        _posDifference = draggableElement.transform.position - touchWorldPosition;
-                        _draggableElement = draggableElement;
+                        if (draggableElement.CanBeDragged())
+                        {
+                            _posDifference = draggableElement.transform.position - touchWorldPosition;
+                            _draggableElement = draggableElement;
+                        }
                     }
                     else if (touchState.phase == TouchPhase.Ended)
                     {
+                        if (_draggableElement!=null) _draggableElement.Drop();
                         _draggableElement = null;
                         return;
                     }
@@ -81,10 +85,12 @@ public class TouchInputManager : MonoBehaviour
             {
                 if (xposDiff > 0)
                 {
+                    if (SceneManager.Instance != null) SceneManager.Instance.MoveScene(true);
                     Debug.Log("Swipe Right");
                 }
                 else
                 {
+                    if (SceneManager.Instance != null) SceneManager.Instance.MoveScene(false);
                     Debug.Log("Swipe Left");
                 }
             }
