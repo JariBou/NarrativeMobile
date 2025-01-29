@@ -12,6 +12,9 @@ namespace _project.Scripts.MessagingSystem
         [SerializeField] private TMP_Text _text;
         [SerializeField] private RectTransform _bgRectTransform;
         [SerializeField] private VerticalLayoutGroup _verticalLayoutGroup;
+        [SerializeField] private Image _bgImage;
+        [SerializeField] private Sprite _leftMsgSprite;
+        [SerializeField] private Sprite _rightMsgSprite;
 
         public void SetText(string text, TextAnchor textAnchor = TextAnchor.MiddleLeft)
         {
@@ -19,6 +22,17 @@ namespace _project.Scripts.MessagingSystem
             _verticalLayoutGroup.childAlignment = textAnchor;
             _verticalLayoutGroup.padding.left = textAnchor == TextAnchor.MiddleRight ? 100 : 10;
             _verticalLayoutGroup.padding.right = textAnchor == TextAnchor.MiddleLeft ? 100 : 10;
+            switch (textAnchor)
+            {
+                case TextAnchor.MiddleLeft:
+                    _bgImage.sprite = _leftMsgSprite;
+                    break;
+                case TextAnchor.MiddleRight:
+                    _bgImage.sprite = _rightMsgSprite;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(textAnchor), textAnchor, null);
+            }
             
             // StartCoroutine(UpdateSize());
         }

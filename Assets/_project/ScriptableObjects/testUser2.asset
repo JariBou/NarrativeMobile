@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: testUser2
   m_EditorClassIdentifier: 
   _userId: test_user_2
-  _icon: {fileID: 0}
-  _name: 
+  _icon: {fileID: 728408819, guid: f35a23e7adc4fca47ad2c7cd8a2c7ba1, type: 3}
+  _name: Meng
