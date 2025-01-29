@@ -33,7 +33,6 @@ public class SceneUI : MonoBehaviour
 
     public void UpdateCurrentRoomUI(int currentRoomIndex)
     {
-        Debug.Log("Ca marche salle pute : " + currentRoomIndex);
         for (int i = 0; i < _sceneCircles.Length; i++)
         {
             _sceneCircles[i].GetComponent<RectTransform>().sizeDelta = i==currentRoomIndex? _activeSceneSize : _normalSceneSize;

@@ -29,7 +29,7 @@ public class DragTargetZone : MonoBehaviour
         else
         {
             if (_draggedObjectsPositions.Length <= nbOccupiedObjectsPositions) return;
-            draggableElement.transform.position = _draggedObjectsPositions[nbOccupiedObjectsPositions];
+            draggableElement.transform.position = transform.position + _draggedObjectsPositions[nbOccupiedObjectsPositions];
             draggableElement.LockDragging();
             nbOccupiedObjectsPositions++;
         }
@@ -41,7 +41,7 @@ public class DragTargetZone : MonoBehaviour
         if (_destroyDraggedObject) return;
         foreach (Vector3 draggedObjectsPosition in _draggedObjectsPositions)
         {
-            Gizmos.DrawWireSphere(draggedObjectsPosition, 0.3f);
+            Gizmos.DrawWireSphere(transform.position + draggedObjectsPosition, 0.3f);
         }
     }
 }
