@@ -6,6 +6,8 @@ public class SceneUI : MonoBehaviour
 {
     [SerializeField] private GameObject _sceneCircle;
     [SerializeField] private Sprite[] _lockAmountSprites;
+
+    [SerializeField] private GameObject _goBackButton;
     
     [Header("Scene Circle Sizes")]
     [SerializeField] private Vector2 _activeSceneSize = new Vector2(20,20);
@@ -16,6 +18,7 @@ public class SceneUI : MonoBehaviour
     private void Start()
     {
         SceneManager.Instance.SetupSceneUI(this);
+        _goBackButton.SetActive(false);
     }
 
     public void SetupUI(List<RoomScene> roomScenes)
@@ -41,5 +44,10 @@ public class SceneUI : MonoBehaviour
     public void ChangeLockAmountOfRoom(int lockAmount, int roomIndex)
     {
         _sceneCircles[roomIndex].GetComponent<Image>().sprite = _lockAmountSprites[lockAmount];
+    }
+
+    public void UpdateChangedSceneElement(SceneElement sceneElement)
+    {
+        _goBackButton.SetActive(!sceneElement.IsMainRoom());
     }
 }
