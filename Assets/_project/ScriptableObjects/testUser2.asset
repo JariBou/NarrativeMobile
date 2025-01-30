@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _userId: test_user_2
   _icon: {fileID: 728408819, guid: f35a23e7adc4fca47ad2c7cd8a2c7ba1, type: 3}
-  _name: Meng
+  _name: Masked Number

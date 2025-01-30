@@ -47,9 +47,9 @@ namespace _project.Scripts.MessagingSystem
         {
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
-            AddMessageTest("AAAAAAA this is some test shit", "test_user");
-            AddMessageTest("AAAAAAA this is some test shit", "test_user", TextAnchor.MiddleRight);
-            AddMessageTest("AAAAAAA this is some test shit", "test_user");
+            AddMessageTest("Your need to go to this place !", "test_user");
+            AddMessageTest("What is the address ?", "test_user", TextAnchor.MiddleRight);
+            AddMessageTest("It's the 10th on Nanana street", "test_user");
             // MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
             // messageScript.SetText("AAAAAAA this is some test shit (but sent by me)", TextAnchor.MiddleRight);
             // _scrollRect.normalizedPosition = new Vector2(0, 0);
