@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a7a333a3d05c96946b372798aacd8d6e
+guid: 7f578c3419a8f6e4d8c3bf81a19028d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6180485587575474514
-    second: SPR_PRO_Bedroom_Painting_0
+      213: 7693580811272243208
+    second: SPR_PRO_Bedroom_Painting 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,37 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_PRO_Bedroom_Painting_0
+      name: SPR_PRO_Bedroom_Painting 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea6742d8a118a3aa0800000000000000
-      internalID: -6180485587575474514
+      spriteID: 808c4aa4cf615ca60800000000000000
+      internalID: 7693580811272243208
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SPR_PRO_Bedroom_Painting_0: -6180485587575474514
+      SPR_PRO_Bedroom_Painting 1_0: 7693580811272243208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
