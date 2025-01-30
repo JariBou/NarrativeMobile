@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4214216734631622320}
   - component: {fileID: 454669622227558503}
+  - component: {fileID: 2436385235768134454}
   m_Layer: 0
   m_Name: BoxButton
   m_TagString: Untagged
@@ -88,6 +89,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2436385235768134454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2209386609947086215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4594734ddc8f46abd8fc72a39868b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 21300000, guid: d2ddd27a2c7de4ad99b3d8c9d00e4265, type: 3}
+  - {fileID: 21300000, guid: 5caee0ba7342b4b2cacdbe0e6030c7b0, type: 3}
+  _startSprite: 0
+  _spriteTarget: 0
 --- !u!1 &3361949745667732712
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +117,6 @@ GameObject:
   - component: {fileID: 5472698439872881917}
   - component: {fileID: 3019677551572199258}
   - component: {fileID: 2986226152920432578}
-  - component: {fileID: 3326451847257721020}
   m_Layer: 6
   m_Name: ClickDetection
   m_TagString: Untagged
@@ -137,9 +154,9 @@ MonoBehaviour:
   _onTouchDetected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3326451847257721020}
-        m_TargetAssemblyTypeName: SpriteSwitcher, Assembly-CSharp
-        m_MethodName: SwitchSprite
+      - m_Target: {fileID: 2436385235768134454}
+        m_TargetAssemblyTypeName: BoxButton, Assembly-CSharp
+        m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -195,19 +212,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.815216, y: 0.8411608}
   m_EdgeRadius: 0
---- !u!114 &3326451847257721020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3361949745667732712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 183e74e729820c445a8c1d23005b7214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spriteRenderer: {fileID: 454669622227558503}
-  _sprites:
-  - {fileID: 21300000, guid: d2ddd27a2c7de4ad99b3d8c9d00e4265, type: 3}
-  - {fileID: 21300000, guid: 5caee0ba7342b4b2cacdbe0e6030c7b0, type: 3}
