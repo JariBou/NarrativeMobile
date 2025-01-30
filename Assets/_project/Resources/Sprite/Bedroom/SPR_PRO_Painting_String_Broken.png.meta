@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_PRO_Painting_String_Broken_0: 368993224214808890
+      SPR_PRO_Painting_String_Broken_1: -8613442929455721813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

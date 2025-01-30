@@ -103,10 +103,10 @@ TextureImporter:
       name: SPR_PRO_DirtyCloth_1_0
       rect:
         serializedVersion: 2
-        x: 304
-        y: 322
-        width: 259
-        height: 104
+        x: 0
+        y: 0
+        width: 257
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
