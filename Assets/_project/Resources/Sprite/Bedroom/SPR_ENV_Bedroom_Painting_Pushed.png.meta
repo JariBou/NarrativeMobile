@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fdbb8628df793c14094d55fc869b7aec
+guid: 2ad48c32bd1efce4f8701b2fae935705
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7693580811272243208
-    second: SPR_PRO_Bedroom_Painting 1_0
+      213: -3556416604909357947
+    second: SPR_ENV_Bedroom_Painting_Pushed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_PRO_Bedroom_Painting 1_0
+      name: SPR_ENV_Bedroom_Painting_Pushed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1497
-        height: 2752
+        width: 640
+        height: 1573
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 808c4aa4cf615ca60800000000000000
-      internalID: 7693580811272243208
+      spriteID: 584b317c0f115aec0800000000000000
+      internalID: -3556416604909357947
       vertices: []
       indices: 
       edges: []
