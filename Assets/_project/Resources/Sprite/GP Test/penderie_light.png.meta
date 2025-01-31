@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      penderie_light_0: 2032983021785330890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

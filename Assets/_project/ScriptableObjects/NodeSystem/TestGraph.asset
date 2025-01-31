@@ -169,7 +169,7 @@ MonoBehaviour:
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         m_ports: []
         m_pureExecutionDone: 1
-        Source: cc35e689-de5a-4bc4-8215-83fb1c3ae7f0
+        Source: d0b3d6d2-f560-4b55-bbfa-d526fee382bb
     - rid: 1550499022229733630
       type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
       data:
@@ -189,7 +189,7 @@ MonoBehaviour:
           _portIndex: 2
           _portDirection: 1
         m_pureExecutionDone: 1
-        dialogInfo: {fileID: 11400000, guid: 15dc1a416c2c8f2439d9630ad64d1fcc, type: 2}
+        dialogInfo: {fileID: 11400000, guid: f574aaf624e94e44b8f9fb270f284764, type: 2}
     - rid: 1550499022229733631
       type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
       data:
