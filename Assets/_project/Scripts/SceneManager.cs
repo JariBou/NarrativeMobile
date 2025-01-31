@@ -33,6 +33,7 @@ public class SceneManager : MonoBehaviour
         }
         
         _cameraDefaultZ = Camera.main.transform.position.z;
+        _currentSceneElement = _roomScenes[_currentRoomSceneIndex].SceneElement;
     }
 
     //UnlockScene, if selected scene can now be accessible, returns true
@@ -59,8 +60,9 @@ public class SceneManager : MonoBehaviour
     
     public bool MoveScene(bool moveLeft)
     {
+        if (_currentSceneElement!=null && !_currentSceneElement.IsMainRoom()) return false;
         int nextIndex = _currentRoomSceneIndex + (moveLeft ? -1 : 1);
-        if (nextIndex > _roomScenes.Count || nextIndex < 0) return false;
+        if (nextIndex >= _roomScenes.Count || nextIndex < 0) return false;
         
         RoomScene roomScene = GetSceneByIndex(nextIndex);
         if (roomScene.CanAccess())
@@ -73,6 +75,7 @@ public class SceneManager : MonoBehaviour
             Debug.Log(roomScene.SceneName);
             
             _currentRoomSceneIndex = nextIndex;
+            _currentSceneElement = roomScene.SceneElement;
             if (_sceneUI != null) _sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);
             return true;
         }
