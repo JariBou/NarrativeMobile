@@ -3949,7 +3949,7 @@ GameObject:
   - component: {fileID: 1101256665}
   - component: {fileID: 1101256664}
   m_Layer: 6
-  m_Name: SPR_PRO_DirtyCloth_2 (4)
+  m_Name: SPR_PRO_DirtyCloth_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4802,6 +4802,7 @@ GameObject:
   - component: {fileID: 1373770250}
   - component: {fileID: 1373770253}
   - component: {fileID: 1373770252}
+  - component: {fileID: 1373770254}
   m_Layer: 0
   m_Name: SPR_PRO_ClothesBasket_0
   m_TagString: Untagged
@@ -4950,6 +4951,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destroyDraggedObject: 1
   _draggedObjectsPositions: []
+--- !u!114 &1373770254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373770249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def0f01b223638e4083c66bef90982a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clothesCapacity: 8
+  _filledBasketSprite: {fileID: -5853627181469354030, guid: 782cf4b6acac81441973969376be7d39, type: 3}
+  _onClothesBasketFilled:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1390347416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6417,7 +6435,7 @@ GameObject:
   - component: {fileID: 1915742448}
   - component: {fileID: 1915742447}
   m_Layer: 6
-  m_Name: SPR_PRO_DirtyCloth_2 (7)
+  m_Name: SPR_PRO_DirtyCloth_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7074,7 +7092,7 @@ GameObject:
   - component: {fileID: 2119250575}
   - component: {fileID: 2119250574}
   m_Layer: 6
-  m_Name: SPR_PRO_DirtyCloth_2 (8)
+  m_Name: SPR_PRO_DirtyCloth_Shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
