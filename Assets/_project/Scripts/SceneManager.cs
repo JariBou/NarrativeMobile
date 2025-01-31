@@ -37,20 +37,22 @@ public class SceneManager : MonoBehaviour
     }
 
     //UnlockScene, if selected scene can now be accessible, returns true
-    public bool UnlockScene(string sceneName)
+    public void UnlockScene(string sceneName)
     {
         RoomScene roomScene = GetSceneByName(sceneName);
 
-        if (roomScene.SceneName != sceneName) return false;
+        if (roomScene.SceneName != sceneName) return ;
         
-        roomScene.LockAmount -= 1;
-
         int roomIndex = _roomScenes.IndexOf(roomScene);
+
+        roomScene.LockAmount -= 1;
+        
+        _roomScenes[roomIndex] = roomScene;
 
         if (_sceneUI != null) _sceneUI.ChangeLockAmountOfRoom(roomScene.LockAmount, roomIndex);
         
-        if (roomScene.CanAccess()) return true;
-        return false;
+        if (roomScene.CanAccess()) return ;
+        return ;
     }
 
     [Button]
