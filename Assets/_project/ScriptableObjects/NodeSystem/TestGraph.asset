@@ -19,6 +19,8 @@ MonoBehaviour:
   - rid: 1550498954628300982
   - rid: 1550498954628300983
   - rid: 1550498954628301200
+  - rid: 7088186014094065736
+  - rid: 7088186014094065737
   m_connections:
   - inputPort:
       nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
@@ -37,6 +39,12 @@ MonoBehaviour:
       portIndex: 1
     outputPort:
       nodeId: 790dcb57-844c-49a1-a984-c4a6b1dc7384
+      portIndex: 0
+  - inputPort:
+      nodeId: 70cef6bd-0cd4-4e1d-b78f-3d2c58ced857
+      portIndex: 1
+    outputPort:
+      nodeId: e7291eb1-a7f2-4755-b31e-637865e0cdf8
       portIndex: 0
   m_exposedProperties: []
   references:
@@ -72,7 +80,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
         m_ports: []
         m_pureExecutionDone: 1
-        Source: cc35e689-de5a-4bc4-8215-83fb1c3ae7f0
+        Source: d0b3d6d2-f560-4b55-bbfa-d526fee382bb
     - rid: 1550498954628300982
       type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
       data:
@@ -143,3 +151,39 @@ MonoBehaviour:
         m_pureExecutionDone: 1
         conversationId: test_user_2
         MessageToSend: {fileID: 11400000, guid: b4c86de4e7c2a9c44ae63ab40982119a, type: 2}
+    - rid: 7088186014094065736
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
+      data:
+        m_guid: e7291eb1-a7f2-4755-b31e-637865e0cdf8
+        m_position:
+          serializedVersion: 2
+          x: -10.400001
+          y: -569.6
+          width: 195.20001
+          height: 96.79999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.Nodes.GameObjectSourceNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: e88c3988-9cef-4260-be44-c09a6fe27c0f
+    - rid: 7088186014094065737
+      type: {class: DebugLogNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
+      data:
+        m_guid: 70cef6bd-0cd4-4e1d-b78f-3d2c58ced857
+        m_position:
+          serializedVersion: 2
+          x: 221.59999
+          y: -569.6
+          width: 350.4
+          height: 100.79999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.Nodes.DebugLogNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: logMessage
+          _ownerId: 70cef6bd-0cd4-4e1d-b78f-3d2c58ced857
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        logMessage: this bottle is cleaaaaaan
