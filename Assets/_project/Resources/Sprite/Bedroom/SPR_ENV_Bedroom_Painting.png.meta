@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_ENV_Bedroom_Painting_0: -9028391188211648046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

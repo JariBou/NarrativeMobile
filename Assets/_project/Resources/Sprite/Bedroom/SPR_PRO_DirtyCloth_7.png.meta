@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_PRO_DirtyCloth_7_0: 537349412692933972
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
