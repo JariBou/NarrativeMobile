@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using GraphicsLabor.Scripts.Attributes.LaborerAttributes.ScriptableObjectAttributes;
+using UnityEngine;
 
 namespace _project.Scripts.MessagingSystem
 {
-    [CreateAssetMenu(fileName = "Message0", menuName = "MessagingSystem/Message")]
+    [CreateAssetMenu(fileName = "Message0", menuName = "MessagingSystem/Message"), Manageable, Editable]
     public class Message : ScriptableObject
     {
         public FDateTime _sentDateTime;

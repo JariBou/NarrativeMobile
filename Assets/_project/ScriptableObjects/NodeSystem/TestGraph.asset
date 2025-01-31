@@ -14,22 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _graphId: a06cc303-51a3-49d9-8d29-48a433ab5c7f
   m_nodes:
-  - rid: 1550498954628300980
-  - rid: 1550498954628300981
   - rid: 1550498954628300982
-  - rid: 1550498954628300983
   - rid: 1550498954628301200
-  - rid: 7088186014094065736
-  - rid: 7088186014094065737
+  - rid: 1550499022229733450
+  - rid: 1550499022229733629
   m_connections:
   - inputPort:
       nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
       portIndex: 1
     outputPort:
-      nodeId: 88d380f9-66e6-40ef-8859-222902be0edd
+      nodeId: 22b71549-2f64-4c42-b7e8-3fc95f04ef8c
       portIndex: 0
   - inputPort:
-      nodeId: 790dcb57-844c-49a1-a984-c4a6b1dc7384
+      nodeId: 06066260-b0a9-4a65-a874-49e51f085109
       portIndex: 1
     outputPort:
       nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
@@ -38,58 +35,21 @@ MonoBehaviour:
       nodeId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
       portIndex: 1
     outputPort:
-      nodeId: 790dcb57-844c-49a1-a984-c4a6b1dc7384
-      portIndex: 0
-  - inputPort:
-      nodeId: 70cef6bd-0cd4-4e1d-b78f-3d2c58ced857
-      portIndex: 1
-    outputPort:
-      nodeId: e7291eb1-a7f2-4755-b31e-637865e0cdf8
+      nodeId: 06066260-b0a9-4a65-a874-49e51f085109
       portIndex: 0
   m_exposedProperties: []
   references:
     version: 2
     RefIds:
-    - rid: 1550498954628300980
-      type: {class: StartNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
-      data:
-        m_guid: 8e5248d7-c12c-4133-984a-fa9b03bba0fb
-        m_position:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.StartNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports: []
-        m_pureExecutionDone: 1
-    - rid: 1550498954628300981
-      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
-      data:
-        m_guid: 88d380f9-66e6-40ef-8859-222902be0edd
-        m_position:
-          serializedVersion: 2
-          x: -9
-          y: -295
-          width: 194
-          height: 98
-        m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.GameObjectSourceNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports: []
-        m_pureExecutionDone: 1
-        Source: d0b3d6d2-f560-4b55-bbfa-d526fee382bb
     - rid: 1550498954628300982
       type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
       data:
         m_guid: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
         m_position:
           serializedVersion: 2
-          x: 233
-          y: -295
-          width: 332
+          x: 279
+          y: -296
+          width: 386
           height: 125
         m_isPure: 0
         typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
@@ -106,26 +66,6 @@ MonoBehaviour:
         m_pureExecutionDone: 1
         conversationId: test_user_2
         MessageToSend: {fileID: 11400000, guid: 4b26cae056d13544ca7c6054ba605b99, type: 2}
-    - rid: 1550498954628300983
-      type: {class: DebugLogNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
-      data:
-        m_guid: 790dcb57-844c-49a1-a984-c4a6b1dc7384
-        m_position:
-          serializedVersion: 2
-          x: 677
-          y: -295
-          width: 303
-          height: 101
-        m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.DebugLogNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports:
-        - _exposedPropertyName: logMessage
-          _ownerId: 790dcb57-844c-49a1-a984-c4a6b1dc7384
-          _portIndex: 2
-          _portDirection: 1
-        m_pureExecutionDone: 1
-        logMessage: sent message
     - rid: 1550498954628301200
       type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
       data:
@@ -151,39 +91,39 @@ MonoBehaviour:
         m_pureExecutionDone: 1
         conversationId: test_user_2
         MessageToSend: {fileID: 11400000, guid: b4c86de4e7c2a9c44ae63ab40982119a, type: 2}
-    - rid: 7088186014094065736
-      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
+    - rid: 1550499022229733450
+      type: {class: WaitNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
       data:
-        m_guid: e7291eb1-a7f2-4755-b31e-637865e0cdf8
+        m_guid: 06066260-b0a9-4a65-a874-49e51f085109
         m_position:
           serializedVersion: 2
-          x: -10.400001
-          y: -569.6
-          width: 195.20001
-          height: 96.79999
+          x: 744
+          y: -295
+          width: 237
+          height: 101
         m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.GameObjectSourceNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports: []
-        m_pureExecutionDone: 1
-        Source: e88c3988-9cef-4260-be44-c09a6fe27c0f
-    - rid: 7088186014094065737
-      type: {class: DebugLogNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
-      data:
-        m_guid: 70cef6bd-0cd4-4e1d-b78f-3d2c58ced857
-        m_position:
-          serializedVersion: 2
-          x: 221.59999
-          y: -569.6
-          width: 350.4
-          height: 100.79999
-        m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.DebugLogNode, NodeSystem, Version=0.0.0.0,
+        typename: NodeSystem.Runtime.NodesLibrary.Process.WaitNode, NodeSystem, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         m_ports:
-        - _exposedPropertyName: logMessage
-          _ownerId: 70cef6bd-0cd4-4e1d-b78f-3d2c58ced857
+        - _exposedPropertyName: time
+          _ownerId: 06066260-b0a9-4a65-a874-49e51f085109
           _portIndex: 2
           _portDirection: 1
         m_pureExecutionDone: 1
-        logMessage: this bottle is cleaaaaaan
+        time: 2
+    - rid: 1550499022229733629
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 22b71549-2f64-4c42-b7e8-3fc95f04ef8c
+        m_position:
+          serializedVersion: 2
+          x: -9
+          y: -296
+          width: 194
+          height: 98
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: cc35e689-de5a-4bc4-8215-83fb1c3ae7f0
