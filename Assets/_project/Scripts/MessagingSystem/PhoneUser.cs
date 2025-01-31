@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using GraphicsLabor.Scripts.Attributes.LaborerAttributes.ScriptableObjectAttributes;
+using UnityEngine;
 
 namespace _project.Scripts.MessagingSystem
 {
-    [CreateAssetMenu(fileName = "PhoneUser0", menuName = "MessagingSystem/Phone User")]
+    [CreateAssetMenu(fileName = "PhoneUser0", menuName = "MessagingSystem/Phone User"), Manageable, Editable]
     public class PhoneUser : ScriptableObject
     {
         [SerializeField] private string _userId;

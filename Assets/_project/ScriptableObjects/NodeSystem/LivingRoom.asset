@@ -13,69 +13,9 @@ MonoBehaviour:
   m_Name: LivingRoom
   m_EditorClassIdentifier: 
   _graphId: 71d2c838-3678-4f6e-8565-958e0ecb4795
-  m_nodes:
-  - rid: 7088186019064578120
-  - rid: 7088186019064578123
-  - rid: 7088186019064578124
-  m_connections:
-  - inputPort:
-      nodeId: 7760b4a8-9f09-4347-a8a2-c0038d5345bb
-      portIndex: 1
-    outputPort:
-      nodeId: 63d339e4-226c-4159-8beb-2e802897c119
-      portIndex: 0
+  m_nodes: []
+  m_connections: []
   m_exposedProperties: []
   references:
     version: 2
-    RefIds:
-    - rid: 7088186019064578120
-      type: {class: StartNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
-      data:
-        m_guid: 27ea8245-3968-48fb-91a6-0da5d8357aca
-        m_position:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.StartNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports: []
-        m_pureExecutionDone: 1
-    - rid: 7088186019064578123
-      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
-      data:
-        m_guid: 63d339e4-226c-4159-8beb-2e802897c119
-        m_position:
-          serializedVersion: 2
-          x: 0
-          y: 183.2
-          width: 195.2
-          height: 97.59999
-        m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.GameObjectSourceNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports: []
-        m_pureExecutionDone: 1
-        Source: 7bcbe720-8379-4ca9-83e1-4bd2cc0c33dd
-    - rid: 7088186019064578124
-      type: {class: DebugLogNode, ns: NodeSystem.Runtime.Nodes, asm: NodeSystem}
-      data:
-        m_guid: 7760b4a8-9f09-4347-a8a2-c0038d5345bb
-        m_position:
-          serializedVersion: 2
-          x: 230.4
-          y: 204.8
-          width: 232.00002
-          height: 100.8
-        m_isPure: 0
-        typename: NodeSystem.Runtime.Nodes.DebugLogNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports:
-        - _exposedPropertyName: logMessage
-          _ownerId: 7760b4a8-9f09-4347-a8a2-c0038d5345bb
-          _portIndex: 2
-          _portDirection: 1
-        m_pureExecutionDone: 1
-        logMessage: WAAAAAH
+    RefIds: []

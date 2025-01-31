@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 1024
-  spriteBorder: {x: 700, y: 748, z: 700, w: 748}
+  spriteBorder: {x: 444, y: 268, z: 444, w: 268}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -116,10 +116,10 @@ TextureImporter:
       name: message_right_0
       rect:
         serializedVersion: 2
-        x: 355
-        y: 355
-        width: 1521
-        height: 1338
+        x: 218
+        y: 0
+        width: 1993
+        height: 1770
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
