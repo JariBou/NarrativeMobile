@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b5098771ee93a3e4aaeee657f9187be5
+guid: c37f9cb571d397c4598639028098f0cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7207877275645755540
-    second: SPR_ENV_DirtyClothesBox_0
-  - first:
-      213: 7136750221309363530
-    second: SPR_ENV_DirtyClothesBox_1
+      213: -8398094231818285390
+    second: SPR_PRO_Button_OFF_Box__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_ENV_DirtyClothesBox_0
+      name: SPR_PRO_Button_OFF_Box__0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 687
-        height: 426
+        x: 22
+        y: 18
+        width: 89
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 490c9777136870460800000000000000
-      internalID: 7207877275645755540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_ENV_DirtyClothesBox_1
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 424
-        width: 325
-        height: 315
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a45c5df9384da0360800000000000000
-      internalID: 7136750221309363530
+      spriteID: 2bec63a8ac9f37b80800000000000000
+      internalID: -8398094231818285390
       vertices: []
       indices: 
       edges: []
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SPR_ENV_DirtyClothesBox_0: 7207877275645755540
-      SPR_ENV_DirtyClothesBox_1: 7136750221309363530
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
