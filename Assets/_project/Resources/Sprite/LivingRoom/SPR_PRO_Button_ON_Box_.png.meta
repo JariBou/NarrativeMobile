@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_PRO_Button_ON_Box__0: -3101594919032180679
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
