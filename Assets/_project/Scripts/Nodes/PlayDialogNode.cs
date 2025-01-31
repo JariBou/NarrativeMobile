@@ -25,7 +25,7 @@ namespace _project.Scripts.Nodes
             // return base.OnProcess(info);
             DialogPanelScript.ShowDialog();
             info.NodeSystemExecutioner.GetObject().StartCoroutine(Wait(info, GetValueOfProp<DialogInfo>(info, nameof(dialogInfo)).GetDialogForLoc(GameSettings.Instance.loc).GetClipDuration()));
-            return new ProcessInfo(id, GetNextNode(info.GraphInstance).id, ProcessInfo.ExecutionFlowType.Wait);
+            return new ProcessInfo(id, GetNextNodeId(info.GraphInstance), ProcessInfo.ExecutionFlowType.Wait);
         }
 
         public override IEnumerator Wait(ExecInfo info, float duration)

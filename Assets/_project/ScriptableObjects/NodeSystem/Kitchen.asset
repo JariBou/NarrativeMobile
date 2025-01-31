@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2892175d8a24d80418dfbf7c18a1a156, type: 3}
+  m_Name: Kitchen
+  m_EditorClassIdentifier: 
+  _graphId: 038307e2-7a50-48a2-b69a-e0010da6f628
+  m_nodes:
+  - rid: 7088186036845019209
+  - rid: 7088186036845019210
+  - rid: 7088186036845019211
+  m_connections:
+  - inputPort:
+      nodeId: cf3bcf2f-97d9-4b81-a604-df6565cb8907
+      portIndex: 1
+    outputPort:
+      nodeId: 34f323b5-f764-4bce-bda6-0bba5d5a1755
+      portIndex: 0
+  m_exposedProperties: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 7088186036845019209
+      type: {class: StartNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 0315a048-39a5-462d-8907-4c70ebca7494
+        m_position:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.StartNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+    - rid: 7088186036845019210
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 34f323b5-f764-4bce-bda6-0bba5d5a1755
+        m_position:
+          serializedVersion: 2
+          x: 211.2
+          y: 164.8
+          width: 195.20001
+          height: 97.59999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: e88c3988-9cef-4260-be44-c09a6fe27c0f
+    - rid: 7088186036845019211
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: cf3bcf2f-97d9-4b81-a604-df6565cb8907
+        m_position:
+          serializedVersion: 2
+          x: 476.80002
+          y: 164.8
+          width: 342.4
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: cf3bcf2f-97d9-4b81-a604-df6565cb8907
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 15dc1a416c2c8f2439d9630ad64d1fcc, type: 2}

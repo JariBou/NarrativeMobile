@@ -115,6 +115,12 @@ namespace NodeSystem.Runtime
             }
             return new ProcessInfo(id, "", ProcessInfo.ExecutionFlowType.EndExecution);;
         }
+        
+        public string GetNextNodeId(NodeSystemAsset graph)
+        {
+            NodeSystemNode nextNode = GetNextNode(graph);
+            return nextNode != null ? nextNode.id : "";
+        }
 
         public NodeSystemNode GetNextNode(NodeSystemAsset graph)
         {
