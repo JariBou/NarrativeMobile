@@ -25,7 +25,7 @@ namespace NodeSystem.Runtime.References
 
         private void OnDisable()
         {
-            ReferenceManager.Instance.UnrecordHolder(this);
+            ReferenceManager.Instance?.UnrecordHolder(this);
         }
 
         public void LoadReferences()

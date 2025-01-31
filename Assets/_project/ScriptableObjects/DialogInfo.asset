@@ -15,8 +15,8 @@ MonoBehaviour:
   _dialogName: 
   _localisations:
   - _loc: 0
-    _content: d
+    _content: fr
     _audioClip: {fileID: 0}
   - _loc: 1
-    _content: d
+    _content: en
     _audioClip: {fileID: 0}

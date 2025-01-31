@@ -9,6 +9,7 @@ namespace NodeSystem.Runtime.Attributes
         private FlowDirection m_nodeFlowDirection;
         private bool m_isPure;
         private int _outputPortCount;
+        private string _tooltip;
 
 
         public string title => m_nodeTitle;
@@ -19,13 +20,15 @@ namespace NodeSystem.Runtime.Attributes
 
         public bool IsPure => m_isPure;
         public int OutputPortCount => _outputPortCount;
+        public string tooltip => _tooltip;
 
-        public NodeInfoAttribute(string nodeTitle, string menuItem = "", FlowDirection flowDirection = FlowDirection.Both, bool isPure = false, int outputPortCount = 1)
+        public NodeInfoAttribute(string nodeTitle, string menuItem = "", FlowDirection flowDirection = FlowDirection.Both, bool isPure = false, string tooltip = "", int outputPortCount = 1)
         {
             m_nodeTitle = nodeTitle;
             m_menuItem = menuItem;
             m_nodeFlowDirection = flowDirection;
             m_isPure = isPure;
+            _tooltip = tooltip;
             _outputPortCount = outputPortCount;
         }
         

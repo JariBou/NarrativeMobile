@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using NodeSystem.Runtime.Utils;
 using UnityEngine;
 
@@ -11,11 +12,11 @@ namespace NodeSystem.Runtime.References
         [SerializeField] private List<ReferenceDataBank> m_referenceDataBanks = new();
 
         private static ReferenceManager m_instance;
-        public static ReferenceManager Instance
+        [CanBeNull] public static ReferenceManager Instance
         {
             get {
+                if (!Application.isPlaying && !Application.isEditor) return null;
                 if (m_instance != null) return m_instance;
-            
                 m_instance = FindAnyObjectByType<ReferenceManager>();
                 if (m_instance == null)
                 {
@@ -63,7 +64,7 @@ namespace NodeSystem.Runtime.References
         {
             if (guid == "") return null;
             // return GetAvailableDataBanks().Select(holder => holder.GetGameObject<T>(guid)).FirstOrDefault(obj => obj);
-            return Instance.m_referenceDataBanks.Select(holder => holder.GetGameObject<T>(guid)).FirstOrDefault(obj => obj);
+            return Instance?.m_referenceDataBanks.Select(holder => holder.GetGameObject<T>(guid)).FirstOrDefault(obj => obj);
         }
     
         public static string GetGuidOf<T>(T obj) where T : UnityEngine.Object

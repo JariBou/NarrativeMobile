@@ -47,6 +47,7 @@ namespace NodeSystem.Editor.Nodes
             m_graphNode.IsPure = info.IsPure;
 
             title = info.title;
+            tooltip = info.tooltip;
             
             string[] depths = info.menuItem.Split('/');
             foreach (string depth in depths)

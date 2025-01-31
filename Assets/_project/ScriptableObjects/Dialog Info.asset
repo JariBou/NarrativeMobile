@@ -15,8 +15,8 @@ MonoBehaviour:
   _dialogName: zizi
   _localisations:
   - _loc: 1
-    _content: zizi
+    _content: EnEnglish
     _audioClip: {fileID: 0}
   - _loc: 0
-    _content: dick
+    _content: FrFrench
     _audioClip: {fileID: 0}

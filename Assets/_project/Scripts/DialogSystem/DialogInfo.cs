@@ -35,7 +35,7 @@ namespace _project.Scripts.DialogSystem
 
         public float GetClipDuration()
         {
-            return audioClip != null ? audioClip.length : 0;
+            return audioClip != null ? audioClip.length : 2;
         }
     }
 

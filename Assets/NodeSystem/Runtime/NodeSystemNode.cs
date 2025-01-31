@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using NodeSystem.Runtime.Attributes;
 using NodeSystem.Runtime.Utils;
@@ -141,6 +142,12 @@ namespace NodeSystem.Runtime
         {
             m_ports.Add(portInfo);
         }
+        
+        public virtual IEnumerator Wait(ExecInfo info, float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            info.NodeSystemExecutioner.TickProcess();
+        }
     }
 
     [Serializable]
@@ -191,6 +198,10 @@ namespace NodeSystem.Runtime
     public class ExecInfo
     {
         public string ExecId { get; private set; }
+        // TODO: So FlowId is going to represent the "main" flow Id
+        // So when doing 'emit after' it's a coroutine that will have a different FlowId
+        // Rework executionners to use a centralised execution system
+        public string FlowId { get; private set; }
         public NodeSystemAsset GraphInstance { get; }
         public INodeSystemExecutioner NodeSystemExecutioner { get; }
 
@@ -199,12 +210,23 @@ namespace NodeSystem.Runtime
             GraphInstance = graphInstance;
             NodeSystemExecutioner = nodeSystemExecutioner;
             ExecId = GuidSystem.NewGuid();
+            FlowId = GuidSystem.NewGuid();
+        }
+
+        public ExecInfo(ExecInfo baseInfo)
+        {
+            GraphInstance = baseInfo.GraphInstance;
+            NodeSystemExecutioner = baseInfo.NodeSystemExecutioner;
+            ExecId = GuidSystem.NewGuid();
+            FlowId = baseInfo.FlowId;
         }
     }
 
     public interface INodeSystemExecutioner
     {
         public void TickProcess();
+
+        public void ExecuteFromNode(string nodeId);
 
         public MonoBehaviour GetObject();
     }

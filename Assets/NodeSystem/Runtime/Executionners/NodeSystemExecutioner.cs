@@ -64,6 +64,11 @@ namespace NodeSystem.Runtime.Executionners
             }
         }
 
+        public void ExecuteFromNode(string nodeId)
+        {
+            throw new NotImplementedException();
+        }
+
         public MonoBehaviour GetObject()
         {
             return this;
