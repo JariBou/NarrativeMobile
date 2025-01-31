@@ -24,6 +24,7 @@ public class TouchInputManager : MonoBehaviour
     
     private bool _isCheckingForTouch = true;
     
+    public void CheckForTouch(bool isCheckingForTouch) => _isCheckingForTouch = isCheckingForTouch;
     public void SetCheckingTouchDetection(bool isCheckingForTouch) => _isCheckingForTouch = isCheckingForTouch;
 
     public void OnTouch(InputAction.CallbackContext callbackContext)
