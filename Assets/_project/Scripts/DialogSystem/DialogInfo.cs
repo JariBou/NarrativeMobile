@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using _project.Scripts.Localisation;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.ScriptableObjectAttributes;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -20,28 +21,5 @@ namespace _project.Scripts.DialogSystem
         }
     }
 
-    [Serializable]
-    public class TranslatedDialogData
-    {
-        [SerializeField] private Loc _loc = Loc.FR_fr;
-        [SerializeField] private string _content;
-        [SerializeField] private AudioClip _audioClip;
-
-        public Loc loc => _loc;
-
-        public string content => _content;
-
-        public AudioClip audioClip => _audioClip;
-
-        public float GetClipDuration()
-        {
-            return audioClip != null ? audioClip.length : 2;
-        }
-    }
-
-    public enum Loc
-    {
-        FR_fr, 
-        EN_en
-    }
+    
 }
