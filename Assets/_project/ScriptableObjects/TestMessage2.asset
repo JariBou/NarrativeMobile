@@ -19,5 +19,9 @@ MonoBehaviour:
     _hour: 0
     _minute: 0
     _second: 0
-  _content: Where are the keys to unlock it ?
+  _content:
+  - _loc: 0
+    _content: another message
+  - _loc: 1
+    _content: 
   _user: {fileID: 11400000, guid: b0346b9f79cbfbc4cac4f9bef433ba4f, type: 2}

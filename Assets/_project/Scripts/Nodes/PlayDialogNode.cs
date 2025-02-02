@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using _project.Scripts.DialogSystem;
+using _project.Scripts.Localisation;
 using NodeSystem.Runtime;
 using NodeSystem.Runtime.Attributes;
 using UnityEngine;
@@ -19,12 +20,16 @@ namespace _project.Scripts.Nodes
         
         public override ProcessInfo OnProcess(ExecInfo info)
         {
-            DialogPanelScript.Instance.SetDialogText(GetValueOfProp<DialogInfo>(info, nameof(dialogInfo)).GetDialogForLoc(GameSettings.Instance.loc).content);
-            // dialogDuration = GetValueOfProp<DialogInfo>(info, nameof(dialogInfo))
-            //     .GetDialogForLoc(GameSettings.Instance.loc).GetClipDuration();
-            // return base.OnProcess(info);
-            DialogPanelScript.ShowDialog();
-            info.NodeSystemExecutioner.GetObject().StartCoroutine(Wait(info, GetValueOfProp<DialogInfo>(info, nameof(dialogInfo)).GetDialogForLoc(GameSettings.Instance.loc).GetClipDuration()));
+            dialogInfo = GetValueOfProp<DialogInfo>(info, nameof(dialogInfo));
+            TranslatedDialogData translatedDialogData = dialogInfo.GetDialogForLoc(GameSettings.Instance.loc);
+            
+            DialogPanelScript.Instance.SetDialogText(translatedDialogData.content);
+            
+            DialogPanelScript.ShowDialog(info.NodeSystemExecutioner);
+            AudioManager.PlayDialog(translatedDialogData.audioClip);
+            
+            info.NodeSystemExecutioner.GetObject().StartCoroutine(Wait(info, translatedDialogData.GetClipDuration()));
+            
             return new ProcessInfo(id, GetNextNodeId(info.GraphInstance), ProcessInfo.ExecutionFlowType.Wait);
         }
 

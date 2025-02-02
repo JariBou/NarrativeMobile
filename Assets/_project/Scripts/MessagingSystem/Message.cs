@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using _project.Scripts.Localisation;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.ScriptableObjectAttributes;
-using NUnit.Framework;
 using UnityEngine;
 
 namespace _project.Scripts.MessagingSystem
