@@ -6,6 +6,7 @@ namespace _project.Scripts.KitchenScripts
     {
         private CleanableItemConstraint _cleanedItem;
         [SerializeField] private float _cleaningTime = 2f;
+        [SerializeField] private GameObject _splashObject;
         private float _cleanStartTime;
         public void OnTriggerEnter2D(Collider2D collision)
         {
@@ -39,7 +40,9 @@ namespace _project.Scripts.KitchenScripts
 
         public void Update()
         {
+            _splashObject.SetActive(_cleanedItem);
             if (!_cleanedItem) return;
+            _splashObject.transform.position = new Vector3(_splashObject.transform.position.x, _cleanedItem.transform.position.y, _splashObject.transform.position.z);
             if (_cleanStartTime + _cleaningTime < Time.time)
             {
                 _cleanedItem.Clean();
