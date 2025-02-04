@@ -4,8 +4,10 @@ using UnityEngine;
 
 namespace _project.Scripts.MessagingSystem
 {
-    public class MessagingService
+    public class MessagingService : MonoBehaviour
     {
+        public static MessagingService Instance { get; private set; }
+        
         private int _lastSentMessageTimeIndex = 0;
         public List<FDateTime> _messageSendingTime = new();
 
@@ -13,28 +15,21 @@ namespace _project.Scripts.MessagingSystem
 
         public PhoneUser _userTest;
 
-        public void SendMessage(Message message)
+        private void Awake()
         {
-            new Message(_messageSendingTime[_lastSentMessageTimeIndex], "textContent", _userTest);
-            _lastSentMessageTimeIndex++;
+            Instance = this;
+        }
+
+        public void SendMessage(Message message, string conversationId)
+        {
+            // new Message(_messageSendingTime[_lastSentMessageTimeIndex], "textContent", _userTest);
+            // _lastSentMessageTimeIndex++;
+            _phone.AddMessage(message, conversationId);
         }
         
     }
 
 
 
-    [CreateAssetMenu(fileName = "Message0", menuName = "MessagingSystem/Message")]
-    public class Message : ScriptableObject
-    {
-        public FDateTime _sentDateTime;
-        public string _content;
-        public PhoneUser _user;
-
-        public Message(FDateTime sentDateTime, string content, PhoneUser user)
-        {
-            _sentDateTime = sentDateTime;
-            _content = content;
-            _user = user;
-        }
-    }
+    
 }

@@ -9,7 +9,9 @@ public class DragTargetZone : MonoBehaviour
     [SerializeField, HideIf("_destroyDraggedObject")]
     private Vector3[] _draggedObjectsPositions;
 
-    private int nbOccupiedObjectsPositions = 0;
+    private int nbDraggedObjects = 0;
+    
+    public event Action<int> onItemDragged;
     
     private Collider2D _collider;
     public Collider2D GetCollider() => _collider;
@@ -17,7 +19,7 @@ public class DragTargetZone : MonoBehaviour
     private void Awake()
     {
         _collider = GetComponent<Collider2D>();
-        nbOccupiedObjectsPositions = 0;
+        nbDraggedObjects = 0;
     }
 
     public void DraggedItem(DraggableElement draggableElement)
@@ -28,11 +30,12 @@ public class DragTargetZone : MonoBehaviour
         }
         else
         {
-            if (_draggedObjectsPositions.Length <= nbOccupiedObjectsPositions) return;
-            draggableElement.transform.position = _draggedObjectsPositions[nbOccupiedObjectsPositions];
+            if (_draggedObjectsPositions.Length <= nbDraggedObjects) return;
+            draggableElement.transform.position = transform.position + _draggedObjectsPositions[nbDraggedObjects];
             draggableElement.LockDragging();
-            nbOccupiedObjectsPositions++;
         }
+        nbDraggedObjects++;
+        onItemDragged?.Invoke(nbDraggedObjects);
     }
 
     private void OnDrawGizmosSelected()
@@ -41,7 +44,7 @@ public class DragTargetZone : MonoBehaviour
         if (_destroyDraggedObject) return;
         foreach (Vector3 draggedObjectsPosition in _draggedObjectsPositions)
         {
-            Gizmos.DrawWireSphere(draggedObjectsPosition, 0.3f);
+            Gizmos.DrawWireSphere(transform.position + draggedObjectsPosition, 0.3f);
         }
     }
 }

@@ -1,17 +1,13 @@
 ﻿using System;
 using NodeSystem.Runtime.References;
-using NodeSystem.Runtime.Utils;
 using UnityEngine;
 
-namespace NodeSystem.Runtime
+namespace NodeSystem.Runtime.Executionners
 {
     public class NodeSystemExecutioner : MonoBehaviour, INodeSystemExecutioner
     {
         [SerializeField]
         private NodeSystemAsset m_graphAsset;
-        
-        [SerializeField]
-        private Ref<GameObject> test;
 
         private NodeSystemAsset graphInstance;
 
@@ -66,6 +62,11 @@ namespace NodeSystem.Runtime
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+        }
+
+        public void ExecuteFromNode(string nodeId)
+        {
+            throw new NotImplementedException();
         }
 
         public MonoBehaviour GetObject()

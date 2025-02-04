@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b5098771ee93a3e4aaeee657f9187be5
+guid: 0969784f351ea984698d73c4ffe197ef
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -106,10 +106,10 @@ TextureImporter:
       name: SPR_ENV_DirtyClothesBox_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 33
         y: 0
-        width: 687
-        height: 426
+        width: 654
+        height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,7 +131,7 @@ TextureImporter:
         x: 326
         y: 424
         width: 325
-        height: 315
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
