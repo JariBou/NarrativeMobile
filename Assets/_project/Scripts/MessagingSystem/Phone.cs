@@ -11,15 +11,19 @@ namespace _project.Scripts.MessagingSystem
 {
     public class Phone : MonoBehaviour
     {
-        public List<PhoneUser> _phoneUsers = new();
-        public Dictionary<string, PhoneConversation> _conversationDictionnary = new();
-        public Transform _conversationParentTransform;
-        public Transform _contactButtonTransform;
-        public GameObject _conversationPrefab;
-        public GameObject _buttonPrefab;
+        [SerializeField] private List<PhoneUser> _phoneUsers = new();
+        private Dictionary<string, PhoneConversation> _conversationDictionnary = new();
+        [SerializeField] private Transform _conversationParentTransform;
+        [SerializeField] private Transform _contactButtonTransform;
+        [SerializeField] private GameObject _conversationPrefab;
+        [SerializeField] private GameObject _buttonPrefab;
 
+        [SerializeField] private Image _phoneBgImage;
         [SerializeField] private Image _messageDetailIcon;
         [SerializeField] private TMP_Text _messageDetailName;
+        
+        [SerializeField] private List<GameObject> _phoneAppPanels = new();
+        [SerializeField] private List<Sprite> _bgSprites;
 
         private bool _hasNotification;
 
@@ -43,13 +47,23 @@ namespace _project.Scripts.MessagingSystem
 
         }
 
+        public void OnPhoneAppClicked(int index)
+        {
+            Debug.LogWarning(index);
+            for (int i = 0; i < _phoneAppPanels.Count; i++)
+            {
+                _phoneAppPanels[i].SetActive(i == index);
+            }
+            _phoneBgImage.sprite = _bgSprites[index];
+        }
+
         private void Start()
         {
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
-            AddMessageTest("Your need to go to this place !", "test_user");
-            AddMessageTest("What is the address ?", "test_user", TextAnchor.MiddleRight);
-            AddMessageTest("It's the 10th on Nanana street", "test_user");
+            // AddMessageTest("Your need to go to this place !", "test_user");
+            // AddMessageTest("What is the address ?", "test_user", TextAnchor.MiddleRight);
+            // AddMessageTest("It's the 10th on Nanana street", "test_user");
             // MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
             // messageScript.SetText("AAAAAAA this is some test shit (but sent by me)", TextAnchor.MiddleRight);
             // _scrollRect.normalizedPosition = new Vector2(0, 0);

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 11c17d13f395335459e971b7bbdf1e78
+guid: c6a83dcafa57d5845b6883114b042958
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2079555844606037082
-    second: SPR_UI_Lock_1_0
+      213: 8827846253074403636
+    second: phone_settings_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_UI_Lock_1_0
+      name: phone_settings_bg_0
       rect:
         serializedVersion: 2
-        x: 196
+        x: 419
         y: 0
-        width: 1656
-        height: 2048
+        width: 1872
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5c8450d5011cdc10800000000000000
-      internalID: 2079555844606037082
+      spriteID: 431534e256fc28a70800000000000000
+      internalID: 8827846253074403636
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SPR_UI_Lock_1_0: 2079555844606037082
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
