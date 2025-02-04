@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,13 +20,13 @@ namespace _project.Scripts.MessagingSystem
 
         public void AddMessage(Message message, FDateTime overrideTime = null)
         {
-            TextAnchor textAnchor = message._user.UserId == "player_user" ? TextAnchor.MiddleRight : TextAnchor.MiddleLeft;
+            TextAnchor textAnchor = message.User.UserId == "player_user" ? TextAnchor.MiddleRight : TextAnchor.MiddleLeft;
             MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
-            messageScript.SetText(message._content, textAnchor);
+            messageScript.SetText(message.GetContentFor(GameSettings.Instance.loc), textAnchor);
             _messages.Add(messageScript);
             _scrollRect.normalizedPosition = new Vector2(0, 0); // maybe put when you pull up your phone or smth like that
             RefreshSizes();
-            linkedButton.SetNewDate(overrideTime ?? message._sentDateTime);
+            linkedButton.SetNewDate(overrideTime ?? message.SentDateTime);
         }
         
         public void AddMessageTest(string message, TextAnchor textAnchor = TextAnchor.MiddleLeft)

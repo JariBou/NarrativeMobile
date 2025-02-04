@@ -1,5 +1,4 @@
-﻿using System;
-using _project.Scripts.DialogSystem;
+﻿using _project.Scripts.Localisation;
 using UnityEngine;
 
 namespace _project.Scripts
