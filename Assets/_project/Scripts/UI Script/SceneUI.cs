@@ -8,6 +8,7 @@ public class SceneUI : MonoBehaviour
     [SerializeField] private Sprite[] _lockAmountSprites;
 
     [SerializeField] private GameObject _goBackButton;
+    [SerializeField] private GameObject _phoneButton;
     
     [Header("Scene Circle Sizes")]
     [SerializeField] private Vector2 _activeSceneSize = new Vector2(20,20);
@@ -19,6 +20,7 @@ public class SceneUI : MonoBehaviour
     {
         SceneManager.Instance.SetupSceneUI(this);
         _goBackButton.SetActive(false);
+        _phoneButton.SetActive(true);
     }
 
     public void SetupUI(List<RoomScene> roomScenes)
@@ -48,5 +50,6 @@ public class SceneUI : MonoBehaviour
     public void UpdateChangedSceneElement(SceneElement sceneElement)
     {
         _goBackButton.SetActive(!sceneElement.IsMainRoom());
+        _phoneButton.SetActive(sceneElement.IsMainRoom());
     }
 }
