@@ -118,7 +118,7 @@ namespace _project.Scripts.MessagingSystem
                 {
                     _conversationDictionnary[key].RefreshSizes();
                     _messageDetailIcon.sprite = _conversationDictionnary[key].userTarget.Icon;
-                    _messageDetailName.text = _conversationDictionnary[key].userTarget.Name;
+                    _messageDetailName.text = _conversationDictionnary[key].userTarget.GetNameFor(GameSettings.Instance.loc);
                 }
             }
             // List<Message> messages = _conversationDictionnary[_phoneUsers[contactIndex].UserId];

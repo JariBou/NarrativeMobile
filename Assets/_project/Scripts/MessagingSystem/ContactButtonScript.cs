@@ -19,7 +19,7 @@ namespace _project.Scripts.MessagingSystem
 
         public void Init(PhoneUser user, UnityAction buttonCallback)
         {
-            nameText.text = user.Name;
+            nameText.text = user.GetNameFor(GameSettings.Instance.loc);
             _icon.sprite = user.Icon;
             button.onClick.AddListener(buttonCallback);
         }
