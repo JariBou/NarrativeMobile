@@ -1,6 +1,7 @@
 using System;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DraggableElement : MonoBehaviour
 {
@@ -10,11 +11,15 @@ public class DraggableElement : MonoBehaviour
     [SerializeField, ShowIf("_hasTargetZone")] private DragTargetZone _targetZone;
     private Vector3 _defaultPosition;
     private IDraggableItemConstraint[] _constraintInterface;
+
+    [SerializeField] private UnityEvent _onDroppedInTargetZone;
     
     public bool CanBeDragged() => _canBeDragged;
     
     public void AllowDragging() => _canBeDragged = true;
     public void LockDragging() => _canBeDragged = false;
+    
+    public void DestroySelf() => Destroy(gameObject);
 
     private void Awake()
     {
@@ -28,6 +33,7 @@ public class DraggableElement : MonoBehaviour
         {
             if (_targetZone.GetCollider().OverlapPoint(transform.position) && CheckConstraints())
             {
+                _onDroppedInTargetZone?.Invoke();
                 _targetZone.DraggedItem(this);
             }
             else if (_goBackToDefaultPos) transform.position = _defaultPosition;

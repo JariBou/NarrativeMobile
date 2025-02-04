@@ -25,6 +25,8 @@ MonoBehaviour:
   - rid: 1550499024159375435
   - rid: 1550499024159375436
   - rid: 1550499024159375437
+  - rid: 8456080101172576328
+  - rid: 299608221890641992
   m_connections:
   - inputPort:
       nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
@@ -80,10 +82,36 @@ MonoBehaviour:
     outputPort:
       nodeId: dd887afd-9a23-4356-ae06-c577d720acd9
       portIndex: 0
+  - inputPort:
+      nodeId: 7fbf2da0-f5f0-4021-bc54-a92503253292
+      portIndex: 1
+    outputPort:
+      nodeId: 9e45fb40-61c5-4c06-a333-c9f0e44b7a2c
+      portIndex: 0
   m_exposedProperties: []
   references:
     version: 2
     RefIds:
+    - rid: 299608221890641992
+      type: {class: PlaySfxNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: ac5fe278-ab67-4d0b-8516-0ba8784ac336
+        m_position:
+          serializedVersion: 2
+          x: 389
+          y: 74
+          width: 286
+          height: 102
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlaySfxNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: audioClip
+          _ownerId: ac5fe278-ab67-4d0b-8516-0ba8784ac336
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        audioClip: {fileID: 0}
     - rid: 1550498954628300982
       type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
       data:
@@ -310,3 +338,24 @@ MonoBehaviour:
           _portDirection: 1
         m_pureExecutionDone: 1
         logMessage: after wait
+    - rid: 8456080101172576328
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 7fbf2da0-f5f0-4021-bc54-a92503253292
+        m_position:
+          serializedVersion: 2
+          x: 2631
+          y: -208
+          width: 234
+          height: 122
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 7fbf2da0-f5f0-4021-bc54-a92503253292
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: fcb2f4a3-e132-467a-a05a-aff9c1aae226
+        state: 0

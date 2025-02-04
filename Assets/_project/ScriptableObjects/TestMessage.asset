@@ -19,5 +19,9 @@ MonoBehaviour:
     _hour: 0
     _minute: 0
     _second: 0
-  _content: The Bedroom is locked, you need to access it
+  _content:
+  - _loc: 0
+    _content: This some message
+  - _loc: 1
+    _content: 
   _user: {fileID: 11400000, guid: 758ad06ba5dfeb844b1971381acb1690, type: 2}

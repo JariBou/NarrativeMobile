@@ -1,5 +1,6 @@
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CleanableItemConstraint : MonoBehaviour, IDraggableItemConstraint
 {
@@ -8,6 +9,8 @@ public class CleanableItemConstraint : MonoBehaviour, IDraggableItemConstraint
     [SerializeField] private Sprite _cleanSprite;
     
     private SpriteRenderer _spriteRenderer;
+    
+    [SerializeField] private UnityEvent _onClean;
     
     public bool IsConstraintCompleted()
     {
@@ -28,8 +31,10 @@ public class CleanableItemConstraint : MonoBehaviour, IDraggableItemConstraint
     [Button]
     public void Clean()
     {
+        if (_isClean) return;
         if (_cleanSprite != null) _spriteRenderer.sprite = _cleanSprite;
         else { _spriteRenderer.color = Color.white; }
         _isClean = true;
+        _onClean?.Invoke();
     }
 }
