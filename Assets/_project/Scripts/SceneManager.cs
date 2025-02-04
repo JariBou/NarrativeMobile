@@ -33,23 +33,26 @@ public class SceneManager : MonoBehaviour
         }
         
         _cameraDefaultZ = Camera.main.transform.position.z;
+        _currentSceneElement = _roomScenes[_currentRoomSceneIndex].SceneElement;
     }
 
     //UnlockScene, if selected scene can now be accessible, returns true
-    public bool UnlockScene(string sceneName)
+    public void UnlockScene(string sceneName)
     {
         RoomScene roomScene = GetSceneByName(sceneName);
 
-        if (roomScene.SceneName != sceneName) return false;
+        if (roomScene.SceneName != sceneName) return ;
         
-        roomScene.LockAmount -= 1;
-
         int roomIndex = _roomScenes.IndexOf(roomScene);
+
+        roomScene.LockAmount -= 1;
+        
+        _roomScenes[roomIndex] = roomScene;
 
         if (_sceneUI != null) _sceneUI.ChangeLockAmountOfRoom(roomScene.LockAmount, roomIndex);
         
-        if (roomScene.CanAccess()) return true;
-        return false;
+        if (roomScene.CanAccess()) return ;
+        return ;
     }
 
     [Button]
@@ -59,8 +62,9 @@ public class SceneManager : MonoBehaviour
     
     public bool MoveScene(bool moveLeft)
     {
+        if (_currentSceneElement!=null && !_currentSceneElement.IsMainRoom()) return false;
         int nextIndex = _currentRoomSceneIndex + (moveLeft ? -1 : 1);
-        if (nextIndex > _roomScenes.Count || nextIndex < 0) return false;
+        if (nextIndex >= _roomScenes.Count || nextIndex < 0) return false;
         
         RoomScene roomScene = GetSceneByIndex(nextIndex);
         if (roomScene.CanAccess())
@@ -73,6 +77,7 @@ public class SceneManager : MonoBehaviour
             Debug.Log(roomScene.SceneName);
             
             _currentRoomSceneIndex = nextIndex;
+            _currentSceneElement = roomScene.SceneElement;
             if (_sceneUI != null) _sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);
             return true;
         }
@@ -91,6 +96,28 @@ public class SceneManager : MonoBehaviour
         }
         return _errorRoomScene;
     }
+    
+    private RoomScene GetSceneBySceneElement(SceneElement sceneElement)
+    {
+        if (_roomScenes.Exists(x => x.SceneElement == sceneElement))
+        {
+            return _roomScenes.Find(x => x.SceneElement == sceneElement);
+        }
+        return _errorRoomScene;
+    }
+
+    private int GetSceneIndexFromSceneElement(SceneElement sceneElement)
+    {
+        for (int i = 0; i < _roomScenes.Count; i++)
+        {
+            if (_roomScenes[i].SceneElement == sceneElement)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
 
     private RoomScene GetSceneByIndex(int sceneIndex)
     {
@@ -102,6 +129,22 @@ public class SceneManager : MonoBehaviour
     {
         Vector3 targetPos = sceneElement.GetPosition();
         Camera.main.transform.position = new Vector3(targetPos.x, targetPos.y, _cameraDefaultZ);
+        if (sceneElement.IsMainRoom())
+        {
+            int sceneIndex = GetSceneIndexFromSceneElement(sceneElement);
+            if (sceneIndex != -1)
+            {
+                _currentRoomSceneIndex = sceneIndex;
+                _sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);
+            }
+        }
+        _currentSceneElement = sceneElement;
+        _sceneUI.UpdateChangedSceneElement(sceneElement);
+    }
+
+    public void GoBack()
+    {
+        MoveTo(_roomScenes[_currentRoomSceneIndex].SceneElement);
     }
 }
 

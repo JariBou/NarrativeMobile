@@ -1,0 +1,361 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2892175d8a24d80418dfbf7c18a1a156, type: 3}
+  m_Name: TestGraph
+  m_EditorClassIdentifier: 
+  _graphId: a06cc303-51a3-49d9-8d29-48a433ab5c7f
+  m_nodes:
+  - rid: 1550498954628300982
+  - rid: 1550498954628301200
+  - rid: 1550499022229733450
+  - rid: 1550499022229733629
+  - rid: 1550499022229733630
+  - rid: 1550499022229733631
+  - rid: 1550499024159375433
+  - rid: 1550499024159375434
+  - rid: 1550499024159375435
+  - rid: 1550499024159375436
+  - rid: 1550499024159375437
+  - rid: 8456080101172576328
+  - rid: 299608221890641992
+  m_connections:
+  - inputPort:
+      nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+      portIndex: 1
+    outputPort:
+      nodeId: 22b71549-2f64-4c42-b7e8-3fc95f04ef8c
+      portIndex: 0
+  - inputPort:
+      nodeId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+      portIndex: 1
+    outputPort:
+      nodeId: 06066260-b0a9-4a65-a874-49e51f085109
+      portIndex: 0
+  - inputPort:
+      nodeId: dd887afd-9a23-4356-ae06-c577d720acd9
+      portIndex: 1
+    outputPort:
+      nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+      portIndex: 0
+  - inputPort:
+      nodeId: fcf5f350-f43e-4f2d-8612-56e379b85678
+      portIndex: 1
+    outputPort:
+      nodeId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+      portIndex: 0
+  - inputPort:
+      nodeId: 916046a7-a6fa-4fb7-a575-03d69a2b5796
+      portIndex: 2
+    outputPort:
+      nodeId: 32b34ce6-62d3-4f6b-960c-d55b061c2ef0
+      portIndex: 0
+  - inputPort:
+      nodeId: 5335edc7-8d73-414c-b82b-38b52b895447
+      portIndex: 1
+    outputPort:
+      nodeId: 32b34ce6-62d3-4f6b-960c-d55b061c2ef0
+      portIndex: 1
+  - inputPort:
+      nodeId: b8a1ae04-f622-4ef9-a38d-63f58c55c838
+      portIndex: 1
+    outputPort:
+      nodeId: 916046a7-a6fa-4fb7-a575-03d69a2b5796
+      portIndex: 1
+  - inputPort:
+      nodeId: 9e45fb40-61c5-4c06-a333-c9f0e44b7a2c
+      portIndex: 1
+    outputPort:
+      nodeId: fcf5f350-f43e-4f2d-8612-56e379b85678
+      portIndex: 0
+  - inputPort:
+      nodeId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+      portIndex: 1
+    outputPort:
+      nodeId: dd887afd-9a23-4356-ae06-c577d720acd9
+      portIndex: 0
+  - inputPort:
+      nodeId: 7fbf2da0-f5f0-4021-bc54-a92503253292
+      portIndex: 1
+    outputPort:
+      nodeId: 9e45fb40-61c5-4c06-a333-c9f0e44b7a2c
+      portIndex: 0
+  m_exposedProperties: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 299608221890641992
+      type: {class: PlaySfxNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: ac5fe278-ab67-4d0b-8516-0ba8784ac336
+        m_position:
+          serializedVersion: 2
+          x: 389
+          y: 74
+          width: 286
+          height: 102
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlaySfxNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: audioClip
+          _ownerId: ac5fe278-ab67-4d0b-8516-0ba8784ac336
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        audioClip: {fileID: 0}
+    - rid: 1550498954628300982
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+        m_position:
+          serializedVersion: 2
+          x: 288
+          y: -296
+          width: 386
+          height: 125
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: test_user_2
+        MessageToSend: {fileID: 11400000, guid: 4b26cae056d13544ca7c6054ba605b99, type: 2}
+    - rid: 1550498954628301200
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+        m_position:
+          serializedVersion: 2
+          x: 1377
+          y: -312
+          width: 393
+          height: 125
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 86ebd632-194c-46a5-9efe-4d212ee5bf5a
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: test_user_2
+        MessageToSend: {fileID: 11400000, guid: b4c86de4e7c2a9c44ae63ab40982119a, type: 2}
+    - rid: 1550499022229733450
+      type: {class: WaitNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 06066260-b0a9-4a65-a874-49e51f085109
+        m_position:
+          serializedVersion: 2
+          x: 1103
+          y: -475
+          width: 237
+          height: 101
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.WaitNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: time
+          _ownerId: 06066260-b0a9-4a65-a874-49e51f085109
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        time: 2
+    - rid: 1550499022229733629
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 22b71549-2f64-4c42-b7e8-3fc95f04ef8c
+        m_position:
+          serializedVersion: 2
+          x: -9
+          y: -296
+          width: 194
+          height: 98
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: d0b3d6d2-f560-4b55-bbfa-d526fee382bb
+    - rid: 1550499022229733630
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: dd887afd-9a23-4356-ae06-c577d720acd9
+        m_position:
+          serializedVersion: 2
+          x: 686
+          y: -296
+          width: 380
+          height: 101
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: dd887afd-9a23-4356-ae06-c577d720acd9
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: f574aaf624e94e44b8f9fb270f284764, type: 2}
+    - rid: 1550499022229733631
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: fcf5f350-f43e-4f2d-8612-56e379b85678
+        m_position:
+          serializedVersion: 2
+          x: 1811
+          y: -312
+          width: 377
+          height: 101
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: fcf5f350-f43e-4f2d-8612-56e379b85678
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 16d3632380cbe4c44a3c66799eb41bc9, type: 2}
+    - rid: 1550499024159375433
+      type: {class: BranchNode, ns: NodeSystem.Runtime.NodesLibrary.Logic, asm: NodeSystem}
+      data:
+        m_guid: 32b34ce6-62d3-4f6b-960c-d55b061c2ef0
+        m_position:
+          serializedVersion: 2
+          x: 389
+          y: 234
+          width: 357
+          height: 125
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Logic.BranchNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: condition
+          _ownerId: 32b34ce6-62d3-4f6b-960c-d55b061c2ef0
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        condition: 0
+    - rid: 1550499024159375434
+      type: {class: BranchNode, ns: NodeSystem.Runtime.NodesLibrary.Logic, asm: NodeSystem}
+      data:
+        m_guid: 916046a7-a6fa-4fb7-a575-03d69a2b5796
+        m_position:
+          serializedVersion: 2
+          x: 821
+          y: 196
+          width: 357
+          height: 125
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Logic.BranchNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: condition
+          _ownerId: 916046a7-a6fa-4fb7-a575-03d69a2b5796
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        condition: 0
+    - rid: 1550499024159375435
+      type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
+      data:
+        m_guid: 5335edc7-8d73-414c-b82b-38b52b895447
+        m_position:
+          serializedVersion: 2
+          x: 834
+          y: 375
+          width: 230
+          height: 101
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.DebugLogNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: logMessage
+          _ownerId: 5335edc7-8d73-414c-b82b-38b52b895447
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        logMessage: 
+    - rid: 1550499024159375436
+      type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
+      data:
+        m_guid: b8a1ae04-f622-4ef9-a38d-63f58c55c838
+        m_position:
+          serializedVersion: 2
+          x: 1234
+          y: 309
+          width: 230
+          height: 101
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.DebugLogNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: logMessage
+          _ownerId: b8a1ae04-f622-4ef9-a38d-63f58c55c838
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        logMessage: 
+    - rid: 1550499024159375437
+      type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
+      data:
+        m_guid: 9e45fb40-61c5-4c06-a333-c9f0e44b7a2c
+        m_position:
+          serializedVersion: 2
+          x: 2249
+          y: -208
+          width: 0
+          height: 0
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.DebugLogNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: logMessage
+          _ownerId: 9e45fb40-61c5-4c06-a333-c9f0e44b7a2c
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        logMessage: after wait
+    - rid: 8456080101172576328
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 7fbf2da0-f5f0-4021-bc54-a92503253292
+        m_position:
+          serializedVersion: 2
+          x: 2631
+          y: -208
+          width: 234
+          height: 122
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 7fbf2da0-f5f0-4021-bc54-a92503253292
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: fcb2f4a3-e132-467a-a05a-aff9c1aae226
+        state: 0

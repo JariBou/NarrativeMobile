@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
+  m_Name: Cuisine-Vin
+  m_EditorClassIdentifier: 
+  _dialogName: cuisine_vin
+  _localisations:
+  - _loc: 1
+    _content: I could afford a month's worth of food with this bottle alone.
+    _audioClip: {fileID: 0}
+  - _loc: 0
+    _content: "Je pourrais m\u2019acheter un mois de nourriture avec cette bouteille."
+    _audioClip: {fileID: 0}

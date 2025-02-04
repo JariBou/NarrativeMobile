@@ -10,12 +10,12 @@ namespace _project.Scripts.MessagingSystem
     [Serializable]
     public class FDateTime
     {
-        [SerializeField] private int _year;
-        [SerializeField, Range(1, 12)] private int _month;
-        [SerializeField, Range(1, 31)] private int _day;
-        [SerializeField, Range(0, 23)] private int _hour;
-        [SerializeField, Range(0, 59)] private int _minute;
-        [SerializeField, Range(0, 59)] private int _second;
+        [SerializeField] private int _year = 0;
+        [SerializeField, Range(1, 12)] private int _month = 1;
+        [SerializeField, Range(1, 31)] private int _day = 1;
+        [SerializeField, Range(0, 23)] private int _hour = 0;
+        [SerializeField, Range(0, 59)] private int _minute = 0;
+        [SerializeField, Range(0, 59)] private int _second = 0;
         
         
         public int year => _year;
@@ -23,9 +23,15 @@ namespace _project.Scripts.MessagingSystem
         public int day => _day;
         public int hour => _hour;
         public int minute => _minute;
-        public int second => _second; 
+        public int second => _second;
 
 
+        public FDateTime(int day, int month)
+        {
+            _day = day;
+            _month = month;
+        }
+        
         public FDateTime(FDateTime fDateTime)
         {
             _year = fDateTime.year;
@@ -65,6 +71,11 @@ namespace _project.Scripts.MessagingSystem
         public override string ToString()
         {
             return "FDateTime(d:"+day+", m:"+month+", y:"+year+", h:"+hour+", m:"+minute+", s:"+second+")";
+        }
+
+        public string GetDayMonthString()
+        {
+            return $"{day:00}/{_month:00}";
         }
     }
     
