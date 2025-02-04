@@ -19,6 +19,6 @@ MonoBehaviour:
       Why kidnap them?
     _audioClip: {fileID: 0}
   - _loc: 0
-    _content: On dirait que Mr.Morel et Mme.Delacroix se connaissent depuis toujours...
+    _content: On dirait que Mr. Morel et Mme. Delacroix se connaissent depuis toujours...
       Pourquoi vouloir les enlever ?
     _audioClip: {fileID: 0}

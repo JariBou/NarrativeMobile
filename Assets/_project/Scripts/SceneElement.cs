@@ -1,19 +1,22 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
-public class SceneElement : MonoBehaviour
+namespace _project.Scripts
 {
-    [SerializeField] private bool _isMainRoom;
-    public Vector3 GetPosition()
+    [RequireComponent(typeof(SpriteRenderer))]
+    public class SceneElement : MonoBehaviour
     {
-        return transform.position;
-    }
+        [SerializeField] private bool _isMainRoom;
+        public Vector3 GetPosition()
+        {
+            return transform.position;
+        }
 
-    public Sprite GetSceneSprite()
-    {
-        return GetComponent<SpriteRenderer>().sprite;
-    }
+        public Sprite GetSceneSprite()
+        {
+            return GetComponent<SpriteRenderer>().sprite;
+        }
 
-    public bool IsMainRoom() => _isMainRoom;
+        public bool IsMainRoom() => _isMainRoom;
  
+    }
 }

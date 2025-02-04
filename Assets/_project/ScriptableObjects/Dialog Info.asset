@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: EnEnglish
-    _audioClip: {fileID: 0}
+    _audioClip: {fileID: 8300000, guid: 91204eb9ab85b444781b27e3334ab717, type: 3}
   - _loc: 0
     _content: FrFrench
-    _audioClip: {fileID: 0}
+    _audioClip: {fileID: 8300000, guid: 91204eb9ab85b444781b27e3334ab717, type: 3}

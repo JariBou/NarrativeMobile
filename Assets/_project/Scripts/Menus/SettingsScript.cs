@@ -1,13 +1,11 @@
 ﻿using System;
 using _project.Scripts.Localisation;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace _project.Scripts
+namespace _project.Scripts.Menus
 {
     public class SettingsScript : MonoBehaviour
     {
@@ -15,6 +13,8 @@ namespace _project.Scripts
         [SerializeField] private Slider _sfxSlider;
         [SerializeField] private Slider _voicesSlider;
         [SerializeField] private TMP_Dropdown _languageDropdown;
+        [SerializeField] private Button _backButton;
+        [SerializeField] private MainMenuScript _menuScript;
         
         [SerializeField]
         private AudioMixer Mixer;
@@ -43,6 +43,8 @@ namespace _project.Scripts
             _languageDropdown.value = 0;
             
             _languageDropdown.onValueChanged.AddListener(DropdownValueChanged);
+            
+            _backButton.onClick.AddListener(_menuScript.SettingsButtonClicked);
         }
 
         private void DropdownValueChanged(int val)

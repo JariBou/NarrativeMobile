@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b0c1d459cc4e2cbf2ed435793589e4, type: 3}
+  m_Name: Message 6
+  m_EditorClassIdentifier: 
+  _sentDateTime:
+    _year: 0
+    _month: 0
+    _day: 0
+    _hour: 0
+    _minute: 0
+    _second: 0
+  _content:
+  - _loc: 0
+    _content: "Nous vous demandons qu\u2019une chose : Fouiller l\u2019appartement
+      pour trouver les preuves de la disparition de Madame Emily Delacroix, dont
+      vous avez forc\xE9ment entendu parler par les m\xE9dias."
+  - _loc: 1
+    _content: 'We ask of you one thing only: search the apartment for evidence of
+      the disappearance of Madame Emily Delacroix, which you have no doubt heard
+      about in the media. '
+  _user: {fileID: 11400000, guid: 0c11fb5e737a4b74da4842532dcbc144, type: 2}

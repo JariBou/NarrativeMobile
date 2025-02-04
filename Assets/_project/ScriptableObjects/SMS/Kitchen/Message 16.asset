@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b0c1d459cc4e2cbf2ed435793589e4, type: 3}
+  m_Name: Message 16
+  m_EditorClassIdentifier: 
+  _sentDateTime:
+    _year: 0
+    _month: 0
+    _day: 0
+    _hour: 0
+    _minute: 0
+    _second: 0
+  _content:
+  - _loc: 0
+    _content: "Ne vous arr\xEAtez pas en si bon chemin ! Pensez \xE0 tout cet argent
+      que vous aurez une fois les preuves trouv\xE9es et d\xE9truites. "
+  - _loc: 1
+    _content: "Don\u2019t stop now! Think of all the money you will have once the
+      evidence is found and destroyed. "
+  _user: {fileID: 11400000, guid: 0c11fb5e737a4b74da4842532dcbc144, type: 2}
