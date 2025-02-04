@@ -26,6 +26,7 @@ MonoBehaviour:
   - rid: 1550499024159375436
   - rid: 1550499024159375437
   - rid: 8456080101172576328
+  - rid: 299608221890641992
   m_connections:
   - inputPort:
       nodeId: 763e62b8-2ce1-4d47-b06d-3ba0fe560d3c
@@ -91,6 +92,26 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 299608221890641992
+      type: {class: PlaySfxNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: ac5fe278-ab67-4d0b-8516-0ba8784ac336
+        m_position:
+          serializedVersion: 2
+          x: 389
+          y: 74
+          width: 286
+          height: 102
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlaySfxNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: audioClip
+          _ownerId: ac5fe278-ab67-4d0b-8516-0ba8784ac336
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        audioClip: {fileID: 0}
     - rid: 1550498954628300982
       type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
       data:
