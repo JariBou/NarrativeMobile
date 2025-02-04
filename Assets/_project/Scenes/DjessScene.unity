@@ -883,6 +883,9 @@ MonoBehaviour:
   _canBeDragged: 1
   _hasTargetZone: 1
   _targetZone: {fileID: 262048419}
+  _onDroppedInTargetZone:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &628432795
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1463,6 +1466,7 @@ MonoBehaviour:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 21300000, guid: 55747841a2e3b47dab36dc8d5e0dc4df, type: 3}
   - {fileID: 21300000, guid: c34cd61ed96ff9a40a54e159467c5155, type: 3}
+  _goBackButton: {fileID: 0}
   _activeSceneSize: {x: 20, y: 20}
   _normalSceneSize: {x: 10, y: 10}
 --- !u!4 &2059081281 stripped

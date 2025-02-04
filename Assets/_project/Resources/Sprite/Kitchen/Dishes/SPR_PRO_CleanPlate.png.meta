@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf59e5abfcede4d48a4b2f4e5c73c8a8
+guid: dc6f35af54050a14792f4876593bcb5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7763025553289717581
-    second: SPR_PRO_Knife_01_0
+      213: -9219938249956670989
+    second: SPR_PRO_CleanPlate_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_PRO_Knife_01_0
+      name: SPR_PRO_CleanPlate_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 37
-        width: 558
-        height: 364
+        x: 9
+        y: 4
+        width: 275
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d472d164c9ecbbb60800000000000000
-      internalID: 7763025553289717581
+      spriteID: 3f1cb40d2033c0080800000000000000
+      internalID: -9219938249956670989
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SPR_PRO_Knife_01_0: 7763025553289717581
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
