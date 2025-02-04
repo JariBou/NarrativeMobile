@@ -33,8 +33,8 @@ public class DraggableElement : MonoBehaviour
         {
             if (_targetZone.GetCollider().OverlapPoint(transform.position) && CheckConstraints())
             {
-                _targetZone.DraggedItem(this);
                 _onDroppedInTargetZone?.Invoke();
+                _targetZone.DraggedItem(this);
             }
             else if (_goBackToDefaultPos) transform.position = _defaultPosition;
         }
