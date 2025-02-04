@@ -17,12 +17,28 @@ MonoBehaviour:
   - rid: 78795436374622208
   - rid: 78795436374622281
   - rid: 78795436374622282
+  - rid: 78795509339258954
+  - rid: 78795509339258955
+  - rid: 78795509339258956
+  - rid: 78795509339258959
   m_connections:
   - inputPort:
       nodeId: 421e1790-f890-44c4-a8e8-e9b135de03b9
       portIndex: 1
     outputPort:
       nodeId: afe3e330-917c-499b-b1bb-b6b267eb93f5
+      portIndex: 0
+  - inputPort:
+      nodeId: 74128b0f-faec-4926-a757-968ff7885db6
+      portIndex: 1
+    outputPort:
+      nodeId: 460fb065-2e8d-46a9-82bc-cc0b474d482d
+      portIndex: 0
+  - inputPort:
+      nodeId: 3dbc850f-7a59-496b-bf13-d7ea9ffe406d
+      portIndex: 1
+    outputPort:
+      nodeId: b1557904-1774-489d-881e-735c0dfe2764
       portIndex: 0
   m_exposedProperties: []
   references:
@@ -79,3 +95,75 @@ MonoBehaviour:
           _portDirection: 1
         m_pureExecutionDone: 1
         logMessage: WOAAAA
+    - rid: 78795509339258954
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 460fb065-2e8d-46a9-82bc-cc0b474d482d
+        m_position:
+          serializedVersion: 2
+          x: 174.4
+          y: 168.8
+          width: 195.2
+          height: 97.59999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 40e3d4bc-d1db-43fd-b310-56fdb4e75652
+    - rid: 78795509339258955
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 74128b0f-faec-4926-a757-968ff7885db6
+        m_position:
+          serializedVersion: 2
+          x: 396
+          y: 168.8
+          width: 342.40002
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 74128b0f-faec-4926-a757-968ff7885db6
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 250613c20ca5957448252115cc206ae8, type: 2}
+    - rid: 78795509339258956
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: b1557904-1774-489d-881e-735c0dfe2764
+        m_position:
+          serializedVersion: 2
+          x: 174.4
+          y: 352
+          width: 195.2
+          height: 96.79999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 5fcab767-cb17-4cca-98d2-44d0824bf8fe
+    - rid: 78795509339258959
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 3dbc850f-7a59-496b-bf13-d7ea9ffe406d
+        m_position:
+          serializedVersion: 2
+          x: 383.2
+          y: 352
+          width: 342.40002
+          height: 100.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 3dbc850f-7a59-496b-bf13-d7ea9ffe406d
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: a11596b5aa9f0d14797990e6e571b7fc, type: 2}

@@ -17,6 +17,8 @@ MonoBehaviour:
   - rid: 7088186036845019209
   - rid: 7088186036845019210
   - rid: 7088186036845019211
+  - rid: 78795509339258960
+  - rid: 78795509339258961
   m_connections:
   - inputPort:
       nodeId: cf3bcf2f-97d9-4b81-a604-df6565cb8907
@@ -24,10 +26,52 @@ MonoBehaviour:
     outputPort:
       nodeId: 34f323b5-f764-4bce-bda6-0bba5d5a1755
       portIndex: 0
+  - inputPort:
+      nodeId: f490e33f-63ad-4374-8c08-c8102b5c253a
+      portIndex: 1
+    outputPort:
+      nodeId: 798d446b-e7a2-42d7-849b-1ba7ee2a8af7
+      portIndex: 0
   m_exposedProperties: []
   references:
     version: 2
     RefIds:
+    - rid: 78795509339258960
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 798d446b-e7a2-42d7-849b-1ba7ee2a8af7
+        m_position:
+          serializedVersion: 2
+          x: 220.8
+          y: 296.8
+          width: 195.19998
+          height: 96.80002
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 
+    - rid: 78795509339258961
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: f490e33f-63ad-4374-8c08-c8102b5c253a
+        m_position:
+          serializedVersion: 2
+          x: 441.6
+          y: 296.8
+          width: 342.4
+          height: 100.80002
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: f490e33f-63ad-4374-8c08-c8102b5c253a
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 19dfa6ad13d96f34391ddb00a3f7f602, type: 2}
     - rid: 7088186036845019209
       type: {class: StartNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
       data:
@@ -78,4 +122,4 @@ MonoBehaviour:
           _portIndex: 2
           _portDirection: 1
         m_pureExecutionDone: 1
-        dialogInfo: {fileID: 11400000, guid: 15dc1a416c2c8f2439d9630ad64d1fcc, type: 2}
+        dialogInfo: {fileID: 11400000, guid: 1db361c1bbb40b14c8d0153dc2227920, type: 2}
