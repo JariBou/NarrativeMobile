@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_ENV_DirtyClothesBox_0: 7207877275645755540
+      SPR_ENV_DirtyClothesBox_1: 7136750221309363530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
