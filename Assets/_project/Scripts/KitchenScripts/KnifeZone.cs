@@ -4,24 +4,21 @@ using UnityEngine.Events;
 
 public class KnifeZone : MonoBehaviour
 {
-    [SerializeField] private DragTargetZone[] _knifeTargetZones;
+    [SerializeField] private DragTargetZone _knifeTargetZone;
+    [SerializeField] private int _nbKnives;
     [SerializeField] private UnityEvent _onAllKnivesPlaced;
-
-    private int _knivesPlaced = 0;
+    
     private void Awake()
     {
-        foreach (DragTargetZone knifeTargetZone in _knifeTargetZones)
-        {
-            knifeTargetZone.onItemDragged += KnifeDragged;
-        }
+        _knifeTargetZone.onItemDragged += KnifeDragged;
     }
 
     private void KnifeDragged(int nbItemDragged)
     {
-        if (nbItemDragged == 1)
+        if (nbItemDragged == _nbKnives)
         {
-            _knivesPlaced++;
-            if (_knivesPlaced == _knifeTargetZones.Length) _onAllKnivesPlaced?.Invoke();
+            _onAllKnivesPlaced?.Invoke(); 
+            _knifeTargetZone.onItemDragged -= KnifeDragged;
         }
     }
 }

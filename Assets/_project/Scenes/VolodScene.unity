@@ -488,7 +488,7 @@ MonoBehaviour:
   _goBackToDefaultPos: 1
   _canBeDragged: 1
   _hasTargetZone: 1
-  _targetZone: {fileID: 2006139520}
+  _targetZone: {fileID: 803084265}
   _onDroppedInTargetZone:
     m_PersistentCalls:
       m_Calls: []
@@ -3102,9 +3102,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323659282}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -16.471676}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -6.7, z: -16.471676}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1346842345}
@@ -3156,7 +3156,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3556416604909357947, guid: 2ad48c32bd1efce4f8701b2fae935705, type: 3}
+  m_Sprite: {fileID: 7693580811272243208, guid: 7f578c3419a8f6e4d8c3bf81a19028d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3865,8 +3865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e70305c4677ee4cbe4d300fff9cc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _knifeTargetZones:
-  - {fileID: 803084265}
+  _knifeTargetZone: {fileID: 803084265}
+  _nbKnives: 2
   _onAllKnivesPlaced:
     m_PersistentCalls:
       m_Calls:
@@ -4860,9 +4860,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 803084264}
-    - targetCorrespondingSourceObject: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2006139518}
     - targetCorrespondingSourceObject: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 458083575}
@@ -6268,7 +6265,7 @@ GameObject:
   - component: {fileID: 803084265}
   - component: {fileID: 803084266}
   m_Layer: 0
-  m_Name: KnifeZone 1
+  m_Name: KnifeZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6301,7 +6298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e451cee3a1c3cec419a14d3d54225ba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destroyDraggedObject: 0
+  _destroyDraggedObject: 1
   _draggedObjectsPositions:
   - {x: 0, y: 0, z: 0}
 --- !u!61 &803084266
@@ -6338,7 +6335,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2.119564, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6348,7 +6345,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3097839, y: 7.74942}
+  m_Size: {x: 6.3475876, y: 7.74942}
   m_EdgeRadius: 0
 --- !u!1 &825684225 stripped
 GameObject:
@@ -6949,14 +6946,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024053982}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.67757004, w: 0.7354583}
-  m_LocalPosition: {x: -6.8499994, y: -4.7099996, z: 1.3416759}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6428614, y: 15.285713, z: 1.9166795}
+  m_LocalScale: {x: 0.85714287, y: 0.85714287, z: 0.85714287}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 280173217}
   m_Father: {fileID: 323659283}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 85.308}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1024053984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8462,14 +8459,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346842344}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.67757004, w: 0.7354583}
-  m_LocalPosition: {x: -7.550004, y: 2.6500018, z: 1.3416759}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.9571378, y: 15.285713, z: 1.9166795}
+  m_LocalScale: {x: 0.85714287, y: 0.85714287, z: 0.85714287}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 777413267}
   m_Father: {fileID: 323659283}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 85.308}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1346842346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9461,14 +9458,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459192433}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.67757004, w: 0.7354583}
-  m_LocalPosition: {x: -7.2799997, y: -1.489998, z: 1.3416759}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.22857665, y: 15.542856, z: 1.9166795}
+  m_LocalScale: {x: 0.85714287, y: 0.85714287, z: 0.85714287}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1807036937}
   m_Father: {fileID: 323659283}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 85.308}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1459192435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11494,100 +11491,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2006139517
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2006139518}
-  - component: {fileID: 2006139520}
-  - component: {fileID: 2006139519}
-  m_Layer: 0
-  m_Name: KnifeZone 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2006139518
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006139517}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.26, y: 4.320002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 557217580}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2006139519
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006139517}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.1088867, y: 7.74942}
-  m_EdgeRadius: 0
---- !u!114 &2006139520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006139517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e451cee3a1c3cec419a14d3d54225ba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _destroyDraggedObject: 0
-  _draggedObjectsPositions:
-  - {x: 0, y: 0, z: 0}
 --- !u!1 &2019088986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3361949745667732712, guid: 82976b209588b7b499db7971f6649168, type: 3}
