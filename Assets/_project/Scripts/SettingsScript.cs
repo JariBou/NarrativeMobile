@@ -1,4 +1,6 @@
 ﻿using System;
+using _project.Scripts.Localisation;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -12,6 +14,7 @@ namespace _project.Scripts
         [SerializeField] private Slider _masterSlider;
         [SerializeField] private Slider _sfxSlider;
         [SerializeField] private Slider _voicesSlider;
+        [SerializeField] private TMP_Dropdown _languageDropdown;
         
         [SerializeField]
         private AudioMixer Mixer;
@@ -33,9 +36,33 @@ namespace _project.Scripts
             _masterSlider.onValueChanged.AddListener(MasterSliderValueChanged);
             _sfxSlider.onValueChanged.AddListener(SfxSliderValueChanged);
             _voicesSlider.onValueChanged.AddListener(VoicesSliderValueChanged);
+            
+            _languageDropdown.options.Clear();
+            _languageDropdown.options.Add(new TMP_Dropdown.OptionData("English"));
+            _languageDropdown.options.Add(new TMP_Dropdown.OptionData("French"));
+            _languageDropdown.value = 0;
+            
+            _languageDropdown.onValueChanged.AddListener(DropdownValueChanged);
         }
 
-       
+        private void DropdownValueChanged(int val)
+        {
+            switch (val)
+            {
+                case 0:
+                    GameSettings.SetLoc(Loc.EN_en);
+                    Debug.Log("English");
+                    break;
+                case 1:
+                    GameSettings.SetLoc(Loc.FR_fr);
+                    Debug.Log("French");
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+
         private void MasterSliderValueChanged(float value)
         {
             float val = -80 + value * 80;
