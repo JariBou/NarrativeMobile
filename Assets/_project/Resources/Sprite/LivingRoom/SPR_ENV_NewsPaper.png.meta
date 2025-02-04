@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_ENV_NewsPaper_0: -2889104908687128153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

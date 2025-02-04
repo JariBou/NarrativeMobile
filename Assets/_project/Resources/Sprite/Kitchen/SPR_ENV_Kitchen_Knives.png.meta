@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 22141b57cf79cb7419641656420d1d76
+guid: e609838a9beddf9428ff7edb10b24b66
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8248963522618826243
-    second: SPR_ENV_Bed_0
+      213: -6887041977733939379
+    second: SPR_ENV_Kitchen_Knives_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_ENV_Bed_0
+      name: SPR_ENV_Kitchen_Knives_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 0
         y: 0
-        width: 1689
-        height: 1115
+        width: 3960
+        height: 1620
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df1662d816bc58d80800000000000000
-      internalID: -8248963522618826243
+      spriteID: d4ff6f37fcf4c60a0800000000000000
+      internalID: -6887041977733939379
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SPR_ENV_Bed_0: -8248963522618826243
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

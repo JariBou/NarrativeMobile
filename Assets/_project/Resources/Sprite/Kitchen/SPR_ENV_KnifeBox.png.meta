@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_ENV_KnifeBox_0: -8118173042757784573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
