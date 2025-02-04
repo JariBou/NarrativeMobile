@@ -21,9 +21,15 @@ public class TouchInputManager : MonoBehaviour
     private DraggableElement _draggableElement;
     
     private float _touchStartTime;
+    
+    private bool _isCheckingForTouch = true;
+    
+    public void CheckForTouch(bool isCheckingForTouch) => _isCheckingForTouch = isCheckingForTouch;
+    public void SetCheckingTouchDetection(bool isCheckingForTouch) => _isCheckingForTouch = isCheckingForTouch;
 
     public void OnTouch(InputAction.CallbackContext callbackContext)
     {
+        if (!_isCheckingForTouch) return;
         TouchState touchState = callbackContext.ReadValue<TouchState>();
 
         if (_touchStartTime <= 0 && touchState.phase == TouchPhase.Began)
@@ -32,27 +38,35 @@ public class TouchInputManager : MonoBehaviour
         }
 
         Vector3 touchWorldPosition = Camera.main.ScreenToWorldPoint(touchState.position);
-        Collider2D overlappedCollider = Physics2D.OverlapCircle(touchWorldPosition, _touchRadius, clickDetectionMask);
+        Collider2D[] overlappedColliders = Physics2D.OverlapCircleAll(touchWorldPosition, _touchRadius, clickDetectionMask);
         
         //Check if touch is Tap (short touch)
         if (touchState.isTap)
         {
             //Check for touchDetectionZone
-            if (overlappedCollider != null)
+            if (overlappedColliders.Length > 0)
             {
-                TouchDetectionZone touchDetectionZone = overlappedCollider.gameObject.GetComponent<TouchDetectionZone>();
-                if (touchDetectionZone)
+                foreach (Collider2D overlappedCollider in overlappedColliders)
                 {
-                    touchDetectionZone.OnClick(touchState);
+                    TouchDetectionZone touchDetectionZone = overlappedCollider.gameObject.GetComponent<TouchDetectionZone>();
+                    if (touchDetectionZone)
+                    {
+                        touchDetectionZone.OnClick(touchState);
+                    }
                 }
             }
         }
         else
         {
             //Check for draggable element
-            if (overlappedCollider != null)
+            if (overlappedColliders.Length > 0)
             {
-                DraggableElement draggableElement = overlappedCollider.gameObject.GetComponent<DraggableElement>();
+                DraggableElement draggableElement = null;
+                foreach (Collider2D overlappedCollider in overlappedColliders)
+                {
+                    draggableElement = overlappedCollider.gameObject.GetComponent<DraggableElement>();
+                    if (draggableElement) break;
+                }
                 if (draggableElement)
                 {
                     if (touchState.phase == TouchPhase.Began)

@@ -2,7 +2,7 @@
 using NodeSystem.Runtime.Attributes;
 using UnityEngine;
 
-namespace NodeSystem.Runtime.Nodes
+namespace NodeSystem.Runtime.NodesLibrary.Process
 {
     [NodeInfo("Wait For Seconds", "Process/Wait For Seconds")]
     public class WaitNode : NodeSystemNode
@@ -13,6 +13,7 @@ namespace NodeSystem.Runtime.Nodes
         public override ProcessInfo OnProcess(ExecInfo info)
         {
             info.NodeSystemExecutioner.GetObject().StartCoroutine(Wait(info));
+            // info.NodeSystemExecutioner.GetObject().StartCoroutine(Wait(info));
             return new ProcessInfo(id, GetNextNode(info.GraphInstance).id, ProcessInfo.ExecutionFlowType.Wait);
         }
 
