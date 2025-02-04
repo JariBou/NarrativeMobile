@@ -38,7 +38,7 @@ public class SceneUI : MonoBehaviour
         for (int i = 0; i < _sceneCircles.Length; i++)
         {
             _sceneCircles[i].GetComponent<RectTransform>().sizeDelta = i==currentRoomIndex? _activeSceneSize : _normalSceneSize;
-            Debug.Log(i==currentRoomIndex? _activeSceneSize : _normalSceneSize);
+            _sceneCircles[i].GetComponent<Image>().color = new Color(1f, 1f, 1f, currentRoomIndex == i ? 1f : 0.44f);
         }
     }
 

@@ -11121,7 +11121,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 80}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1667258902
 MonoBehaviour:
@@ -11163,13 +11163,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneCircle: {fileID: 529361492514911430, guid: b9577a340f98a7c41b8b0e7b0191965d, type: 3}
   _lockAmountSprites:
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 55747841a2e3b47dab36dc8d5e0dc4df, type: 3}
-  - {fileID: 21300000, guid: c34cd61ed96ff9a40a54e159467c5155, type: 3}
+  - {fileID: 21300000, guid: b450d14db2c594f4cb835a0b390707cb, type: 3}
+  - {fileID: 21300000, guid: 82a9f7b5bd9b3274d9857d6b58a39c75, type: 3}
+  - {fileID: 21300000, guid: 3acc913db0bc2384bb9f11297a74187a, type: 3}
   _goBackButton: {fileID: 546587864}
   _phoneButton: {fileID: 275032482}
-  _activeSceneSize: {x: 20, y: 20}
-  _normalSceneSize: {x: 10, y: 10}
+  _activeSceneSize: {x: 60, y: 60}
+  _normalSceneSize: {x: 50, y: 50}
 --- !u!1 &1684142124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3361949745667732712, guid: 82976b209588b7b499db7971f6649168, type: 3}
@@ -13520,15 +13520,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b5098771ee93a3e4aaeee657f9187be5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0969784f351ea984698d73c4ffe197ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.87, y: 7.39}
+  m_Size: {x: 6.87, y: 7.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2135460455
