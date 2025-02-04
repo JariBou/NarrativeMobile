@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 0969784f351ea984698d73c4ffe197ef
+guid: 12884e4d8afba8d43a20a6036d826498
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7207877275645755540
-    second: SPR_ENV_DirtyClothesBox_0
-  - first:
-      213: 7136750221309363530
-    second: SPR_ENV_DirtyClothesBox_1
+      213: -7937351263199951728
+    second: SPR_PRO_Wine_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_ENV_DirtyClothesBox_0
+      name: SPR_PRO_Wine_0
       rect:
         serializedVersion: 2
-        x: 33
+        x: 0
         y: 0
-        width: 654
-        height: 427
+        width: 140
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 490c9777136870460800000000000000
-      internalID: 7207877275645755540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_ENV_DirtyClothesBox_1
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 424
-        width: 325
-        height: 316
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a45c5df9384da0360800000000000000
-      internalID: 7136750221309363530
+      spriteID: 094087b741dd8d190800000000000000
+      internalID: -7937351263199951728
       vertices: []
       indices: 
       edges: []
@@ -159,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_PRO_Wine_0: -7937351263199951728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
