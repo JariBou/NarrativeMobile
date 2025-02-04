@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: DialogInfo_temp
+  m_Name: Salon-journal-emily
   m_EditorClassIdentifier: 
-  _dialogName: chambre_photos
+  _dialogName: salon_article_emily
   _localisations:
   - _loc: 1
-    _content: zizi
+    _content: Getting involved in this mess... what was I thinking?
     _audioClip: {fileID: 0}
   - _loc: 0
-    _content: "Mais qu'est ce qui lui arrive \xE0 ce d\xE9traqu\xE9 ?"
+    _content: "Sacr\xE9e affaire... et voil\xE0 que je me retrouve embarqu\xE9 dedans."
     _audioClip: {fileID: 0}

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: DialogInfo_temp
+  m_Name: dialoguefinmachin
   m_EditorClassIdentifier: 
-  _dialogName: chambre_photos
+  _dialogName: dialog_kitchen_1
   _localisations:
   - _loc: 1
     _content: zizi
     _audioClip: {fileID: 0}
   - _loc: 0
-    _content: "Mais qu'est ce qui lui arrive \xE0 ce d\xE9traqu\xE9 ?"
+    _content: "Ahahah\u2026Dommage. Vous auriez pu repartir avec votre argent et
+      l\u2019assurance d\u2019\xE9ponger TOUTES vos dettes\u2026 Mais NAN !  "
     _audioClip: {fileID: 0}
