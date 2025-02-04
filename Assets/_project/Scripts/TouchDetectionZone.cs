@@ -22,4 +22,9 @@ public class TouchDetectionZone : MonoBehaviour
             SceneManager.Instance.MoveTo(sceneElement);
         }
     }
+
+    public void ChangeActivationState(GameObject gameObject)
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
 }

@@ -7,7 +7,7 @@ namespace _project.Scripts.Localisation
     public class TranslatedData
     {
         [SerializeField] protected Loc _loc = Loc.FR_fr;
-        [SerializeField] protected string _content;
+        [SerializeField, TextArea] protected string _content;
         
         public Loc loc => _loc;
 
