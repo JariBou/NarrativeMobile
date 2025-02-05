@@ -24,7 +24,7 @@ namespace _project.Scripts
     
         private float _touchStartTime;
     
-        private bool _isCheckingForTouch = true;
+        private bool _isCheckingForTouch = false;
     
         public void CheckForTouch(bool isCheckingForTouch) => _isCheckingForTouch = isCheckingForTouch;
         public void SetCheckingTouchDetection(bool isCheckingForTouch) => _isCheckingForTouch = isCheckingForTouch;

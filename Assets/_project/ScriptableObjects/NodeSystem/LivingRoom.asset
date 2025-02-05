@@ -41,6 +41,8 @@ MonoBehaviour:
   - rid: 78795522988048498
   - rid: 78795522988048504
   - rid: 78795522988048505
+  - rid: 78795522988048635
+  - rid: 78795522988048636
   m_connections:
   - inputPort:
       nodeId: 74128b0f-faec-4926-a757-968ff7885db6
@@ -156,6 +158,12 @@ MonoBehaviour:
     outputPort:
       nodeId: 2109c668-c1a7-4b01-8484-43f478cb686a
       portIndex: 0
+  - inputPort:
+      nodeId: 921ae3cc-b094-4f5e-aa91-63724e0bdf69
+      portIndex: 1
+    outputPort:
+      nodeId: f76ebf62-46cb-4224-98f6-33701c508405
+      portIndex: 0
   m_exposedProperties:
   - PropertyName: New String
     PropertyValue: New Value
@@ -192,7 +200,7 @@ MonoBehaviour:
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         m_ports: []
         m_pureExecutionDone: 1
-        Source: 
+        Source: e1d0d867-a090-4749-8c0d-866e3db9fa77
     - rid: 78795509339258954
       type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
       data:
@@ -719,3 +727,39 @@ MonoBehaviour:
         m_pureExecutionDone: 1
         conversationId: kidnapper
         MessageToSend: {fileID: 11400000, guid: 7cafccaf3d174f3469918075e136dc7b, type: 2}
+    - rid: 78795522988048635
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: f76ebf62-46cb-4224-98f6-33701c508405
+        m_position:
+          serializedVersion: 2
+          x: 161.6
+          y: 4.799988
+          width: 0
+          height: 0
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 967f7daa-12e5-4258-b579-5755aed7be98
+    - rid: 78795522988048636
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 921ae3cc-b094-4f5e-aa91-63724e0bdf69
+        m_position:
+          serializedVersion: 2
+          x: 385.6
+          y: 4.799999
+          width: 342.4
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 921ae3cc-b094-4f5e-aa91-63724e0bdf69
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 26ae6b066edb25d47be24abc870422b5, type: 2}
