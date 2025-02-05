@@ -19,7 +19,9 @@ namespace _project.Scripts
                 return;
             }
             Instance = this;
-            loc = Loc.FR_fr;
+            int selectedLoc = PlayerPrefs.GetInt("loc", 0);
+            Loc castedLoc = (Loc)selectedLoc;
+            loc = castedLoc;
             
             DontDestroyOnLoad(gameObject);
         }
@@ -28,6 +30,7 @@ namespace _project.Scripts
         {
             Instance.loc = loc;
             OnLocChanged?.Invoke(loc);
+            PlayerPrefs.SetInt("loc", (int)loc);
         }
 
     }
