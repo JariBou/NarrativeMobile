@@ -12,6 +12,8 @@ namespace _project.Scripts
     
         [SerializeField] private float _minSwipeDistance = 100;
         [SerializeField] private float _minSwipeTime = 0.5f;
+
+        [SerializeField] private Vector3 _dragPosDiff;
     
         [Header("Developper")]
         [SerializeField] private LayerMask clickDetectionMask;
@@ -78,19 +80,20 @@ namespace _project.Scripts
                                 _draggableElement = draggableElement;
                             }
                         }
-                        else if (touchState.phase == TouchPhase.Ended)
-                        {
-                            if (_draggableElement!=null) _draggableElement.Drop();
-                            _draggableElement = null;
-                            return;
-                        }
                     }
                 }
             }
 
-            if (_draggableElement != null && touchState.phase != TouchPhase.Ended)
+            if (touchState.phase == TouchPhase.Ended && _draggableElement!=null)
             {
-                _draggableElement.transform.position = touchWorldPosition + _posDifference;
+                _draggableElement.Drop();
+                _draggableElement = null;
+                return;
+            }
+            if (_draggableElement != null && touchState.phase == TouchPhase.Moved)
+            {
+                _draggableElement.transform.position = touchWorldPosition + /*_posDifference + */ _dragPosDiff;
+                _draggableElement.transform.position += new Vector3(0,0,_posDifference.z);
             }
             else if (_draggableElement == null && TouchPhase.Ended == touchState.phase && _touchStartTime > 0)
             {
