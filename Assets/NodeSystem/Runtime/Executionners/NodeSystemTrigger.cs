@@ -32,6 +32,7 @@ namespace NodeSystem.Runtime.Executionners
         
         public NodeSystemNode GetCurrentNode()
         {
+            Debug.Log(m_currentExecNodeId);
             return _graphInstance == null ? null : _graphInstance.GetNode(m_currentExecNodeId);
         }
 

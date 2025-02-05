@@ -32,6 +32,11 @@ namespace NodeSystem.Runtime.References
 
         private void Awake()
         {
+            if (m_instance != null)
+            {
+                Destroy(this);
+                return;
+            }
             m_instance = this;
             Initialize();
         }
@@ -49,11 +54,11 @@ namespace NodeSystem.Runtime.References
             {
                 m_instance.RecordHolder(referenceDataBank);
             }
-
-            if (m_referenceDataBanks.Count == 0)
-            {
-                m_instance.RecordHolder(m_instance.gameObject.AddComponent<ReferenceDataBank>());
-            }
+            //
+            // if (m_referenceDataBanks.Count == 0)
+            // {
+            //     m_instance.RecordHolder(m_instance.gameObject.AddComponent<ReferenceDataBank>());
+            // }
         }
     
         public void RecordHolder(ReferenceDataBank referenceDataBank)
@@ -65,13 +70,25 @@ namespace NodeSystem.Runtime.References
 
         public void UnrecordHolder(ReferenceDataBank referenceDataBank)
         {
-            GetAvailableDataBanks().Remove(referenceDataBank);
+            if (!m_referenceDataBanks.Contains(referenceDataBank)) return;
+            m_referenceDataBanks.Remove(referenceDataBank);
         }
         public static T GetGameObject<T>(string guid) where T : UnityEngine.Object
         {
             if (guid == "") return null;
             // return GetAvailableDataBanks().Select(holder => holder.GetGameObject<T>(guid)).FirstOrDefault(obj => obj);
-            return Instance?.m_referenceDataBanks.Select(holder => holder.GetGameObject<T>(guid)).FirstOrDefault(obj => obj);
+            if (Instance?.m_referenceDataBanks == null) return null;
+            
+            foreach (ReferenceDataBank referenceDataBank in Instance.m_referenceDataBanks)
+            {
+                T o = referenceDataBank.GetGameObject<T>(guid);
+                if (o != null)
+                {
+                    return o;
+                }
+            }
+
+            return null;
         }
     
         public static string GetGuidOf<T>(T obj) where T : UnityEngine.Object
