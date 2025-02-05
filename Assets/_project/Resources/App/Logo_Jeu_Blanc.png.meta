@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 53bd1f6c244148b45a445acb389cf469
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5223878428446164766
+    second: Logo_Jeu_Blanc_0
+  - first:
+      213: 3876234097286192662
+    second: Logo_Jeu_Blanc_1
+  - first:
+      213: 1487168036277686082
+    second: Logo_Jeu_Blanc_2
+  - first:
+      213: -4246731267262024614
+    second: Logo_Jeu_Blanc_3
+  - first:
+      213: -4415191300246412411
+    second: Logo_Jeu_Blanc_4
+  - first:
+      213: -5153790925991214446
+    second: Logo_Jeu_Blanc_5
+  - first:
+      213: -7328903023813654258
+    second: Logo_Jeu_Blanc_6
+  - first:
+      213: 7814516875055104124
+    second: Logo_Jeu_Blanc_7
+  - first:
+      213: 5724887415865553869
+    second: Logo_Jeu_Blanc_8
+  - first:
+      213: 7365568547136810881
+    second: Logo_Jeu_Blanc_9
+  - first:
+      213: -80195049206969302
+    second: Logo_Jeu_Blanc_10
+  - first:
+      213: 3088983979380668990
+    second: Logo_Jeu_Blanc_11
+  - first:
+      213: 8912726816779424422
+    second: Logo_Jeu_Blanc_12
+  - first:
+      213: 3400358325392922758
+    second: Logo_Jeu_Blanc_13
+  - first:
+      213: 2234453693499290702
+    second: Logo_Jeu_Blanc_14
+  - first:
+      213: 4255553483032660828
+    second: Logo_Jeu_Blanc_15
+  - first:
+      213: -1177262067777175259
+    second: Logo_Jeu_Blanc_16
+  - first:
+      213: 2358624407691776581
+    second: Logo_Jeu_Blanc_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 72
+        width: 119
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8f3a22f3e0187b0800000000000000
+      internalID: -5223878428446164766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 307
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e1003df562bc530800000000000000
+      internalID: 3876234097286192662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 307
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f85ab137b73a410800000000000000
+      internalID: 1487168036277686082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 309
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a547d4e99649015c0800000000000000
+      internalID: -4246731267262024614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 225
+        width: 35
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583ea65b7e61ab2c0800000000000000
+      internalID: -4415191300246412411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 227
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29289a1757e0a78b0800000000000000
+      internalID: -5153790925991214446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 225
+        width: 34
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e090d40b7818a4a90800000000000000
+      internalID: -7328903023813654258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_7
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 224
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7084fcd1bdb27c60800000000000000
+      internalID: 7814516875055104124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_8
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 226
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc335c1e5c2e27f40800000000000000
+      internalID: 5724887415865553869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 225
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f21e4b191c73660800000000000000
+      internalID: 7365568547136810881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_10
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 287
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c0643170713eef0800000000000000
+      internalID: -80195049206969302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_11
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 227
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a7bd720964eda20800000000000000
+      internalID: 3088983979380668990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_12
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 232
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a25c3671dd50bb70800000000000000
+      internalID: 8912726816779424422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 225
+        width: 15
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688561e81ef703f20800000000000000
+      internalID: 3400358325392922758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 144
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44b51cabcf520f10800000000000000
+      internalID: 2234453693499290702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 142
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b86de8853ce0b30800000000000000
+      internalID: 4255553483032660828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_16
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 145
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5218992036689afe0800000000000000
+      internalID: -1177262067777175259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_Jeu_Blanc_17
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 145
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542d80bf6648bb020800000000000000
+      internalID: 2358624407691776581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Logo_Jeu_Blanc_0: -5223878428446164766
+      Logo_Jeu_Blanc_1: 3876234097286192662
+      Logo_Jeu_Blanc_10: -80195049206969302
+      Logo_Jeu_Blanc_11: 3088983979380668990
+      Logo_Jeu_Blanc_12: 8912726816779424422
+      Logo_Jeu_Blanc_13: 3400358325392922758
+      Logo_Jeu_Blanc_14: 2234453693499290702
+      Logo_Jeu_Blanc_15: 4255553483032660828
+      Logo_Jeu_Blanc_16: -1177262067777175259
+      Logo_Jeu_Blanc_17: 2358624407691776581
+      Logo_Jeu_Blanc_2: 1487168036277686082
+      Logo_Jeu_Blanc_3: -4246731267262024614
+      Logo_Jeu_Blanc_4: -4415191300246412411
+      Logo_Jeu_Blanc_5: -5153790925991214446
+      Logo_Jeu_Blanc_6: -7328903023813654258
+      Logo_Jeu_Blanc_7: 7814516875055104124
+      Logo_Jeu_Blanc_8: 5724887415865553869
+      Logo_Jeu_Blanc_9: 7365568547136810881
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
