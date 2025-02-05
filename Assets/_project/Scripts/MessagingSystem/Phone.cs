@@ -28,6 +28,7 @@ namespace _project.Scripts.MessagingSystem
         [SerializeField] private List<Sprite> _bgSprites;
 
         private bool _hasNotification;
+        private string _selectedConv;
 
         private void Awake()
         {
@@ -123,6 +124,8 @@ namespace _project.Scripts.MessagingSystem
         public void OnPhonePullUp()
         {
             _hasNotification = false;
+            if (_conversationDictionnary.ContainsKey(_selectedConv)) _conversationDictionnary[_selectedConv].RefreshSizes();
+            
         }
 
         public void OnContactClicked(string userId)
@@ -132,6 +135,7 @@ namespace _project.Scripts.MessagingSystem
                 _conversationDictionnary[key].gameObject.SetActive(key == userId);
                 if (key == userId)
                 {
+                    _selectedConv = key;
                     _conversationDictionnary[key].RefreshSizes();
                     _messageDetailIcon.sprite = _conversationDictionnary[key].userTarget.Icon;
                     _messageDetailName.text = _conversationDictionnary[key].userTarget.GetNameFor(GameSettings.Instance.loc);
