@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace _project.Scripts
 {
@@ -6,6 +7,8 @@ namespace _project.Scripts
     public class SceneElement : MonoBehaviour
     {
         [SerializeField] private bool _isMainRoom;
+        [SerializeField] private UnityEvent _onFirstEnterRoom;
+        private bool _hasEnteredRoom;
         public Vector3 GetPosition()
         {
             return transform.position;
@@ -17,6 +20,13 @@ namespace _project.Scripts
         }
 
         public bool IsMainRoom() => _isMainRoom;
+
+        public void EnterRoom()
+        {
+            if (_hasEnteredRoom) return;
+            _hasEnteredRoom = true;
+            _onFirstEnterRoom?.Invoke();
+        }
  
     }
 }

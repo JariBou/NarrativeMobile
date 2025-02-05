@@ -16,7 +16,6 @@ MonoBehaviour:
   m_nodes:
   - rid: 78795436374622208
   - rid: 78795436374622281
-  - rid: 78795436374622282
   - rid: 78795509339258954
   - rid: 78795509339258955
   - rid: 78795509339258956
@@ -27,13 +26,22 @@ MonoBehaviour:
   - rid: 78795522988048387
   - rid: 78795522988048388
   - rid: 78795522988048389
+  - rid: 78795522988048484
+  - rid: 78795522988048485
+  - rid: 78795522988048486
+  - rid: 78795522988048487
+  - rid: 78795522988048489
+  - rid: 78795522988048490
+  - rid: 78795522988048491
+  - rid: 78795522988048492
+  - rid: 78795522988048493
+  - rid: 78795522988048494
+  - rid: 78795522988048496
+  - rid: 78795522988048497
+  - rid: 78795522988048498
+  - rid: 78795522988048504
+  - rid: 78795522988048505
   m_connections:
-  - inputPort:
-      nodeId: 421e1790-f890-44c4-a8e8-e9b135de03b9
-      portIndex: 1
-    outputPort:
-      nodeId: afe3e330-917c-499b-b1bb-b6b267eb93f5
-      portIndex: 0
   - inputPort:
       nodeId: 74128b0f-faec-4926-a757-968ff7885db6
       portIndex: 1
@@ -70,7 +78,87 @@ MonoBehaviour:
     outputPort:
       nodeId: 18bc1a1a-7865-4b6a-aaec-003cf4c7ae5b
       portIndex: 0
-  m_exposedProperties: []
+  - inputPort:
+      nodeId: 2f5a5002-dcde-49e3-bf2c-e35cb0a43389
+      portIndex: 1
+    outputPort:
+      nodeId: 1cdd4908-ad74-4f5d-8885-e120b41b03cf
+      portIndex: 0
+  - inputPort:
+      nodeId: e6a38f35-aa61-4222-8c65-640c9935c92a
+      portIndex: 1
+    outputPort:
+      nodeId: 2f5a5002-dcde-49e3-bf2c-e35cb0a43389
+      portIndex: 0
+  - inputPort:
+      nodeId: fab795af-d637-4c53-a6ce-aac341bc8fe0
+      portIndex: 1
+    outputPort:
+      nodeId: e6a38f35-aa61-4222-8c65-640c9935c92a
+      portIndex: 0
+  - inputPort:
+      nodeId: 2005dc83-bc2a-49c2-92b7-397ba9465244
+      portIndex: 1
+    outputPort:
+      nodeId: fab795af-d637-4c53-a6ce-aac341bc8fe0
+      portIndex: 0
+  - inputPort:
+      nodeId: 5c4c3fc0-f64a-4d6c-bf7e-3e01427bb00d
+      portIndex: 1
+    outputPort:
+      nodeId: b7cbd669-befc-4cd8-b96c-1140bfc27ebe
+      portIndex: 0
+  - inputPort:
+      nodeId: 9bcbf8bf-4fa5-42bd-8c78-ae9dd75185f1
+      portIndex: 1
+    outputPort:
+      nodeId: 5c4c3fc0-f64a-4d6c-bf7e-3e01427bb00d
+      portIndex: 0
+  - inputPort:
+      nodeId: c30a94de-47a5-445c-8b4b-788d4ccfdd99
+      portIndex: 1
+    outputPort:
+      nodeId: 9bcbf8bf-4fa5-42bd-8c78-ae9dd75185f1
+      portIndex: 0
+  - inputPort:
+      nodeId: 9bde00bc-4fd1-40a2-ae95-5d801b3f276a
+      portIndex: 1
+    outputPort:
+      nodeId: c30a94de-47a5-445c-8b4b-788d4ccfdd99
+      portIndex: 0
+  - inputPort:
+      nodeId: 841e4f98-9655-40e8-91b7-13ffc629e8c8
+      portIndex: 1
+    outputPort:
+      nodeId: 9bde00bc-4fd1-40a2-ae95-5d801b3f276a
+      portIndex: 0
+  - inputPort:
+      nodeId: a07ed0c3-e344-4f1d-82f4-e051e31ed19b
+      portIndex: 1
+    outputPort:
+      nodeId: 841e4f98-9655-40e8-91b7-13ffc629e8c8
+      portIndex: 0
+  - inputPort:
+      nodeId: c6bfabb9-726c-40d1-a805-fb9c47ba0593
+      portIndex: 1
+    outputPort:
+      nodeId: afe3e330-917c-499b-b1bb-b6b267eb93f5
+      portIndex: 0
+  - inputPort:
+      nodeId: c17b7fb6-0e18-4aa8-a27c-0268c8d3129d
+      portIndex: 1
+    outputPort:
+      nodeId: c6bfabb9-726c-40d1-a805-fb9c47ba0593
+      portIndex: 0
+  - inputPort:
+      nodeId: 43df5f59-ac3d-40f6-95d9-af16321b4b3d
+      portIndex: 1
+    outputPort:
+      nodeId: 2109c668-c1a7-4b01-8484-43f478cb686a
+      portIndex: 0
+  m_exposedProperties:
+  - PropertyName: New String
+    PropertyValue: New Value
   references:
     version: 2
     RefIds:
@@ -80,10 +168,10 @@ MonoBehaviour:
         m_guid: 1cdd4908-ad74-4f5d-8885-e120b41b03cf
         m_position:
           serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
+          x: 2.4
+          y: -749.6
+          width: 75.200005
+          height: 76.79999
         m_isPure: 0
         typename: NodeSystem.Runtime.NodesLibrary.Process.StartNode, NodeSystem,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -95,36 +183,16 @@ MonoBehaviour:
         m_guid: afe3e330-917c-499b-b1bb-b6b267eb93f5
         m_position:
           serializedVersion: 2
-          x: 147.2
-          y: -20
-          width: 195.20001
-          height: 96.8
+          x: 1028
+          y: -30.4
+          width: 195.19995
+          height: 97.6
         m_isPure: 0
         typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         m_ports: []
         m_pureExecutionDone: 1
-        Source: 7bcbe720-8379-4ca9-83e1-4bd2cc0c33dd
-    - rid: 78795436374622282
-      type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
-      data:
-        m_guid: 421e1790-f890-44c4-a8e8-e9b135de03b9
-        m_position:
-          serializedVersion: 2
-          x: 396
-          y: -20
-          width: 232
-          height: 100.8
-        m_isPure: 0
-        typename: NodeSystem.Runtime.NodesLibrary.DebugLogNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports:
-        - _exposedPropertyName: logMessage
-          _ownerId: 421e1790-f890-44c4-a8e8-e9b135de03b9
-          _portIndex: 2
-          _portDirection: 1
-        m_pureExecutionDone: 1
-        logMessage: WOAAAA
+        Source: 
     - rid: 78795509339258954
       type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
       data:
@@ -309,3 +377,345 @@ MonoBehaviour:
           _portDirection: 1
         m_pureExecutionDone: 1
         dialogInfo: {fileID: 11400000, guid: ced47b0ddf671904288466adebeefc46, type: 2}
+    - rid: 78795522988048484
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 2f5a5002-dcde-49e3-bf2c-e35cb0a43389
+        m_position:
+          serializedVersion: 2
+          x: 120
+          y: -749.6
+          width: 334.40002
+          height: 124.79999
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 2f5a5002-dcde-49e3-bf2c-e35cb0a43389
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 2f5a5002-dcde-49e3-bf2c-e35cb0a43389
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: a04763a1322ab6640b2e9e75410e51fe, type: 2}
+    - rid: 78795522988048485
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: e6a38f35-aa61-4222-8c65-640c9935c92a
+        m_position:
+          serializedVersion: 2
+          x: 528
+          y: -749.6
+          width: 334.40002
+          height: 124.79999
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: e6a38f35-aa61-4222-8c65-640c9935c92a
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: e6a38f35-aa61-4222-8c65-640c9935c92a
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: f86a29fbd8b267f4d94ab5b1b6e3d799, type: 2}
+    - rid: 78795522988048486
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: fab795af-d637-4c53-a6ce-aac341bc8fe0
+        m_position:
+          serializedVersion: 2
+          x: 941.60004
+          y: -749.6
+          width: 334.40002
+          height: 124.79999
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: fab795af-d637-4c53-a6ce-aac341bc8fe0
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: fab795af-d637-4c53-a6ce-aac341bc8fe0
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: e379dfdef34181b418ff0e27f6d9c7bf, type: 2}
+    - rid: 78795522988048487
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 2005dc83-bc2a-49c2-92b7-397ba9465244
+        m_position:
+          serializedVersion: 2
+          x: 1348
+          y: -749.6
+          width: 334.3999
+          height: 124.79999
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 2005dc83-bc2a-49c2-92b7-397ba9465244
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 2005dc83-bc2a-49c2-92b7-397ba9465244
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: 961e326f201d01d428743f31004c36ae, type: 2}
+    - rid: 78795522988048489
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: b7cbd669-befc-4cd8-b96c-1140bfc27ebe
+        m_position:
+          serializedVersion: 2
+          x: 151.99998
+          y: -1005.6001
+          width: 0
+          height: 0
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 1b077699-6b2f-44b6-9d11-45059e6784b2
+    - rid: 78795522988048490
+      type: {class: WaitNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 5c4c3fc0-f64a-4d6c-bf7e-3e01427bb00d
+        m_position:
+          serializedVersion: 2
+          x: 373.6
+          y: -1005.6
+          width: 239.19998
+          height: 100.79999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.WaitNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: time
+          _ownerId: 5c4c3fc0-f64a-4d6c-bf7e-3e01427bb00d
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        time: 5
+    - rid: 78795522988048491
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 9bcbf8bf-4fa5-42bd-8c78-ae9dd75185f1
+        m_position:
+          serializedVersion: 2
+          x: 644.8
+          y: -1005.6
+          width: 334.40002
+          height: 124.79999
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 9bcbf8bf-4fa5-42bd-8c78-ae9dd75185f1
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 9bcbf8bf-4fa5-42bd-8c78-ae9dd75185f1
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: e851c7ee8fb8edc4bbe1d7898fb7e7f5, type: 2}
+    - rid: 78795522988048492
+      type: {class: WaitNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: c30a94de-47a5-445c-8b4b-788d4ccfdd99
+        m_position:
+          serializedVersion: 2
+          x: 1054.3999
+          y: -1005.6
+          width: 239.20007
+          height: 100.79999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.WaitNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: time
+          _ownerId: c30a94de-47a5-445c-8b4b-788d4ccfdd99
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        time: 1
+    - rid: 78795522988048493
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 9bde00bc-4fd1-40a2-ae95-5d801b3f276a
+        m_position:
+          serializedVersion: 2
+          x: 1316
+          y: -1005.6
+          width: 334.3999
+          height: 124.79999
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 9bde00bc-4fd1-40a2-ae95-5d801b3f276a
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 9bde00bc-4fd1-40a2-ae95-5d801b3f276a
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: c4421b04ff0764e42968077748920e68, type: 2}
+    - rid: 78795522988048494
+      type: {class: WaitNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 841e4f98-9655-40e8-91b7-13ffc629e8c8
+        m_position:
+          serializedVersion: 2
+          x: 1712
+          y: -1005.6
+          width: 239.19995
+          height: 100.79999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.WaitNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: time
+          _ownerId: 841e4f98-9655-40e8-91b7-13ffc629e8c8
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        time: 1
+    - rid: 78795522988048496
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: a07ed0c3-e344-4f1d-82f4-e051e31ed19b
+        m_position:
+          serializedVersion: 2
+          x: 1981.6
+          y: -1005.6
+          width: 334.40002
+          height: 124.79999
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: a07ed0c3-e344-4f1d-82f4-e051e31ed19b
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: a07ed0c3-e344-4f1d-82f4-e051e31ed19b
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: 3fddfb7f0cd2a81429cd1479bd84458c, type: 2}
+    - rid: 78795522988048497
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: c6bfabb9-726c-40d1-a805-fb9c47ba0593
+        m_position:
+          serializedVersion: 2
+          x: 1263.2
+          y: -30.4
+          width: 374.40002
+          height: 124.8
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: c6bfabb9-726c-40d1-a805-fb9c47ba0593
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: c6bfabb9-726c-40d1-a805-fb9c47ba0593
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: 89970a8e84631f14a85413f1f6833de3, type: 2}
+    - rid: 78795522988048498
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: c17b7fb6-0e18-4aa8-a27c-0268c8d3129d
+        m_position:
+          serializedVersion: 2
+          x: 1657.6
+          y: -30.4
+          width: 374.40002
+          height: 124.8
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: c17b7fb6-0e18-4aa8-a27c-0268c8d3129d
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: c17b7fb6-0e18-4aa8-a27c-0268c8d3129d
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: 0a8b049b64434064990094f3862aac20, type: 2}
+    - rid: 78795522988048504
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 2109c668-c1a7-4b01-8484-43f478cb686a
+        m_position:
+          serializedVersion: 2
+          x: 1028
+          y: 176.8
+          width: 195.19995
+          height: 97.59999
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 68b6af12-f075-432d-a42b-b56d6a3201c4
+    - rid: 78795522988048505
+      type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
+      data:
+        m_guid: 43df5f59-ac3d-40f6-95d9-af16321b4b3d
+        m_position:
+          serializedVersion: 2
+          x: 1263.2
+          y: 176.8
+          width: 334.40002
+          height: 124.8
+        m_isPure: 0
+        typename: _project.Scripts.MessagingSystem.SendMessageNode, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: conversationId
+          _ownerId: 43df5f59-ac3d-40f6-95d9-af16321b4b3d
+          _portIndex: 2
+          _portDirection: 1
+        - _exposedPropertyName: MessageToSend
+          _ownerId: 43df5f59-ac3d-40f6-95d9-af16321b4b3d
+          _portIndex: 3
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        conversationId: kidnapper
+        MessageToSend: {fileID: 11400000, guid: 7cafccaf3d174f3469918075e136dc7b, type: 2}

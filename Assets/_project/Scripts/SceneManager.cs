@@ -80,6 +80,7 @@ namespace _project.Scripts
             
                 _currentRoomSceneIndex = nextIndex;
                 _currentSceneElement = roomScene.SceneElement;
+                _currentSceneElement.EnterRoom();
                 if (_sceneUI != null) _sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);
                 return true;
             }
@@ -142,6 +143,7 @@ namespace _project.Scripts
             }
             _currentSceneElement = sceneElement;
             _sceneUI.UpdateChangedSceneElement(sceneElement);
+            _currentSceneElement.EnterRoom();
         }
 
         public void GoBack()
