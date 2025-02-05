@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _userId: test_user
   _icon: {fileID: 3700593426120589194, guid: f35a23e7adc4fca47ad2c7cd8a2c7ba1, type: 3}
-  _name: Her
+  _names:
+  - _loc: 0
+    _content: Utilisateur Test
+  - _loc: 1
+    _content: Test User

@@ -30,6 +30,12 @@ namespace NodeSystem.Runtime.References
             }
         }
 
+        private void Awake()
+        {
+            m_instance = this;
+            Initialize();
+        }
+
         public static List<ReferenceDataBank> GetAvailableDataBanks()
         {
             return new List<ReferenceDataBank>(FindObjectsByType<ReferenceDataBank>(FindObjectsInactive.Include, FindObjectsSortMode.None));
@@ -53,6 +59,7 @@ namespace NodeSystem.Runtime.References
         public void RecordHolder(ReferenceDataBank referenceDataBank)
         {
             Debug.Log("Recording " + referenceDataBank.name);
+            if (m_referenceDataBanks.Contains(referenceDataBank)) return;
             m_referenceDataBanks.Add(referenceDataBank);
         }
 
