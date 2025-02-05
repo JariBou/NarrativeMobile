@@ -2580,6 +2580,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2059081284}
+        m_TargetAssemblyTypeName: NodeSystem.Runtime.Executionners.NodeSystemTrigger,
+          NodeSystem
+        m_MethodName: Trigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 261841885}
         m_TargetAssemblyTypeName: DraggableElement, Assembly-CSharp
         m_MethodName: DestroySelf
@@ -5146,6 +5159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458083575}
   - component: {fileID: 458083576}
+  - component: {fileID: 458083577}
   m_Layer: 0
   m_Name: KnifeZoneManager
   m_TagString: Untagged
@@ -5197,6 +5211,34 @@ MonoBehaviour:
           m_StringArgument: All Knives are placed
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 458083577}
+        m_TargetAssemblyTypeName: NodeSystem.Runtime.Executionners.NodeSystemTrigger,
+          NodeSystem
+        m_MethodName: Trigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &458083577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458083574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bb0786cdd6456fa900cb96ca69677e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjectToTrigger: {fileID: 458083574}
+  _graph: {fileID: 11400000, guid: 97996b0d5a91bb54d9c7c13d5b0e46f3, type: 2}
+  _canBeExecutedMultipleTimes: 0
 --- !u!1 &462042836
 GameObject:
   m_ObjectHideFlags: 0
@@ -11996,7 +12038,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 478450084}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2608760723904440624, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2059081284}
   m_SourcePrefab: {fileID: 100100000, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
 --- !u!1 &1346842344
 GameObject:
@@ -15283,6 +15328,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f35e4557419e8746aefcb81ccdfe2e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2059081284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753868584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bb0786cdd6456fa900cb96ca69677e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjectToTrigger: {fileID: 753868584}
+  _graph: {fileID: 11400000, guid: 181de306c4113a745ba8ab184627693f, type: 2}
+  _canBeExecutedMultipleTimes: 0
 --- !u!1 &2084794819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2608760723904440624, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
