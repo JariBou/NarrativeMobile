@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: Cuisine-Vin
+  m_Name: '[END]P2'
   m_EditorClassIdentifier: 
-  _dialogName: cuisine_vin
+  _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: I could afford a month's worth of food with this bottle alone.
+    _content: We asked you to DESTROY the proof, not to observe and analyse them
+      thoroughly.
     _audioClip: {fileID: 0}
   - _loc: 0
-    _content: "Je pourrais m\u2019acheter un mois de nourriture avec cette bouteille."
-    _audioClip: {fileID: 0}
+    _content: "Nous vous avions demand\xE9 de D\xC9TRUIRE les preuves, pas de les
+      observer sous toutes leurs coutures. "
+    _audioClip: {fileID: 8300000, guid: bdbe1c9b50d7c0640ad0e4d185d9b604, type: 3}

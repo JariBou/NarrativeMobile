@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: Salon-journal-emily
+  m_Name: Chambre_Masque
   m_EditorClassIdentifier: 
-  _dialogName: salon_article_emily
+  _dialogName: chambre_masque
   _localisations:
   - _loc: 1
-    _content: Getting involved in this mess... what was I thinking?
-    _audioClip: {fileID: 0}
+    _content: Looks like he kept those masks from the living room painting
+    _audioClip: {fileID: 8300000, guid: 35a298a021911d64d8e089d34c92b82d, type: 3}
   - _loc: 0
-    _content: "Sacr\xE9e affaire... et voil\xE0 que je me retrouve embarqu\xE9 dedans."
-    _audioClip: {fileID: 0}
+    _content: "Tiens, on dirait qu'il a gard\xE9 les masques du tableau du salon."
+    _audioClip: {fileID: 8300000, guid: 35a298a021911d64d8e089d34c92b82d, type: 3}

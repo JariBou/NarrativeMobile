@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: Salon-Tableau
+  m_Name: '[END]Choix1_P6'
   m_EditorClassIdentifier: 
-  _dialogName: salon_tableau
+  _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: A bit excentric this Mr.Morel guy is he?
-    _audioClip: {fileID: 0}
+    _content: "But say\u2026 Why stop there?"
+    _audioClip: {fileID: 8300000, guid: 0333c3d2486dbda498fa3f614205f9d9, type: 3}
   - _loc: 0
-    _content: Un poil excentrique ce Mr. Morel, non ?
-    _audioClip: {fileID: 0}
+    _content: "Mais dites-moi\u2026 Pourquoi s\u2019arr\xEAter l\xE0 ? "
+    _audioClip: {fileID: 8300000, guid: 0333c3d2486dbda498fa3f614205f9d9, type: 3}

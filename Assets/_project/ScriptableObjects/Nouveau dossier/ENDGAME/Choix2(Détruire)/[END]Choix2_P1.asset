@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
+  m_Name: '[END]Choix2_P1'
+  m_EditorClassIdentifier: 
+  _dialogName: chambre_photos
+  _localisations:
+  - _loc: 1
+    _content: "Ha ha ha\u2026 Too bad. You could\u2019ve left with your money and
+      the certainty of writing off ALL of your debt\u2026 but NO!"
+    _audioClip: {fileID: 8300000, guid: 9ac725122b789654884df47064ed71fc, type: 3}
+  - _loc: 0
+    _content: "Ahahah\u2026 Dommage. Vous auriez pu repartir avec votre argent et
+      l\u2019assurance d\u2019\xE9ponger TOUTES vos dettes\u2026 Mais NAN ! "
+    _audioClip: {fileID: 8300000, guid: 9ac725122b789654884df47064ed71fc, type: 3}
