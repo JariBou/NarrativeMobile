@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd12c4705d646e9bb34624828ad3b18, type: 3}
   m_Name: PhoneUser_temp
   m_EditorClassIdentifier: 
-  _userId: 
+  _userId: kidnapper
   _icon: {fileID: 0}
-  _name: 
+  _names:
+  - _loc: 0
+    _content: "Num\xE9ro masqu\xE9"
+  - _loc: 0
+    _content: Hidden number

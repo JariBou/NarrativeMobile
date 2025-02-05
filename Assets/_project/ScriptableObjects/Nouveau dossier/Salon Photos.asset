@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: Dialog Info
+  m_Name: Salon Photos
   m_EditorClassIdentifier: 
   _dialogName: salon_photos
   _localisations:
@@ -19,6 +19,6 @@ MonoBehaviour:
       Why kidnap them?
     _audioClip: {fileID: 0}
   - _loc: 0
-    _content: On dirait que Mr.Morel et Mme.Delacroix se connaissent depuis toujours...
+    _content: On dirait que Mr. Morel et Mme. Delacroix se connaissent depuis toujours...
       Pourquoi vouloir les enlever ?
     _audioClip: {fileID: 0}

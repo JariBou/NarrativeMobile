@@ -1,28 +1,30 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class AttachedPainting : MonoBehaviour
+namespace _project.Scripts.Bedroom_Scripts
 {
-    [SerializeField] private String[] _attachedStrings;
-
-    [SerializeField] private UnityEvent _onPaintingFall;
-
-    public void StringBroke()
+    public class AttachedPainting : MonoBehaviour
     {
-        if (AreAllStringsBroken())
+        [SerializeField] private String[] _attachedStrings;
+
+        [SerializeField] private UnityEvent _onPaintingFall;
+
+        public void StringBroke()
         {
-            _onPaintingFall?.Invoke();
+            if (AreAllStringsBroken())
+            {
+                _onPaintingFall?.Invoke();
+            }
         }
-    }
 
-    private bool AreAllStringsBroken()
-    {
+        private bool AreAllStringsBroken()
+        {
         
-        foreach (String attachedString in _attachedStrings)
-        {
-            if (!attachedString.IsBroken()) return false;
+            foreach (String attachedString in _attachedStrings)
+            {
+                if (!attachedString.IsBroken()) return false;
+            }
+            return true;
         }
-        return true;
     }
 }

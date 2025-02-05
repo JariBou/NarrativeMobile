@@ -1,56 +1,59 @@
-using System;
+using _project.Scripts.Interface;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DraggableElement : MonoBehaviour
+namespace _project.Scripts
 {
-    [SerializeField] private bool _goBackToDefaultPos;
-    [SerializeField] private bool _canBeDragged = true;
-    [SerializeField] private bool _hasTargetZone = false;
-    [SerializeField, ShowIf("_hasTargetZone")] private DragTargetZone _targetZone;
-    private Vector3 _defaultPosition;
-    private IDraggableItemConstraint[] _constraintInterface;
-
-    [SerializeField] private UnityEvent _onDroppedInTargetZone;
-    
-    public bool CanBeDragged() => _canBeDragged;
-    
-    public void AllowDragging() => _canBeDragged = true;
-    public void LockDragging() => _canBeDragged = false;
-    
-    public void DestroySelf() => Destroy(gameObject);
-
-    private void Awake()
+    public class DraggableElement : MonoBehaviour
     {
-        _defaultPosition = transform.position;
-        _constraintInterface = GetComponents<IDraggableItemConstraint>();
-    }
+        [SerializeField] private bool _goBackToDefaultPos;
+        [SerializeField] private bool _canBeDragged = true;
+        [SerializeField] private bool _hasTargetZone = false;
+        [SerializeField, ShowIf("_hasTargetZone")] private DragTargetZone _targetZone;
+        private Vector3 _defaultPosition;
+        private IDraggableItemConstraint[] _constraintInterface;
 
-    public void Drop()
-    {
-        if (_hasTargetZone)
+        [SerializeField] private UnityEvent _onDroppedInTargetZone;
+    
+        public bool CanBeDragged() => _canBeDragged;
+    
+        public void AllowDragging() => _canBeDragged = true;
+        public void LockDragging() => _canBeDragged = false;
+    
+        public void DestroySelf() => Destroy(gameObject);
+
+        private void Awake()
         {
-            if (_targetZone.GetCollider().OverlapPoint(transform.position) && CheckConstraints())
+            _defaultPosition = transform.position;
+            _constraintInterface = GetComponents<IDraggableItemConstraint>();
+        }
+
+        public void Drop()
+        {
+            if (_hasTargetZone)
             {
-                _targetZone.DraggedItem(this);
-                _onDroppedInTargetZone?.Invoke();
+                if (_targetZone.GetCollider().OverlapPoint(transform.position) && CheckConstraints())
+                {
+                    _onDroppedInTargetZone?.Invoke();
+                    _targetZone.DraggedItem(this);
+                }
+                else if (_goBackToDefaultPos) transform.position = _defaultPosition;
             }
             else if (_goBackToDefaultPos) transform.position = _defaultPosition;
         }
-        else if (_goBackToDefaultPos) transform.position = _defaultPosition;
-    }
 
-    private bool CheckConstraints()
-    {
-        if (_constraintInterface.Length <= 0) return true;
-        else
+        private bool CheckConstraints()
         {
-            foreach (IDraggableItemConstraint constraintInterface in _constraintInterface)
+            if (_constraintInterface.Length <= 0) return true;
+            else
             {
-               if (!constraintInterface.IsConstraintCompleted()) return false; 
+                foreach (IDraggableItemConstraint constraintInterface in _constraintInterface)
+                {
+                    if (!constraintInterface.IsConstraintCompleted()) return false; 
+                }
+                return true;
             }
-            return true;
         }
     }
 }

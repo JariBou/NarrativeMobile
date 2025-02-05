@@ -1,47 +1,52 @@
-using System;
 using UnityEngine;
 
-public class SinkWater : MonoBehaviour
+namespace _project.Scripts.KitchenScripts
 {
-    private CleanableItemConstraint _cleanedItem;
-    [SerializeField] private float _cleaningTime = 2f;
-    private float _cleanStartTime;
-    public void OnTriggerEnter2D(Collider2D collision)
+    public class SinkWater : MonoBehaviour
     {
-        Debug.Log(collision.gameObject.name);
-        CleanableItemConstraint cleanableItemConstraint = collision.GetComponent<CleanableItemConstraint>();
-        if (cleanableItemConstraint != null)
+        private CleanableItemConstraint _cleanedItem;
+        [SerializeField] private float _cleaningTime = 2f;
+        [SerializeField] private GameObject _splashObject;
+        private float _cleanStartTime;
+        public void OnTriggerEnter2D(Collider2D collision)
         {
-            _cleanedItem = cleanableItemConstraint;
-            _cleanStartTime = Time.time;
+            Debug.Log(collision.gameObject.name);
+            CleanableItemConstraint cleanableItemConstraint = collision.GetComponent<CleanableItemConstraint>();
+            if (cleanableItemConstraint != null)
+            {
+                _cleanedItem = cleanableItemConstraint;
+                _cleanStartTime = Time.time;
+            }
         }
-    }
 
-    public void ChangeActivation()
-    {
-        gameObject.SetActive(!gameObject.activeSelf);
-    }
-
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log(other.gameObject.name);
-    }
-
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        CleanableItemConstraint cleanableItemConstraint = collision.GetComponent<CleanableItemConstraint>();
-        if (cleanableItemConstraint != null && _cleanedItem == cleanableItemConstraint)
+        public void ChangeActivation()
         {
-            _cleanedItem = null;
+            gameObject.SetActive(!gameObject.activeSelf);
         }
-    }
 
-    public void Update()
-    {
-        if (!_cleanedItem) return;
-        if (_cleanStartTime + _cleaningTime < Time.time)
+        public void OnCollisionEnter2D(Collision2D other)
         {
-            _cleanedItem.Clean();
+            Debug.Log(other.gameObject.name);
+        }
+
+        public void OnTriggerExit2D(Collider2D collision)
+        {
+            CleanableItemConstraint cleanableItemConstraint = collision.GetComponent<CleanableItemConstraint>();
+            if (cleanableItemConstraint != null && _cleanedItem == cleanableItemConstraint)
+            {
+                _cleanedItem = null;
+            }
+        }
+
+        public void Update()
+        {
+            _splashObject.SetActive(_cleanedItem);
+            if (!_cleanedItem) return;
+            _splashObject.transform.position = new Vector3(_splashObject.transform.position.x, _cleanedItem.transform.position.y, _splashObject.transform.position.z);
+            if (_cleanStartTime + _cleaningTime < Time.time)
+            {
+                _cleanedItem.Clean();
+            }
         }
     }
 }

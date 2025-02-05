@@ -2,24 +2,32 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem.LowLevel;
 
-public class TouchDetectionZone : MonoBehaviour
+namespace _project.Scripts
 {
-    [SerializeField] private UnityEvent _onTouchDetected;
-    public void OnClick(TouchState touchState)
+    public class TouchDetectionZone : MonoBehaviour
     {
-        _onTouchDetected?.Invoke();
-    }
-
-    public void DebugLog(string message)
-    {
-        Debug.Log(message);
-    }
-
-    public void MoveTo(SceneElement sceneElement)
-    {
-        if (SceneManager.Instance != null)
+        [SerializeField] private UnityEvent _onTouchDetected;
+        public void OnClick(TouchState touchState)
         {
-            SceneManager.Instance.MoveTo(sceneElement);
+            _onTouchDetected?.Invoke();
+        }
+
+        public void DebugLog(string message)
+        {
+            Debug.Log(message);
+        }
+
+        public void MoveTo(SceneElement sceneElement)
+        {
+            if (SceneManager.Instance != null)
+            {
+                SceneManager.Instance.MoveTo(sceneElement);
+            }
+        }
+
+        public void ChangeActivationState(GameObject gameObject)
+        {
+            gameObject.SetActive(!gameObject.activeSelf);
         }
     }
 }

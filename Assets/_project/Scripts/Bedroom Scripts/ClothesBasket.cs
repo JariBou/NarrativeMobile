@@ -1,26 +1,29 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ClothesBasket : MonoBehaviour
+namespace _project.Scripts.Bedroom_Scripts
 {
-    [SerializeField] private int _clothesCapacity;
-    private DragTargetZone _dragTargetZone;
-
-    [SerializeField] private Sprite _filledBasketSprite;
-
-    [SerializeField] private UnityEvent _onClothesBasketFilled;
-    private void Awake()
+    public class ClothesBasket : MonoBehaviour
     {
-        _dragTargetZone = GetComponent<DragTargetZone>();
-        _dragTargetZone.onItemDragged += OnItemDragged;
-    }
+        [SerializeField] private int _clothesCapacity;
+        private DragTargetZone _dragTargetZone;
 
-    private void OnItemDragged(int nbDraggedItem)
-    {
-        if (nbDraggedItem == _clothesCapacity)
+        [SerializeField] private Sprite _filledBasketSprite;
+
+        [SerializeField] private UnityEvent _onClothesBasketFilled;
+        private void Awake()
         {
-            GetComponent<SpriteRenderer>().sprite = _filledBasketSprite;
-            _onClothesBasketFilled?.Invoke();
+            _dragTargetZone = GetComponent<DragTargetZone>();
+            _dragTargetZone.onItemDragged += OnItemDragged;
+        }
+
+        private void OnItemDragged(int nbDraggedItem)
+        {
+            if (nbDraggedItem == _clothesCapacity)
+            {
+                GetComponent<SpriteRenderer>().sprite = _filledBasketSprite;
+                _onClothesBasketFilled?.Invoke();
+            }
         }
     }
 }
