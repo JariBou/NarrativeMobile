@@ -2263,6 +2263,7 @@ MonoBehaviour:
   _touchRadius: 0.5
   _minSwipeDistance: 400
   _minSwipeTime: 4
+  _dragPosDiff: {x: 0, y: 0, z: 0}
   clickDetectionMask:
     serializedVersion: 2
     m_Bits: 64
@@ -3224,6 +3225,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1405843010}
+        m_TargetAssemblyTypeName: _project.Scripts.TouchDetectionZone, Assembly-CSharp
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: JHAISGHIAHS
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &275032486
@@ -4469,6 +4482,18 @@ MonoBehaviour:
       nouvelle g\xE9n\xE9ration qui semble savoir quelle direction prendre.\nBonne
       chance \xE0 Mr.Morel, et qu\u2019il continue \xE0 faire briller le journalisme
       moderne."
+  - _loc: 1
+    _content: '<b>A Rising Star of Television</b>
+
+
+      Journalist Carl Morel has
+      won another journalism award for his latest report on the American Mafia. This
+      young writer has been shining on the television scene for some time now and
+      shows no signs of slowing down his ascent. The world of journalism is welcoming
+      a new generation that seems to know exactly which direction to take.
+
+      Good
+      luck to Mr. Morel, and may he continue to make modern journalism shine.'
   _textOverride: {fileID: 0}
 --- !u!1 &415405044
 GameObject:
@@ -4790,7 +4815,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       propertyPath: _isMainRoom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _onFirstEnterRoom.m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _onFirstEnterRoom.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _onFirstEnterRoom.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1464954057}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _onFirstEnterRoom.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _onFirstEnterRoom.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HasSeenProof
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _onFirstEnterRoom.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _project.Scripts.SceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _onFirstEnterRoom.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8100,6 +8153,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757267621}
   m_CullTransparentMesh: 1
+--- !u!1 &763265615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763265616}
+  - component: {fileID: 763265618}
+  - component: {fileID: 763265617}
+  m_Layer: 5
+  m_Name: FadeToBlack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &763265616
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763265615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1457293239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &763265617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763265615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &763265618
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763265615}
+  m_CullTransparentMesh: 1
 --- !u!1 &770338204
 GameObject:
   m_ObjectHideFlags: 0
@@ -8256,6 +8384,10 @@ MonoBehaviour:
     _content: "Cela fait maintenant trois jours que la journaliste et pr\xE9sentatrice
       c\xE9l\xE8bre Emily Delacroix a disparu. Elle a \xE9t\xE9 vue la derni\xE8re
       fois en quittant son lieu de travail et n'est pas revenue le lendemain matin."
+  - _loc: 1
+    _content: "It\u2019s been three days since the famous journalist and presenter
+      Emily Delacroix disappeared. She was last seen leaving her workplace and did
+      not return the next morning."
   _textOverride: {fileID: 0}
 --- !u!1 &770654413
 GameObject:
@@ -12462,12 +12594,25 @@ MonoBehaviour:
   _textContent:
   - _loc: 0
     _content: <b>L'affaire Delacroix continue</b>
+  - _loc: 1
+    _content: <b>The Delacroix case continues</b>
   _textOverride: {fileID: 0}
 --- !u!1 &1405843008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6386805500426524168, guid: 256d91208f9ae054281267907aa059c3, type: 3}
   m_PrefabInstance: {fileID: 5481392277370179071}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1405843010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5200035342178303180, guid: 256d91208f9ae054281267907aa059c3, type: 3}
+  m_PrefabInstance: {fileID: 5481392277370179071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405843008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b46a7df75b7694e8e48892770ffab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1413876554
 GameObject:
   m_ObjectHideFlags: 0
@@ -13075,6 +13220,7 @@ RectTransform:
   - {fileID: 656407830}
   - {fileID: 1107658359}
   - {fileID: 1667258901}
+  - {fileID: 763265616}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13243,6 +13389,23 @@ MonoBehaviour:
     LockAmount: 2
     SceneElement: {fileID: 683218536}
   _currentRoomSceneIndex: 1
+  _startedEnding:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 236282902}
+        m_TargetAssemblyTypeName: _project.Scripts.TouchInputManager, Assembly-CSharp
+        m_MethodName: CheckForTouch
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _fadeBlackSprite: {fileID: 763265617}
+  _animationDuration: 3
 --- !u!4 &1464954058
 Transform:
   m_ObjectHideFlags: 0

@@ -1,9 +1,12 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using _project.Scripts.UI_Script;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace _project.Scripts
 {
@@ -19,6 +22,18 @@ namespace _project.Scripts
 
         private float _cameraDefaultZ;
         private SceneElement _currentSceneElement;
+
+        [Header("Ending Animation")]
+        [SerializeField] private UnityEvent _startedEnding;
+        [SerializeField] private Image _fadeBlackSprite;
+        [SerializeField] private float _animationDuration;
+        private bool _hasSeenProof;
+
+        public void HasSeenProof()
+        {
+            if (_hasSeenProof) return;
+            _hasSeenProof = true;
+        }
 
         public void SetupSceneUI(SceneUI sceneUI)
         {
@@ -148,7 +163,25 @@ namespace _project.Scripts
 
         public void GoBack()
         {
+            if (_hasSeenProof)
+            {
+                StartCoroutine(Ending());
+            }
             MoveTo(_roomScenes[_currentRoomSceneIndex].SceneElement);
+        }
+
+        private IEnumerator Ending()
+        {
+            float opacity = 0f;
+            _startedEnding?.Invoke();
+            _fadeBlackSprite.gameObject.SetActive(true);
+            for (int i = 0; i < _animationDuration/0.1f; i++)
+            {
+                opacity += 0.1f/_animationDuration;
+                _fadeBlackSprite.color = new Color(_fadeBlackSprite.color.r, _fadeBlackSprite.color.g, _fadeBlackSprite.color.b, opacity);
+                yield return new WaitForSeconds(0.1f);
+            }
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EndingScreen");
         }
     }
 
