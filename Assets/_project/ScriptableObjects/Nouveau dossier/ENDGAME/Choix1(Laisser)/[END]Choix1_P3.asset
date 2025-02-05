@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: DialogInfo_temp
+  m_Name: '[END]Choix1_P3'
   m_EditorClassIdentifier: 
   _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: "Enjoy your new life, detective\u2026 As long as you still have control
-      over it."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _content: Nobody will ever be able to trace this back to us... Back to me.
+    _audioClip: {fileID: 8300000, guid: 5b704c64921cc4047b12c99dcd545af2, type: 3}
   - _loc: 0
-    _content: "Profitez bien de votre nouvelle vie, d\xE9tective\u2026 Tant que vous
-      en avez encore le contr\xF4le."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _content: "Personne ne pourra jamais remonter jusqu\u2019\xE0 nous\u2026 Jusqu\u2019\xE0
+      moi."
+    _audioClip: {fileID: 8300000, guid: 5b704c64921cc4047b12c99dcd545af2, type: 3}

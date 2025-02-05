@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: DialogInfo_temp
+  m_Name: '[END]Choix2_P5'
   m_EditorClassIdentifier: 
   _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: "Enjoy your new life, detective\u2026 As long as you still have control
-      over it."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _content: "But I promise I always come back\u2026 just for you. "
+    _audioClip: {fileID: 8300000, guid: 94d822a01c0baa745897fd03092ee6c3, type: 3}
   - _loc: 0
-    _content: "Profitez bien de votre nouvelle vie, d\xE9tective\u2026 Tant que vous
-      en avez encore le contr\xF4le."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _content: "Mais je vous fais la promesse que je reviendrai\u2026 juste pour vous. "
+    _audioClip: {fileID: 8300000, guid: 94d822a01c0baa745897fd03092ee6c3, type: 3}

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: Salon-Livre
+  m_Name: '[END]Choix1_P8'
   m_EditorClassIdentifier: 
-  _dialogName: salon_livre
+  _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: So he likes crime novels?
-    _audioClip: {fileID: 0}
+    _content: "I was very lucky to land on a detective this\u2026 efficient."
+    _audioClip: {fileID: 8300000, guid: d1d5b25310d6d49479e0fa5fa36af5b5, type: 3}
   - _loc: 0
-    _content: C'est donc un fan de romans policier ?
-    _audioClip: {fileID: 0}
+    _content: "J'ai eu beaucoup de chance de tomber sur un d\xE9tective aussi\u2026
+      efficace."
+    _audioClip: {fileID: 8300000, guid: d1d5b25310d6d49479e0fa5fa36af5b5, type: 3}

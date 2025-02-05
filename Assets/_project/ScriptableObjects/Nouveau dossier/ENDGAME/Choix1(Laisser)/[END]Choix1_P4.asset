@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
-  m_Name: DialogInfo_temp
+  m_Name: '[END]Choix1_P4'
   m_EditorClassIdentifier: 
   _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: "Enjoy your new life, detective\u2026 As long as you still have control
-      over it."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _content: You did what I asked. You can say goodbye to your debt.
+    _audioClip: {fileID: 8300000, guid: 9619368859865f44197e15e97fc6596c, type: 3}
   - _loc: 0
-    _content: "Profitez bien de votre nouvelle vie, d\xE9tective\u2026 Tant que vous
-      en avez encore le contr\xF4le."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _content: "Vous avez fait ce que j'ai demand\xE9. Vous pouvez dire adieu \xE0
+      vos dettes."
+    _audioClip: {fileID: 8300000, guid: 9619368859865f44197e15e97fc6596c, type: 3}
