@@ -5335,6 +5335,104 @@ MonoBehaviour:
   _gameObjectToTrigger: {fileID: 462042836}
   _graph: {fileID: 11400000, guid: f294a1c196d1f8a4f880bcd3252c70aa, type: 2}
   _canBeExecutedMultipleTimes: 0
+--- !u!1001 &468764584
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 657068847}
+    m_Modifications:
+    - target: {fileID: 2608760723904440624, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_Name
+      value: StartScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.471676
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215138083367804262, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_Size.x
+      value: 39.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215138083367804262, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_Size.y
+      value: 16.203516
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215138083367804262, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0057ba2de30a7484a86372de15109d9b, type: 3}
+    - target: {fileID: 5215138083367804262, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561267418223830258, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      propertyPath: _isMainRoom
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+--- !u!4 &468764585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+  m_PrefabInstance: {fileID: 468764584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &478450081
 GameObject:
   m_ObjectHideFlags: 0
@@ -5355,7 +5453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &478450082
 Animator:
   serializedVersion: 7
@@ -6014,7 +6112,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 33, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7309,7 +7407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -7321,6 +7419,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
@@ -7334,6 +7436,10 @@ PrefabInstance:
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 1464954057}
+    - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
       objectReference: {fileID: 687117186}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -7341,6 +7447,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
@@ -7353,6 +7463,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ClosePhone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
@@ -7365,6 +7479,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: _project.Scripts.SceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
@@ -7385,6 +7503,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931217060361585037, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4207799108811848615, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
@@ -7823,7 +7945,7 @@ Transform:
   m_GameObject: {fileID: 657068846}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3692079, y: -5.2120767, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7840,6 +7962,7 @@ Transform:
   - {fileID: 1280195659}
   - {fileID: 2059081281}
   - {fileID: 557217580}
+  - {fileID: 468764585}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &677708211 stripped
@@ -8489,6 +8612,13 @@ MonoBehaviour:
       tourn\xE9e \xE9tait aussi celle de la distribution des savons pour chaque cellules.\nL\xE9on
       donna le plateau habituel \xE0 Luste mais cette fois en murmurant une seule
       phrase sans lever les yeux :"
+  - _loc: 1
+    _content: "<b>Chapter-4 Finally the soap.</b>\n\nAfter almost finishing the decoration
+      of his cell with pieces of clothing, Luste heard a guard approaching.\nIt was
+      Leon, the guard in charge of distributing the meal for each cell.\nThis tour
+      was also the distribution of soaps for each cell.\nL\xE9on gave the usual tray
+      to Luste but this time by whispering a single sentence without lifting his
+      eyes: "
   _textOverride: {fileID: 0}
 --- !u!114 &757267624
 MonoBehaviour:
@@ -8510,12 +8640,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Chapitre-4 Enfin le savon.\n\nApr\xE8s avoir presque fini la d\xE9coration
-    de sa cellule avec des bouts de v\xEAtements, Luste entendit un garde s'approcher.\nC'\xE9tait
-    L\xE9on, le garde charg\xE9 de la distribution du repas pour chaque cellule.\nCette
-    tourn\xE9e \xE9tait aussi celle de la distribution des savons pour chaque cellules.\nL\xE9on
-    donna le plateau habituel \xE0 Luste mais cette fois en murmurant une seule phrase
-    sans lever les yeux :\n"
+  m_text: "<b>Chapter-4 Finally the soap.</b>\n\nAfter almost finishing the decoration
+    of his cell with pieces of clothing, Luste heard a guard approaching.\nIt was
+    Leon, the guard in charge of distributing the meal for each cell.\nThis tour
+    was also the distribution of soaps for each cell.\nL\xE9on gave the usual tray
+    to Luste but this time by whispering a single sentence without lifting his eyes: "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10012,7 +10141,7 @@ Transform:
   m_GameObject: {fileID: 957974380}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -11201,6 +11330,21 @@ MonoBehaviour:
       d'ouvrir le savon emball\xE9 dans du papier toilette.\nLuste le trouva l\xE9g\xE8rement
       plus lourd que d'habitude, et l'observa avec plus d'attention.\nC'est alors
       qu'elle arriva \xE0 d\xE9cerner une cl\xE9 \xE0 l'int\xE9rieur."
+  - _loc: 1
+    _content: '-Take a shower, you need it.
+
+      Then he moved away, leaving Luste
+      alone with the tray. The latter picked it up, feigning indifference.
+
+      He
+      retreated into the shadow of his cell and savored his meal tray before opening
+      the soap wrapped in toilet paper.
+
+      Luste found it slightly heavier than
+      usual, and watched it more attentively.
+
+      It was then that she managed
+      to give a key inside.'
   _textOverride: {fileID: 0}
 --- !u!114 &1107578379
 MonoBehaviour:
@@ -11222,12 +11366,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Prend une douche, tu en a besoin.\nPuis il s\u2019\xE9loigna, laissant
-    Luste seul avec le plateau. Ce dernier le ramassa, feignant l\u2019indiff\xE9rence.\nIl
-    se recula dans l\u2019ombre de sa cellule et savoura son plateau repas avant
-    d'ouvrir le savon emball\xE9 dans du papier toilette.\nLuste le trouva l\xE9g\xE8rement
-    plus lourd que d'habitude, et l'observa avec plus d'attention.\nC'est alors qu'elle
-    arriva \xE0 d\xE9cerner une cl\xE9 \xE0 l'int\xE9rieur."
+  m_text: '-Take a shower, you need it.
+
+    Then he moved away, leaving Luste alone
+    with the tray. The latter picked it up, feigning indifference.
+
+    He retreated
+    into the shadow of his cell and savored his meal tray before opening the soap
+    wrapped in toilet paper.
+
+    Luste found it slightly heavier than usual, and
+    watched it more attentively.
+
+    It was then that she managed to give a key
+    inside.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11254,7 +11406,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.35
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12987,6 +13139,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 68734036}
           m_ObjectArgumentAssemblyTypeName: _project.Scripts.SceneElement, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 800787638}
+        m_TargetAssemblyTypeName: NodeSystem.Runtime.Executionners.NodeSystemTrigger,
+          NodeSystem
+        m_MethodName: Trigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -15101,7 +15266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1917672692
 Transform:
   m_ObjectHideFlags: 0
@@ -15111,7 +15276,7 @@ Transform:
   m_GameObject: {fileID: 1917672691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.8, y: -3.14, z: -17.89}
+  m_LocalPosition: {x: 12.8, y: -3.14, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -15161,15 +15326,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4055507219117313083, guid: 942c3220472fce8489c0b7d5f210a5ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 942c3220472fce8489c0b7d5f210a5ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.89, y: 13.76}
+  m_Size: {x: 11.71, y: 1.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1919620237
@@ -16583,11 +16748,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3692079
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.2120767
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       propertyPath: m_LocalPosition.z

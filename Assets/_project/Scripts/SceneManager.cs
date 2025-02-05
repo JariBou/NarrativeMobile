@@ -29,6 +29,15 @@ namespace _project.Scripts
         [SerializeField] private float _animationDuration;
         private bool _hasSeenProof;
 
+        public void ClosePhone()
+        {
+            if (_currentSceneElement == null)
+            {
+                _currentSceneElement = _roomScenes[_currentRoomSceneIndex].SceneElement;
+                MoveTo(_currentSceneElement);
+            }
+        }
+
         public void HasSeenProof()
         {
             if (_hasSeenProof) return;
@@ -49,8 +58,7 @@ namespace _project.Scripts
                 Instance = this;
             }
         
-            _cameraDefaultZ = Camera.main.transform.position.z;
-            _currentSceneElement = _roomScenes[_currentRoomSceneIndex].SceneElement;
+            _cameraDefaultZ = Camera.main.transform.position.z; 
         }
 
         //UnlockScene, if selected scene can now be accessible, returns true
