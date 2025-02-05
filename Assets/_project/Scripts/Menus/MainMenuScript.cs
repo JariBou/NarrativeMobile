@@ -9,15 +9,21 @@ namespace _project.Scripts.Menus
         [SerializeField] private Button _playButton;
         [SerializeField] private Button _settingsButton;
         [SerializeField] private Button _quitButton;
+        [SerializeField] private TranslatedButtonScript _playButtonScript;
+        [SerializeField] private TranslatedButtonScript _settingsButtonScript;
+        [SerializeField] private TranslatedButtonScript _quitButtonScript;
         
         [SerializeField] private GameObject _settingsPanel;
         [SerializeField] private GameObject _mainMenuPanel;
 
         private void Awake()
         {
-            _playButton.onClick.AddListener(PlayButtonClicked);
-            _settingsButton.onClick.AddListener(SettingsButtonClicked);
-            _quitButton.onClick.AddListener(QuitButtonClicked);
+            // _playButton.onClick.AddListener(PlayButtonClicked);
+            _playButtonScript.AddOnClick(PlayButtonClicked);
+            // _settingsButton.onClick.AddListener(SettingsButtonClicked);
+            _settingsButtonScript.AddOnClick(SettingsButtonClicked);
+            // _quitButton.onClick.AddListener(QuitButtonClicked);
+            _quitButtonScript.AddOnClick(QuitButtonClicked);
         }
 
         private void QuitButtonClicked()
