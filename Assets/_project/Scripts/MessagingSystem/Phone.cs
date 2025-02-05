@@ -22,6 +22,8 @@ namespace _project.Scripts.MessagingSystem
         [SerializeField] private Image _messageDetailIcon;
         [SerializeField] private TMP_Text _messageDetailName;
         
+        [SerializeField] private NotificationScript _notificationScript;
+        
         [SerializeField] private List<GameObject> _phoneAppPanels = new();
         [SerializeField] private List<Sprite> _bgSprites;
 
@@ -81,6 +83,7 @@ namespace _project.Scripts.MessagingSystem
             
             _conversationDictionnary[conversationUserId].AddMessage(message);
             _conversationDictionnary[conversationUserId].linkedButton.GetComponent<RectTransform>().SetAsFirstSibling();
+            _notificationScript.NotifyNewMessage();
             // _conversationDictionnary[conversationUserId].Add(message);
             // _hasNotification = true;
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText(message._content);

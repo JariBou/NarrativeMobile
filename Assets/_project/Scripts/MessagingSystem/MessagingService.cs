@@ -12,9 +12,7 @@ namespace _project.Scripts.MessagingSystem
         public List<FDateTime> _messageSendingTime = new();
 
         public Phone _phone;
-
-        public PhoneUser _userTest;
-
+        
         private void Awake()
         {
             Instance = this;
