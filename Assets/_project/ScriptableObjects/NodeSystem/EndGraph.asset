@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2892175d8a24d80418dfbf7c18a1a156, type: 3}
+  m_Name: EndGraph
+  m_EditorClassIdentifier: 
+  _graphId: 609934ed-4aa2-4521-aee3-809be446d579
+  m_nodes:
+  - rid: 78795522988048539
+  - rid: 78795522988048540
+  - rid: 78795522988048541
+  - rid: 78795522988048542
+  - rid: 78795522988048543
+  - rid: 78795522988048546
+  - rid: 78795522988048550
+  - rid: 78795522988048551
+  m_connections:
+  - inputPort:
+      nodeId: f2bde35a-d3e1-4800-abfd-d2790639d18a
+      portIndex: 1
+    outputPort:
+      nodeId: 9071f19b-5176-41f5-af6b-97ab5c675802
+      portIndex: 0
+  - inputPort:
+      nodeId: 53b6d1e1-4889-4d7f-b12d-87dac453bb43
+      portIndex: 1
+    outputPort:
+      nodeId: 03997974-6487-461f-a17c-7f3364d0ec02
+      portIndex: 0
+  - inputPort:
+      nodeId: 9071f19b-5176-41f5-af6b-97ab5c675802
+      portIndex: 1
+    outputPort:
+      nodeId: 53b6d1e1-4889-4d7f-b12d-87dac453bb43
+      portIndex: 0
+  - inputPort:
+      nodeId: 6c7ec849-b7e8-465b-a2e9-8d8492949581
+      portIndex: 1
+    outputPort:
+      nodeId: e7baedb5-2e65-4dbc-bfac-b5d7e0caeee7
+      portIndex: 0
+  - inputPort:
+      nodeId: 81ed01b9-b5bc-4543-b7bf-ed995ab09577
+      portIndex: 1
+    outputPort:
+      nodeId: e56f2a01-2cf8-4ed2-aedf-fe8fd1ee9cf3
+      portIndex: 0
+  m_exposedProperties: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 78795522988048539
+      type: {class: StartNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 03997974-6487-461f-a17c-7f3364d0ec02
+        m_position:
+          serializedVersion: 2
+          x: -205.6
+          y: -152.8
+          width: 75.2
+          height: 76.8
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.StartNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+    - rid: 78795522988048540
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: f2bde35a-d3e1-4800-abfd-d2790639d18a
+        m_position:
+          serializedVersion: 2
+          x: 408.80002
+          y: 0
+          width: 234.4
+          height: 121.600006
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: f2bde35a-d3e1-4800-abfd-d2790639d18a
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: 3a58df69-3fa5-4031-b960-0481c693b507
+        state: 1
+    - rid: 78795522988048541
+      type: {class: WaitNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 9071f19b-5176-41f5-af6b-97ab5c675802
+        m_position:
+          serializedVersion: 2
+          x: 112
+          y: 0
+          width: 239.2
+          height: 100.8
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.WaitNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: time
+          _ownerId: 9071f19b-5176-41f5-af6b-97ab5c675802
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        time: 5
+    - rid: 78795522988048542
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: e7baedb5-2e65-4dbc-bfac-b5d7e0caeee7
+        m_position:
+          serializedVersion: 2
+          x: 156
+          y: 168
+          width: 195.2
+          height: 97.600006
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 909c6d10-aca0-45a8-a61b-2f1441433bed
+    - rid: 78795522988048543
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: e56f2a01-2cf8-4ed2-aedf-fe8fd1ee9cf3
+        m_position:
+          serializedVersion: 2
+          x: 144
+          y: 371.2
+          width: 195.2
+          height: 97.599976
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 0c12ee9b-31ae-4eff-bd43-445685f5a8b4
+    - rid: 78795522988048546
+      type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
+      data:
+        m_guid: 53b6d1e1-4889-4d7f-b12d-87dac453bb43
+        m_position:
+          serializedVersion: 2
+          x: -84
+          y: -136.8
+          width: 232
+          height: 100.8
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.DebugLogNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: logMessage
+          _ownerId: 53b6d1e1-4889-4d7f-b12d-87dac453bb43
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        logMessage: ahajha
+    - rid: 78795522988048550
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 6c7ec849-b7e8-465b-a2e9-8d8492949581
+        m_position:
+          serializedVersion: 2
+          x: 388
+          y: 168
+          width: 235.20001
+          height: 120.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 6c7ec849-b7e8-465b-a2e9-8d8492949581
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: 3a58df69-3fa5-4031-b960-0481c693b507
+        state: 0
+    - rid: 78795522988048551
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 81ed01b9-b5bc-4543-b7bf-ed995ab09577
+        m_position:
+          serializedVersion: 2
+          x: 362.40002
+          y: 371.2
+          width: 235.20001
+          height: 120.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 81ed01b9-b5bc-4543-b7bf-ed995ab09577
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: 3a58df69-3fa5-4031-b960-0481c693b507
+        state: 0
