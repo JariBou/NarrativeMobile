@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_PRO_Bedroom_Photos_0: 5467087555869145584
+      SPR_PRO_Bedroom_Photos_1: -2868834758058940178
+      SPR_PRO_Bedroom_Photos_2: 5546748128753469774
+      SPR_PRO_Bedroom_Photos_3: 7111742600354087964
+      SPR_PRO_Bedroom_Photos_4: 1907276141785086287
+      SPR_PRO_Bedroom_Photos_5: 2335817430085013991
+      SPR_PRO_Bedroom_Photos_6: -2488205295749806542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
