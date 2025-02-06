@@ -18,5 +18,5 @@ MonoBehaviour:
     _content: What is wrong with this nuthead?
     _audioClip: {fileID: 8300000, guid: eddef9d064b2b3f419c360a39fd9d6af, type: 3}
   - _loc: 0
-    _content: "Mais qu'est ce qui lui arrive \xE0 ce d\xE9traqu\xE9 ?"
+    _content: "Mais qu'est-ce qui lui arrive \xE0 ce d\xE9traqu\xE9 ?"
     _audioClip: {fileID: 8300000, guid: eddef9d064b2b3f419c360a39fd9d6af, type: 3}

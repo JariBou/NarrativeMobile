@@ -21,7 +21,7 @@ MonoBehaviour:
     _second: 0
   _content:
   - _loc: 0
-    _content: "Ce ne sont pas les preuves du kidnapping, ne regardez pas \xE7a ! "
+    _content: "Ce ne sont pas les preuves du kidnapping, ne regardez pas \xE7a !"
   - _loc: 1
     _content: "This is not evidence of kidnapping, don\u2019t look at that! "
   _user: {fileID: 11400000, guid: 0c11fb5e737a4b74da4842532dcbc144, type: 2}
