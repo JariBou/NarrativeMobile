@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace _project.Scripts.MessagingSystem
@@ -63,7 +60,7 @@ namespace _project.Scripts.MessagingSystem
         {
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
-            AddMessageTest("Your need to go to this place !", "test_user");
+            // AddMessageTest("Your need to go to this place !", "test_user");
             // AddMessageTest("What is the address ?", "test_user", TextAnchor.MiddleRight);
             // AddMessageTest("It's the 10th on Nanana street", "test_user");
             // MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
@@ -126,6 +123,10 @@ namespace _project.Scripts.MessagingSystem
         {
             _hasNotification = false;
             if (_selectedConv != null && _conversationDictionnary.ContainsKey(_selectedConv)) _conversationDictionnary[_selectedConv].RefreshSizes();
+            else if (_selectedConv == null && _conversationDictionnary.Count > 0)
+            {
+                OnContactClicked(_conversationDictionnary.Keys.ElementAt(0));
+            }
             
         }
 

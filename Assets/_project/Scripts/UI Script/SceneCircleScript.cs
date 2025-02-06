@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Numerics;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 

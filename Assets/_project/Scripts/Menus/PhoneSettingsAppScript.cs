@@ -3,7 +3,6 @@ using _project.Scripts.Localisation;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.UI;
 
 namespace _project.Scripts.Menus
 {

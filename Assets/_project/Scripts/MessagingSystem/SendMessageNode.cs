@@ -1,6 +1,5 @@
 ﻿using NodeSystem.Runtime;
 using NodeSystem.Runtime.Attributes;
-using UnityEngine;
 
 namespace _project.Scripts.MessagingSystem
 {

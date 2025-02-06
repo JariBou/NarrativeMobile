@@ -1,5 +1,4 @@
-﻿using System;
-using NodeSystem.Runtime;
+﻿using NodeSystem.Runtime;
 using TMPro;
 using UnityEngine;
 

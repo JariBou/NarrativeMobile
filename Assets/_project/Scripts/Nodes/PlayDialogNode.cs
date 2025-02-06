@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using _project.Scripts.DialogSystem;
 using _project.Scripts.Localisation;
 using NodeSystem.Runtime;

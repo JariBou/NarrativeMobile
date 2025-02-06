@@ -7259,8 +7259,16 @@ PrefabInstance:
       objectReference: {fileID: 1342338473}
     - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: _phoneUsers.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_phoneUsers.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c11fb5e737a4b74da4842532dcbc144, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_phoneUsers.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c11fb5e737a4b74da4842532dcbc144, type: 2}
     - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: '_phoneUsers.Array.data[2]'
       value: 
