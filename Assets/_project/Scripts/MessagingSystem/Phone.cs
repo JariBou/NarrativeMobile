@@ -22,6 +22,8 @@ namespace _project.Scripts.MessagingSystem
         [SerializeField] private Image _messageDetailIcon;
         [SerializeField] private TMP_Text _messageDetailName;
         
+        [SerializeField] private NotificationScript _notificationScript;
+        
         [SerializeField] private List<GameObject> _phoneAppPanels = new();
         [SerializeField] private List<Sprite> _bgSprites;
 
@@ -49,7 +51,6 @@ namespace _project.Scripts.MessagingSystem
 
         public void OnPhoneAppClicked(int index)
         {
-            Debug.LogWarning(index);
             for (int i = 0; i < _phoneAppPanels.Count; i++)
             {
                 _phoneAppPanels[i].SetActive(i == index);
@@ -61,7 +62,7 @@ namespace _project.Scripts.MessagingSystem
         {
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText("AAAAAAA this is some test shit");
-            // AddMessageTest("Your need to go to this place !", "test_user");
+            AddMessageTest("Your need to go to this place !", "test_user");
             // AddMessageTest("What is the address ?", "test_user", TextAnchor.MiddleRight);
             // AddMessageTest("It's the 10th on Nanana street", "test_user");
             // MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
@@ -82,6 +83,7 @@ namespace _project.Scripts.MessagingSystem
             
             _conversationDictionnary[conversationUserId].AddMessage(message);
             _conversationDictionnary[conversationUserId].linkedButton.GetComponent<RectTransform>().SetAsFirstSibling();
+            _notificationScript.NotifyNewMessage();
             // _conversationDictionnary[conversationUserId].Add(message);
             // _hasNotification = true;
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText(message._content);
