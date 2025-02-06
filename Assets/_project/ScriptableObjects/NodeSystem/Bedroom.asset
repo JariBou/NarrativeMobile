@@ -21,8 +21,6 @@ MonoBehaviour:
   - rid: 78795509339258966
   - rid: 78795509339258967
   - rid: 78795509339258968
-  - rid: 78795509339258969
-  - rid: 78795509339258970
   - rid: 78795522988048514
   - rid: 78795522988048516
   - rid: 78795522988048517
@@ -40,12 +38,6 @@ MonoBehaviour:
       portIndex: 1
     outputPort:
       nodeId: ffbdb2b6-8f42-49cc-8996-dbfc73f7ba1c
-      portIndex: 0
-  - inputPort:
-      nodeId: d5273c36-c526-4c03-af91-6ca2704f706a
-      portIndex: 1
-    outputPort:
-      nodeId: 10cd32a8-9774-4694-8235-6521fc46a96e
       portIndex: 0
   - inputPort:
       nodeId: eed5ecc0-6d89-494f-b7b2-a06a973d4260
@@ -204,42 +196,6 @@ MonoBehaviour:
         m_ports: []
         m_pureExecutionDone: 1
         Source: aa280b41-d78d-41c2-81eb-d9f7cb5020f7
-    - rid: 78795509339258969
-      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
-      data:
-        m_guid: 10cd32a8-9774-4694-8235-6521fc46a96e
-        m_position:
-          serializedVersion: 2
-          x: 292.80002
-          y: 667.19995
-          width: 0
-          height: 0
-        m_isPure: 0
-        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
-          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-        m_ports: []
-        m_pureExecutionDone: 1
-        Source: 9bc23da1-af04-4aba-81d6-0ca47361f284
-    - rid: 78795509339258970
-      type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
-      data:
-        m_guid: d5273c36-c526-4c03-af91-6ca2704f706a
-        m_position:
-          serializedVersion: 2
-          x: 512.8
-          y: 667.2
-          width: 280
-          height: 100.79999
-        m_isPure: 0
-        typename: NodeSystem.Runtime.NodesLibrary.DebugLogNode, NodeSystem, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        m_ports:
-        - _exposedPropertyName: logMessage
-          _ownerId: d5273c36-c526-4c03-af91-6ca2704f706a
-          _portIndex: 2
-          _portDirection: 1
-        m_pureExecutionDone: 1
-        logMessage: THE END
     - rid: 78795522988048514
       type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
       data:

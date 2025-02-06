@@ -27,6 +27,7 @@ namespace _project.Scripts
         [SerializeField] private UnityEvent _startedEnding;
         [SerializeField] private Image _fadeBlackSprite;
         [SerializeField] private float _animationDuration;
+        [SerializeField] private float _timeBeforeFadeBlack;
         private bool _hasSeenProof;
 
         public void ClosePhone()
@@ -40,8 +41,8 @@ namespace _project.Scripts
 
         public void HasSeenProof()
         {
-            if (_hasSeenProof) return;
             _hasSeenProof = true;
+            StartCoroutine(Ending());
         }
 
         public void SetupSceneUI(SceneUI sceneUI)
@@ -171,10 +172,6 @@ namespace _project.Scripts
 
         public void GoBack()
         {
-            if (_hasSeenProof)
-            {
-                StartCoroutine(Ending());
-            }
             MoveTo(_roomScenes[_currentRoomSceneIndex].SceneElement);
         }
 
@@ -183,6 +180,7 @@ namespace _project.Scripts
             float opacity = 0f;
             _startedEnding?.Invoke();
             _fadeBlackSprite.gameObject.SetActive(true);
+            yield return new WaitForSeconds(_timeBeforeFadeBlack);
             for (int i = 0; i < _animationDuration/0.1f; i++)
             {
                 opacity += 0.1f/_animationDuration;
