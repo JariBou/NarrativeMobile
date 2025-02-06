@@ -42,6 +42,8 @@ MonoBehaviour:
   - rid: 78795522988048572
   - rid: 78795522988048573
   - rid: 78795522988048574
+  - rid: 78795551122128997
+  - rid: 78795551122128998
   m_connections:
   - inputPort:
       nodeId: 1c7d1a86-d228-47e7-8ee2-e101f19f8ba5
@@ -192,6 +194,18 @@ MonoBehaviour:
       portIndex: 1
     outputPort:
       nodeId: e7baedb5-2e65-4dbc-bfac-b5d7e0caeee7
+      portIndex: 0
+  - inputPort:
+      nodeId: 5a1b6a96-3b75-46cf-8712-83f65bec3621
+      portIndex: 1
+    outputPort:
+      nodeId: af5e7951-b206-4e15-a852-6c0f255024cf
+      portIndex: 0
+  - inputPort:
+      nodeId: 13ebe049-2ffd-4f13-8663-a41729c7281b
+      portIndex: 1
+    outputPort:
+      nodeId: 1637f555-0388-4692-ac6d-ff779f2bf4be
       portIndex: 0
   m_exposedProperties: []
   references:
@@ -747,3 +761,45 @@ MonoBehaviour:
           _portDirection: 1
         m_pureExecutionDone: 1
         dialogInfo: {fileID: 11400000, guid: 66aaf7584223f8b48a44daa89860c352, type: 2}
+    - rid: 78795551122128997
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 5a1b6a96-3b75-46cf-8712-83f65bec3621
+        m_position:
+          serializedVersion: 2
+          x: 2872.8
+          y: 371.2
+          width: 235.19995
+          height: 120.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 5a1b6a96-3b75-46cf-8712-83f65bec3621
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: dfdc5fb3-46ef-4a6a-a697-c0558d42f48b
+        state: 1
+    - rid: 78795551122128998
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 13ebe049-2ffd-4f13-8663-a41729c7281b
+        m_position:
+          serializedVersion: 2
+          x: 4624
+          y: 126.399994
+          width: 235.2002
+          height: 120.80002
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 13ebe049-2ffd-4f13-8663-a41729c7281b
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: dfdc5fb3-46ef-4a6a-a697-c0558d42f48b
+        state: 1

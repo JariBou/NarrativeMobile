@@ -12,6 +12,7 @@ namespace _project.Scripts.Menus
         [SerializeField] private TranslatedButtonScript _playButtonScript;
         [SerializeField] private TranslatedButtonScript _settingsButtonScript;
         [SerializeField] private TranslatedButtonScript _quitButtonScript;
+        [SerializeField] private TranslatedButtonScript _creditsButtonScript;
         
         [SerializeField] private GameObject _settingsPanel;
         [SerializeField] private GameObject _mainMenuPanel;
@@ -24,6 +25,12 @@ namespace _project.Scripts.Menus
             _settingsButtonScript.AddOnClick(SettingsButtonClicked);
             // _quitButton.onClick.AddListener(QuitButtonClicked);
             _quitButtonScript.AddOnClick(QuitButtonClicked);
+            _creditsButtonScript.AddOnClick(CreditsButtonClicked);
+        }
+
+        private void CreditsButtonClicked()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(4);
         }
 
         private void QuitButtonClicked()

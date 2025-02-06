@@ -1844,6 +1844,7 @@ MonoBehaviour:
   _playButtonScript: {fileID: 2013524721}
   _settingsButtonScript: {fileID: 1191416745}
   _quitButtonScript: {fileID: 1918469955}
+  _creditsButtonScript: {fileID: 1918469955}
   _settingsPanel: {fileID: 1760551313}
   _mainMenuPanel: {fileID: 2076855307}
 --- !u!1 &776690144
