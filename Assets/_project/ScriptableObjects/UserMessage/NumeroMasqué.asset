@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "NumeroMasqu\xE9"
   m_EditorClassIdentifier: 
   _userId: kidnapper
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: eae17be7f14a74c40ae446a8b7e176df, type: 3}
   _names:
   - _loc: 0
     _content: "Num\xE9ro masqu\xE9"

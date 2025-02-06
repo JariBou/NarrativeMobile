@@ -27,6 +27,7 @@ MonoBehaviour:
   - rid: 78795522988048516
   - rid: 78795522988048517
   - rid: 78795522988048519
+  - rid: 78795545066602606
   m_connections:
   - inputPort:
       nodeId: 80de9200-e058-45af-9137-bf36c77d96d2
@@ -39,12 +40,6 @@ MonoBehaviour:
       portIndex: 1
     outputPort:
       nodeId: ffbdb2b6-8f42-49cc-8996-dbfc73f7ba1c
-      portIndex: 0
-  - inputPort:
-      nodeId: 5ae950ee-9d58-4fc6-8d2c-9f8992672719
-      portIndex: 1
-    outputPort:
-      nodeId: 66a0c700-4460-4307-babc-c5bdf03f9d4e
       portIndex: 0
   - inputPort:
       nodeId: d5273c36-c526-4c03-af91-6ca2704f706a
@@ -69,6 +64,18 @@ MonoBehaviour:
       portIndex: 1
     outputPort:
       nodeId: 5ae950ee-9d58-4fc6-8d2c-9f8992672719
+      portIndex: 0
+  - inputPort:
+      nodeId: db01ad47-01c0-4efb-b481-b518a3a2f2b6
+      portIndex: 1
+    outputPort:
+      nodeId: 66a0c700-4460-4307-babc-c5bdf03f9d4e
+      portIndex: 0
+  - inputPort:
+      nodeId: 5ae950ee-9d58-4fc6-8d2c-9f8992672719
+      portIndex: 1
+    outputPort:
+      nodeId: db01ad47-01c0-4efb-b481-b518a3a2f2b6
       portIndex: 0
   m_exposedProperties: []
   references:
@@ -187,16 +194,16 @@ MonoBehaviour:
         m_guid: 66a0c700-4460-4307-babc-c5bdf03f9d4e
         m_position:
           serializedVersion: 2
-          x: 161.59999
-          y: 412.8
-          width: 195.20001
-          height: 96.79999
+          x: -280
+          y: 445.6
+          width: 307.2
+          height: 97.600006
         m_isPure: 0
         typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         m_ports: []
         m_pureExecutionDone: 1
-        Source: 1545a24f-db12-49a3-adc4-1f8734c425dc
+        Source: 
     - rid: 78795509339258969
       type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
       data:
@@ -324,3 +331,23 @@ MonoBehaviour:
         m_pureExecutionDone: 1
         conversationId: kidnapper
         MessageToSend: {fileID: 11400000, guid: faa466a1408f71b44833a8407742cc46, type: 2}
+    - rid: 78795545066602606
+      type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
+      data:
+        m_guid: db01ad47-01c0-4efb-b481-b518a3a2f2b6
+        m_position:
+          serializedVersion: 2
+          x: 66.399994
+          y: 426.4
+          width: 284.8
+          height: 100.80002
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.DebugLogNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: logMessage
+          _ownerId: db01ad47-01c0-4efb-b481-b518a3a2f2b6
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        logMessage: uidg"yerhi
