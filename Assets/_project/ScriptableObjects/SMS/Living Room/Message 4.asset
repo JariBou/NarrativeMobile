@@ -21,7 +21,7 @@ MonoBehaviour:
     _second: 0
   _content:
   - _loc: 0
-    _content: "Et c\u2019est pour \xE7a que nous sommes l\xE0. Vous aider \xE0 \xE9ponger
+    _content: "Et c\u2019est pour \xE7a que nous sommes l\xE0. Vous aidez \xE0 \xE9ponger
       vos dettes en \xE9change de ce service. "
   - _loc: 1
     _content: "And that\u2019s why we\u2019re here. To help you pay off your debt
