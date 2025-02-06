@@ -18,11 +18,11 @@ namespace _project.Scripts.MessagingSystem
             Instance = this;
         }
 
-        public void SendMessage(Message message, string conversationId)
+        public void SendMessage(Message message, string conversationId, bool playNotifSound = true)
         {
             // new Message(_messageSendingTime[_lastSentMessageTimeIndex], "textContent", _userTest);
             // _lastSentMessageTimeIndex++;
-            _phone.AddMessage(message, conversationId);
+            _phone.AddMessage(message, conversationId, playNotifSound);
         }
         
     }

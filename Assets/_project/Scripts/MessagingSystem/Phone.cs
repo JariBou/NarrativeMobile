@@ -75,7 +75,7 @@ namespace _project.Scripts.MessagingSystem
             }
         }
 
-        public void AddMessage(Message message, string conversationUserId)
+        public void AddMessage(Message message, string conversationUserId, bool playNotifSound = true)
         {
             if (!_conversationDictionnary.ContainsKey(conversationUserId))
             {
@@ -84,7 +84,8 @@ namespace _project.Scripts.MessagingSystem
             
             _conversationDictionnary[conversationUserId].AddMessage(message);
             _conversationDictionnary[conversationUserId].linkedButton.GetComponent<RectTransform>().SetAsFirstSibling();
-            _notificationScript.NotifyNewMessage();
+            _notificationScript.NotifyNewMessage(playNotifSound);
+
             // _conversationDictionnary[conversationUserId].Add(message);
             // _hasNotification = true;
             // Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>().SetText(message._content);
