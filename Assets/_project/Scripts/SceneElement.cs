@@ -1,3 +1,5 @@
+using System;
+using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,14 +11,25 @@ namespace _project.Scripts
         [SerializeField] private bool _isMainRoom;
         [SerializeField] private UnityEvent _onFirstEnterRoom;
         private bool _hasEnteredRoom;
+        [SerializeField] private bool _hasOwnBackground;
+        [SerializeField, HideIf("_hasOwnBackground")] private Sprite _overlaySprite;
+        private SpriteRenderer _spriteRenderer;
         public Vector3 GetPosition()
         {
             return transform.position;
         }
 
+        private void Awake()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        public bool HasOwnBackground() => _hasOwnBackground;
+
         public Sprite GetSceneSprite()
         {
-            return GetComponent<SpriteRenderer>().sprite;
+            if (_hasOwnBackground) return _spriteRenderer.sprite;
+            return _overlaySprite?? _spriteRenderer.sprite;
         }
 
         public bool IsMainRoom() => _isMainRoom;

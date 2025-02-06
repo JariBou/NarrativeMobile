@@ -6,6 +6,7 @@ using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace _project.Scripts
@@ -26,9 +27,15 @@ namespace _project.Scripts
         [Header("Ending Animation")]
         [SerializeField] private UnityEvent _startedEnding;
         [SerializeField] private Image _fadeBlackSprite;
-        [SerializeField] private float _animationDuration;
+        [SerializeField] private float _fadeToBlackDuration;
         [SerializeField] private float _timeBeforeFadeBlack;
         private bool _hasSeenProof;
+        
+        [Header("Scene Transition")]
+        [SerializeField] private SpriteRenderer _sceneTransitionSprite;
+        [SerializeField] private float _sceneTransitionTime;
+        private Camera _camera;
+        
 
         public void ClosePhone()
         {
@@ -59,7 +66,8 @@ namespace _project.Scripts
                 Instance = this;
             }
         
-            _cameraDefaultZ = Camera.main.transform.position.z; 
+            _camera = Camera.main;
+            _cameraDefaultZ = _camera.transform.position.z;
         }
 
         //UnlockScene, if selected scene can now be accessible, returns true
@@ -98,8 +106,7 @@ namespace _project.Scripts
                 //Change Scene Animation
             
                 Vector3 targetPos = roomScene.SceneElement.GetPosition();
-                Camera.main.transform.position = new Vector3(targetPos.x, targetPos.y, Camera.main.transform.position.z);
-            
+                _camera.transform.position = new Vector3(targetPos.x, targetPos.y, _camera.transform.position.z);
                 Debug.Log(roomScene.SceneName);
             
                 _currentRoomSceneIndex = nextIndex;
@@ -152,10 +159,22 @@ namespace _project.Scripts
             return _roomScenes[sceneIndex];
         }
 
+        public void MoveTo(SceneElement sceneElement, Vector3 elementPosition)
+        {
+            if (sceneElement.IsMainRoom())
+            {
+                //Main room transition
+            }
+            else
+            {
+                //MoveToScene Transition
+                StartCoroutine(MoveToSceneWithTargetPos(sceneElement, elementPosition));
+            }
+        }
         public void MoveTo(SceneElement sceneElement)
         {
             Vector3 targetPos = sceneElement.GetPosition();
-            Camera.main.transform.position = new Vector3(targetPos.x, targetPos.y, _cameraDefaultZ);
+            _camera.transform.position = new Vector3(targetPos.x, targetPos.y, _cameraDefaultZ);
             if (sceneElement.IsMainRoom())
             {
                 int sceneIndex = GetSceneIndexFromSceneElement(sceneElement);
@@ -170,9 +189,52 @@ namespace _project.Scripts
             _currentSceneElement.EnterRoom();
         }
 
+        #region MoveScene Animations
+
+        //Move to Scene Animation
+        private IEnumerator MoveToSceneWithTargetPos(SceneElement sceneElement, Vector3 targetPos)
+        {
+            _sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
+            _sceneTransitionSprite.color = new Color(1, 1, 1, 0);
+            _sceneTransitionSprite.gameObject.SetActive(true);
+            float defaultOrthSize = _camera.orthographicSize;
+            Vector3 defaultCamPos = _camera.transform.position;
+            for (int i = 0; i < _sceneTransitionTime * 100f; i++)
+            {
+                float alpha = i / (_sceneTransitionTime * 100f - 1);
+                _camera.orthographicSize = Mathf.Lerp(defaultOrthSize, defaultOrthSize * 0.5f, alpha);
+                _camera.transform.position = Vector3.Lerp(defaultCamPos, targetPos, alpha);
+                _sceneTransitionSprite.transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 0.5f, alpha); ;
+                _sceneTransitionSprite.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);
+                yield return new WaitForSeconds(0.01f);
+            }
+            yield return new WaitForSeconds(_sceneTransitionTime/10f);
+            MoveTo(sceneElement);
+            _camera.orthographicSize = defaultOrthSize;
+            _sceneTransitionSprite.transform.localScale = Vector3.one;
+            _sceneTransitionSprite.gameObject.SetActive(false);
+        }
+        
+        private IEnumerator MoveToScene(SceneElement sceneElement)
+        {
+            _sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
+            _sceneTransitionSprite.color = new Color(1, 1, 1, 0);
+            _sceneTransitionSprite.gameObject.SetActive(true);
+            for (int i = 0; i < _sceneTransitionTime * 100f; i++)
+            {
+                float alpha = i / (_sceneTransitionTime * 100f - 1);
+                _sceneTransitionSprite.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);
+                yield return new WaitForSeconds(0.01f);
+            }
+            yield return new WaitForSeconds(_sceneTransitionTime/10f);
+            MoveTo(sceneElement);
+            _sceneTransitionSprite.gameObject.SetActive(false);
+        }
+        
+        #endregion
         public void GoBack()
         {
-            MoveTo(_roomScenes[_currentRoomSceneIndex].SceneElement);
+            StartCoroutine(MoveToScene(_roomScenes[_currentRoomSceneIndex].SceneElement));
         }
 
         private IEnumerator Ending()
@@ -181,9 +243,9 @@ namespace _project.Scripts
             _startedEnding?.Invoke();
             _fadeBlackSprite.gameObject.SetActive(true);
             yield return new WaitForSeconds(_timeBeforeFadeBlack);
-            for (int i = 0; i < _animationDuration/0.1f; i++)
+            for (int i = 0; i < _fadeToBlackDuration/0.1f; i++)
             {
-                opacity += 0.1f/_animationDuration;
+                opacity += 0.1f/_fadeToBlackDuration;
                 _fadeBlackSprite.color = new Color(_fadeBlackSprite.color.r, _fadeBlackSprite.color.g, _fadeBlackSprite.color.b, opacity);
                 yield return new WaitForSeconds(0.1f);
             }

@@ -21,13 +21,13 @@ namespace _project.Scripts
         {
             if (SceneManager.Instance != null)
             {
-                SceneManager.Instance.MoveTo(sceneElement);
+                SceneManager.Instance.MoveTo(sceneElement, transform.position);
             }
         }
 
-        public void ChangeActivationState(GameObject gameObject)
+        public void ChangeActivationState(GameObject gameObjectRef)
         {
-            gameObject.SetActive(!gameObject.activeSelf);
+            gameObjectRef.SetActive(!gameObjectRef.activeSelf);
         }
     }
 }
