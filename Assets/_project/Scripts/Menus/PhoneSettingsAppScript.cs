@@ -76,6 +76,11 @@ namespace _project.Scripts.Menus
         }
         
         public void Quit() { Application.Quit(); }
+
+        public void MainMenu()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        }
         
         public string GetTextFor(Loc loc, List<TranslatedData> translations)
         {
