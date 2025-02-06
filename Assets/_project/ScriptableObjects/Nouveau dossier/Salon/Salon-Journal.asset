@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: Hey, pretty good article for getting your boots kissed.
-    _audioClip: {fileID: 8300000, guid: b55bbbece3181d64fbfac2e212a314fb, type: 3}
+    _audioClip: {fileID: 8300000, guid: ac37f6514db73b144a85887b6339ba57, type: 3}
   - _loc: 0
     _content: "Heh, pas mal comme article pour se faire l\xE9cher les bottes."
     _audioClip: {fileID: 8300000, guid: b55bbbece3181d64fbfac2e212a314fb, type: 3}

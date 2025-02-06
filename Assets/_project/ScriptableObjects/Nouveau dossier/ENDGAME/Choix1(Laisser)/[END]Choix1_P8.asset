@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: "I was very lucky to land on a detective this\u2026 efficient."
-    _audioClip: {fileID: 8300000, guid: d1d5b25310d6d49479e0fa5fa36af5b5, type: 3}
+    _audioClip: {fileID: 8300000, guid: 96fbc64ab5b7e59428910035e145fc2b, type: 3}
   - _loc: 0
     _content: "J'ai eu beaucoup de chance de tomber sur un d\xE9tective aussi\u2026
       Efficace."
