@@ -194,16 +194,16 @@ MonoBehaviour:
         m_guid: 66a0c700-4460-4307-babc-c5bdf03f9d4e
         m_position:
           serializedVersion: 2
-          x: -280
-          y: 445.6
-          width: 307.2
+          x: -289.59998
+          y: 426.4
+          width: 270.4
           height: 97.600006
         m_isPure: 0
         typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         m_ports: []
         m_pureExecutionDone: 1
-        Source: 
+        Source: aa280b41-d78d-41c2-81eb-d9f7cb5020f7
     - rid: 78795509339258969
       type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
       data:
@@ -278,9 +278,14 @@ MonoBehaviour:
           _ownerId: eed5ecc0-6d89-494f-b7b2-a06a973d4260
           _portIndex: 3
           _portDirection: 1
+        - _exposedPropertyName: playNotifSound
+          _ownerId: eed5ecc0-6d89-494f-b7b2-a06a973d4260
+          _portIndex: 4
+          _portDirection: 1
         m_pureExecutionDone: 1
         conversationId: kidnapper
         MessageToSend: {fileID: 11400000, guid: c22eb17162b56b94b9db5b176713dc34, type: 2}
+        playNotifSound: 1
     - rid: 78795522988048517
       type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
       data:
@@ -303,9 +308,14 @@ MonoBehaviour:
           _ownerId: 16e35403-d0a9-44bd-baf6-915fb0de0c32
           _portIndex: 3
           _portDirection: 1
+        - _exposedPropertyName: playNotifSound
+          _ownerId: 16e35403-d0a9-44bd-baf6-915fb0de0c32
+          _portIndex: 4
+          _portDirection: 1
         m_pureExecutionDone: 1
         conversationId: kidnapper
         MessageToSend: {fileID: 11400000, guid: 5e2fabc8187ad174aa2e0f2a9c59a632, type: 2}
+        playNotifSound: 1
     - rid: 78795522988048519
       type: {class: SendMessageNode, ns: _project.Scripts.MessagingSystem, asm: Assembly-CSharp}
       data:
@@ -328,9 +338,14 @@ MonoBehaviour:
           _ownerId: 7767f480-24f8-46e4-bd0a-ee31f150ad62
           _portIndex: 3
           _portDirection: 1
+        - _exposedPropertyName: playNotifSound
+          _ownerId: 7767f480-24f8-46e4-bd0a-ee31f150ad62
+          _portIndex: 4
+          _portDirection: 1
         m_pureExecutionDone: 1
         conversationId: kidnapper
         MessageToSend: {fileID: 11400000, guid: faa466a1408f71b44833a8407742cc46, type: 2}
+        playNotifSound: 1
     - rid: 78795545066602606
       type: {class: DebugLogNode, ns: NodeSystem.Runtime.NodesLibrary, asm: NodeSystem}
       data:
