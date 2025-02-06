@@ -17,6 +17,7 @@ namespace _project.Scripts.UI_Script
         [SerializeField] private Vector2 _normalSceneSize = new Vector2(10,10);
 
         private GameObject[] _sceneCircles;
+        private SceneCircleScript[] _sceneCircleScripts;
 
         private void Start()
         {
@@ -28,10 +29,14 @@ namespace _project.Scripts.UI_Script
         public void SetupUI(List<RoomScene> roomScenes)
         {
             _sceneCircles = new GameObject[roomScenes.Count];
+            _sceneCircleScripts = new SceneCircleScript[roomScenes.Count];
             for (int i = 0; i < roomScenes.Count; i++)
             {
-                _sceneCircles[i] = Instantiate(_sceneCircle, transform);
-                _sceneCircles[i].GetComponent<Image>().sprite = _lockAmountSprites[roomScenes[i].LockAmount];
+                // _sceneCircles[i] = Instantiate(_sceneCircle, transform);
+                _sceneCircleScripts[i] = Instantiate(_sceneCircle, transform).GetComponent<SceneCircleScript>();
+                _sceneCircleScripts[i].Init(_activeSceneSize, _normalSceneSize);
+                // _sceneCircles[i].GetComponent<Image>().sprite = _lockAmountSprites[roomScenes[i].LockAmount];
+                _sceneCircleScripts[i].SetSprite(_lockAmountSprites[roomScenes[i].LockAmount]);
             }
         }
 
@@ -39,14 +44,16 @@ namespace _project.Scripts.UI_Script
         {
             for (int i = 0; i < _sceneCircles.Length; i++)
             {
-                _sceneCircles[i].GetComponent<RectTransform>().sizeDelta = i==currentRoomIndex? _activeSceneSize : _normalSceneSize;
-                _sceneCircles[i].GetComponent<Image>().color = new Color(1f, 1f, 1f, currentRoomIndex == i ? 1f : 0.44f);
+                _sceneCircleScripts[i].SetState(i==currentRoomIndex);
+                // _sceneCircles[i].GetComponent<RectTransform>().sizeDelta = i==currentRoomIndex? _activeSceneSize : _normalSceneSize;
+                // _sceneCircles[i].GetComponent<Image>().color = new Color(1f, 1f, 1f, currentRoomIndex == i ? 1f : 0.44f);
             }
         }
 
         public void ChangeLockAmountOfRoom(int lockAmount, int roomIndex)
         {
-            _sceneCircles[roomIndex].GetComponent<Image>().sprite = _lockAmountSprites[lockAmount];
+            _sceneCircleScripts[roomIndex].SetSprite(_lockAmountSprites[lockAmount]);
+            // _sceneCircles[roomIndex].GetComponent<Image>().sprite = _lockAmountSprites[lockAmount];
         }
 
         public void UpdateChangedSceneElement(SceneElement sceneElement)
