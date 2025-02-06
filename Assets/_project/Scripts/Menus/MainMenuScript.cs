@@ -10,7 +10,6 @@ namespace _project.Scripts.Menus
         [SerializeField] private Button _quitButton;
         [SerializeField] private TranslatedButtonScript _playButtonScript;
         [SerializeField] private TranslatedButtonScript _settingsButtonScript;
-        [SerializeField] private TranslatedButtonScript _quitButtonScript;
         [SerializeField] private TranslatedButtonScript _creditsButtonScript;
         
         [SerializeField] private GameObject _settingsPanel;
@@ -23,7 +22,7 @@ namespace _project.Scripts.Menus
             // _settingsButton.onClick.AddListener(SettingsButtonClicked);
             _settingsButtonScript.AddOnClick(SettingsButtonClicked);
             // _quitButton.onClick.AddListener(QuitButtonClicked);
-            _quitButtonScript.AddOnClick(QuitButtonClicked);
+            //_quitButtonScript.AddOnClick(QuitButtonClicked);
             _creditsButtonScript.AddOnClick(CreditsButtonClicked);
         }
 
