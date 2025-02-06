@@ -29,8 +29,9 @@ namespace _project.Scripts.Nodes
             AudioManager.PlayDialog(translatedDialogData.audioClip);
             
             info.NodeSystemExecutioner.GetObject().StartCoroutine(Wait(info, translatedDialogData.GetClipDuration()));
-            
-            return new ProcessInfo(id, GetNextNodeId(info.GraphInstance), ProcessInfo.ExecutionFlowType.Wait);
+
+            string nextNodeId = GetNextNodeId(info.GraphInstance);
+            return new ProcessInfo(id, nextNodeId, nextNodeId == "" ? ProcessInfo.ExecutionFlowType.EndExecution : ProcessInfo.ExecutionFlowType.Wait);
         }
 
         public override IEnumerator Wait(ExecInfo info, float duration)
