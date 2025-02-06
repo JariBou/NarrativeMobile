@@ -17,5 +17,5 @@ MonoBehaviour:
   _names:
   - _loc: 0
     _content: "Num\xE9ro masqu\xE9"
-  - _loc: 0
+  - _loc: 1
     _content: Hidden number

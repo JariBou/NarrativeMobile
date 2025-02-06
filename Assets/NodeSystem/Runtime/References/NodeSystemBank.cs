@@ -10,6 +10,11 @@ namespace NodeSystem.Runtime.References
         
         private void Awake()
         {
+            if (_instance != null)
+            {
+                Destroy(this);
+                return;
+            }
             _instance = this;
             DontDestroyOnLoad(gameObject);
             _bank.Initialize();

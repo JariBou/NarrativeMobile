@@ -124,7 +124,7 @@ namespace _project.Scripts.MessagingSystem
         public void OnPhonePullUp()
         {
             _hasNotification = false;
-            if (_conversationDictionnary.ContainsKey(_selectedConv)) _conversationDictionnary[_selectedConv].RefreshSizes();
+            if (_selectedConv != null && _conversationDictionnary.ContainsKey(_selectedConv)) _conversationDictionnary[_selectedConv].RefreshSizes();
             
         }
 

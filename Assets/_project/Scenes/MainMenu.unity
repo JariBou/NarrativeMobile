@@ -2889,7 +2889,7 @@ MonoBehaviour:
   _translations:
   - _loc: 0
     _content: "Param\xE8tres"
-  - _loc: 0
+  - _loc: 1
     _content: Settings
 --- !u!1 &1195152073
 GameObject:
@@ -4241,7 +4241,7 @@ MonoBehaviour:
   _translations:
   - _loc: 0
     _content: Quitter
-  - _loc: 0
+  - _loc: 1
     _content: Quit
 --- !u!1 &1926887595
 GameObject:
@@ -4974,7 +4974,7 @@ MonoBehaviour:
   _translations:
   - _loc: 0
     _content: Jouer
-  - _loc: 0
+  - _loc: 1
     _content: Play
 --- !u!1 &2019802800
 GameObject:
