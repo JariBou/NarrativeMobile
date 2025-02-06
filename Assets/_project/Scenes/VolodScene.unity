@@ -1740,7 +1740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165c3953eef844247a9d83d1c45aa7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_referenceDataBanks: []
+  m_referenceDataBanks:
+  - {fileID: 1142680837}
 --- !u!4 &147103244
 Transform:
   m_ObjectHideFlags: 0
@@ -3613,18 +3614,6 @@ MonoBehaviour:
   _onPaintingFall:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 323659282}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1884623042}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -3661,7 +3650,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 957974382}
+      - m_Target: {fileID: 1953961593}
         m_TargetAssemblyTypeName: NodeSystem.Runtime.Executionners.NodeSystemTrigger,
           NodeSystem
         m_MethodName: Trigger
@@ -3673,6 +3662,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 323659282}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &329844100
 GameObject:
@@ -4012,8 +4013,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410594952}
-  m_LocalRotation: {x: 0.14161211, y: -0.20675853, z: 0.010337859, w: 0.96803415}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1203}
+  m_LocalRotation: {x: 0.13432644, y: -0.20100012, z: 0.041990984, w: 0.96942884}
+  m_LocalPosition: {x: 0, y: 0, z: -0.089999855}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4021,8 +4022,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 16.167, y: -24.44, z: -2.3}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.3532, y: -2.8744}
-  m_SizeDelta: {x: 7.7854, y: 7.1376}
+  m_AnchoredPosition: {x: 3.4400005, y: -3.6400003}
+  m_SizeDelta: {x: 7.7854, y: 5.9911}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &410594954
 MonoBehaviour:
@@ -4044,13 +4045,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Une nouvelle \xE9toile montante de la t\xE9l\xE9vision</b>\n\nLe journaliste
-    Carl Morel remporte un nouveau prix de journalisme gr\xE2ce \xE0 son dernier
-    reportage sur la Mafia am\xE9ricaine. Ce jeune auteur brille sur la sc\xE8ne
-    t\xE9l\xE9vis\xE9e depuis maintenant quelque temps, et ne semble pas vouloir
-    arr\xEAter son assencion. Le monde du journalisme accueille une nouvelle g\xE9n\xE9ration
-    qui semble savoir quelle direction prendre.\nBonne chance \xE0 Mr.Morel, et qu\u2019il
-    continue \xE0 faire briller le journalisme moderne."
+  m_text: "Le journaliste Carl Morel remporte un nouveau prix de journalisme gr\xE2ce
+    \xE0 son dernier reportage sur la Mafia am\xE9ricaine. Ce jeune auteur brille
+    sur la sc\xE8ne t\xE9l\xE9vis\xE9e depuis maintenant quelque temps, et ne semble
+    pas vouloir arr\xEAter son assencion. Le monde du journalisme accueille une nouvelle
+    g\xE9n\xE9ration qui semble savoir quelle direction prendre.\nBonne chance \xE0
+    Mr.Morel, et qu\u2019il continue \xE0 faire briller le journalisme moderne."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4143,26 +4143,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _textContent:
   - _loc: 0
-    _content: "<b>Une nouvelle \xE9toile montante de la t\xE9l\xE9vision</b>\n\nLe
-      journaliste Carl Morel remporte un nouveau prix de journalisme gr\xE2ce \xE0
-      son dernier reportage sur la Mafia am\xE9ricaine. Ce jeune auteur brille sur
-      la sc\xE8ne t\xE9l\xE9vis\xE9e depuis maintenant quelque temps, et ne semble
-      pas vouloir arr\xEAter son assencion. Le monde du journalisme accueille une
-      nouvelle g\xE9n\xE9ration qui semble savoir quelle direction prendre.\nBonne
-      chance \xE0 Mr.Morel, et qu\u2019il continue \xE0 faire briller le journalisme
-      moderne."
+    _content: "Le journaliste Carl Morel remporte un nouveau prix de journalisme
+      gr\xE2ce \xE0 son dernier reportage sur la Mafia am\xE9ricaine. Ce jeune auteur
+      brille sur la sc\xE8ne t\xE9l\xE9vis\xE9e depuis maintenant quelque temps,
+      et ne semble pas vouloir arr\xEAter son assencion. Le monde du journalisme
+      accueille une nouvelle g\xE9n\xE9ration qui semble savoir quelle direction
+      prendre.\nBonne chance \xE0 Mr.Morel, et qu\u2019il continue \xE0 faire briller
+      le journalisme moderne."
   - _loc: 1
-    _content: '<b>A Rising Star of Television</b>
+    _content: 'Journalist Carl Morel has won another journalism award for his latest
+      report on the American Mafia. This young writer has been shining on the television
+      scene for some time now and shows no signs of slowing down his ascent. The
+      world of journalism is welcoming a new generation that seems to know exactly
+      which direction to take.
 
-
-      Journalist Carl Morel has
-      won another journalism award for his latest report on the American Mafia. This
-      young writer has been shining on the television scene for some time now and
-      shows no signs of slowing down his ascent. The world of journalism is welcoming
-      a new generation that seems to know exactly which direction to take.
-
-      Good
-      luck to Mr. Morel, and may he continue to make modern journalism shine.'
+      Good luck to Mr. Morel, and may he continue
+      to make modern journalism shine.'
   _textOverride: {fileID: 0}
 --- !u!1 &415405044
 GameObject:
@@ -5287,6 +5283,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 410594953}
+  - {fileID: 1785671931}
   - {fileID: 770338205}
   - {fileID: 1397866878}
   m_Father: {fileID: 137261604}
@@ -7312,11 +7309,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6797338486302901652, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
   m_PrefabInstance: {fileID: 656407829}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &656407841 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8882225609079192432, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
-  m_PrefabInstance: {fileID: 656407829}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &656407842 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3531254889564154271, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
@@ -8431,8 +8423,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770338204}
-  m_LocalRotation: {x: 0.14161213, y: -0.20675851, z: 0.010337744, w: 0.9680341}
-  m_LocalPosition: {x: 0, y: 0, z: -0.4989}
+  m_LocalRotation: {x: 0.14161214, y: -0.20675853, z: 0.010337745, w: 0.96803415}
+  m_LocalPosition: {x: 0, y: 0, z: -0.6999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8440,7 +8432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.015}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.6036, y: 3.2269}
+  m_AnchoredPosition: {x: -2.07, y: 3.249999}
   m_SizeDelta: {x: 8.8659, y: 3.5182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770338206
@@ -9730,7 +9722,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 957974381}
-  - component: {fileID: 957974382}
   - component: {fileID: 957974383}
   m_Layer: 0
   m_Name: CreepyPhoto
@@ -9754,21 +9745,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1097582242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &957974382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957974380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96bb0786cdd6456fa900cb96ca69677e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameObjectToTrigger: {fileID: 957974380}
-  _graph: {fileID: 11400000, guid: 3619607107d887646a72d75be0b653c3, type: 2}
-  _canBeExecutedMultipleTimes: 0
 --- !u!212 &957974383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10524,6 +10500,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 957974381}
+    - targetCorrespondingSourceObject: {fileID: 4592764180521482119, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1953961592}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
 --- !u!4 &1097582242 stripped
@@ -11721,8 +11700,6 @@ MonoBehaviour:
     m_guid: f5532957-88c4-4afb-ac3f-4f2aac433298
   - m_go: {fileID: 656407842}
     m_guid: 2f67f3c5-5b88-44df-bb46-ab2427d2422e
-  - m_go: {fileID: 656407841}
-    m_guid: 443f6715-d67d-489f-8e98-83c3b6365825
   - m_go: {fileID: 656407840}
     m_guid: 7bb5a96f-5b88-4018-8fbd-c9b93b104637
   - m_go: {fileID: 656407839}
@@ -11751,6 +11728,18 @@ MonoBehaviour:
     m_guid: df1ca9e6-cbb4-432b-87bc-2abe372f559d
   - m_go: {fileID: 1342338470}
     m_guid: 0b4b07a1-7551-4402-844b-02c09a6a96ca
+  - m_go: {fileID: 1309806180}
+    m_guid: f2d3dcf9-c269-4f88-8317-5baf623b22cb
+  - m_go: {fileID: 1953961591}
+    m_guid: aa280b41-d78d-41c2-81eb-d9f7cb5020f7
+  - m_go: {fileID: 1434360613}
+    m_guid: ae080e7d-49f7-4208-bf72-76e59741cba1
+  - m_go: {fileID: 1142680836}
+    m_guid: 64a0673c-f5a4-4fc9-a6fb-ff5381f31a05
+  - m_go: {fileID: 1943925042}
+    m_guid: ce2c599d-9615-431c-87e8-15f159dcc4ec
+  - m_go: {fileID: 1784064963}
+    m_guid: 09b1761a-7b88-4bc4-bbfd-c84568365cda
 --- !u!4 &1142680838
 Transform:
   m_ObjectHideFlags: 0
@@ -13236,8 +13225,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397866877}
-  m_LocalRotation: {x: 0.14161213, y: -0.20675851, z: 0.010337744, w: 0.9680341}
-  m_LocalPosition: {x: 0, y: 0, z: -0.04}
+  m_LocalRotation: {x: 0.14426136, y: -0.20491883, z: -0.0021216758, w: 0.9680871}
+  m_LocalPosition: {x: 0, y: 0, z: -0.039999597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14840,6 +14829,161 @@ MonoBehaviour:
   - {x: -0.78043365, y: -0.47418213, z: 0}
   - {x: -1.0720596, y: 2.3929596, z: 0}
   - {x: -3.939499, y: 2.3844147, z: 0}
+--- !u!1 &1785671930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785671931}
+  - component: {fileID: 1785671934}
+  - component: {fileID: 1785671933}
+  - component: {fileID: 1785671932}
+  m_Layer: 5
+  m_Name: ArticleCarl (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1785671931
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785671930}
+  m_LocalRotation: {x: 0.13622637, y: -0.19971731, z: 0.032796506, w: 0.96978337}
+  m_LocalPosition: {x: 0, y: 0, z: 0.76489955}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487334888}
+  m_LocalEulerAnglesHint: {x: 16.167, y: -24.44, z: -2.3}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.7825, y: -0.008801545}
+  m_SizeDelta: {x: 7.7854, y: 0.7694}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1785671932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785671930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9366127076758c4d9758f83d75a66b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textContent:
+  - _loc: 0
+    _content: "<b>Une nouvelle \xE9toile montante de la t\xE9l\xE9vision</b>"
+  - _loc: 1
+    _content: <b>A Rising Star of Television</b>
+  _textOverride: {fileID: 0}
+--- !u!114 &1785671933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785671930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "<b>Une nouvelle \xE9toile montante de la t\xE9l\xE9vision</b>"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.4
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.2
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -0.176898, y: 0, z: 0, w: -0.24235272}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1785671934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785671930}
+  m_CullTransparentMesh: 1
 --- !u!1 &1791937855
 GameObject:
   m_ObjectHideFlags: 0
@@ -15650,6 +15794,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb4594734ddc8f46abd8fc72a39868b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1943925042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2608760723904440624, guid: 5e7dba037b370224da5c1330278f8f27, type: 3}
+  m_PrefabInstance: {fileID: 468764584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1953961591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1953961592}
+  - component: {fileID: 1953961593}
+  m_Layer: 0
+  m_Name: VoicelineTriggererForCreepyPhotosDUmb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1953961592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953961591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097582242}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1953961593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953961591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bb0786cdd6456fa900cb96ca69677e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjectToTrigger: {fileID: 1953961591}
+  _graph: {fileID: 11400000, guid: 3619607107d887646a72d75be0b653c3, type: 2}
+  _canBeExecutedMultipleTimes: 0
 --- !u!1 &1961318436
 GameObject:
   m_ObjectHideFlags: 0
