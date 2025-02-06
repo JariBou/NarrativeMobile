@@ -14727,7 +14727,7 @@ MonoBehaviour:
   _goBackButton: {fileID: 546587864}
   _phoneButton: {fileID: 275032482}
   _activeSceneSize: {x: 60, y: 60}
-  _normalSceneSize: {x: 50, y: 50}
+  _normalSceneSize: {x: 40, y: 40}
 --- !u!1 &1684142124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3361949745667732712, guid: 82976b209588b7b499db7971f6649168, type: 3}
