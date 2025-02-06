@@ -89,17 +89,5 @@ namespace NodeSystem.Runtime.Executionners
         {
             graphInstance.ModifyExposedVariable(propertyName, newValue);
         }
-        
-        #if UNITY_EDITOR
-
-        public void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                TickProcess();
-            }
-        }
-        
-        #endif
     }
 }

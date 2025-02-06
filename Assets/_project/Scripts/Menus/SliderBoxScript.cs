@@ -18,19 +18,18 @@ namespace _project.Scripts.Menus
         {
             SetValue(value);
             GameSettings.OnLocChanged += OnGameSettingsLocChanged;
+            _text.text = GetContentFor(GameSettings.Instance.loc);
         }
 
         private void OnGameSettingsLocChanged(Loc loc)
         {
             _text.text = GetContentFor(loc);
         }
-
-
+        
         public void SetValue(float value)
         {
             _slider.value = value;
         }
-        
         
         public void AddListener(UnityAction<float> listener)
         {

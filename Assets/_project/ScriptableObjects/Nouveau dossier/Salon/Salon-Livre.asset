@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
+  m_Name: Salon-Livre
+  m_EditorClassIdentifier: 
+  _dialogName: salon_livre
+  _localisations:
+  - _loc: 1
+    _content: So he likes crime novels?
+    _audioClip: {fileID: 8300000, guid: 63159dd2972406b43b52a4fbcf2a9d87, type: 3}
+  - _loc: 0
+    _content: C'est donc un fan de romans policier ?
+    _audioClip: {fileID: 8300000, guid: 63159dd2972406b43b52a4fbcf2a9d87, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
+  m_Name: Salon Photos
+  m_EditorClassIdentifier: 
+  _dialogName: salon_photos
+  _localisations:
+  - _loc: 1
+    _content: Looks like Mr.Morel and Ms.Delacroix new each other since forever...
+      Why kidnap them?
+    _audioClip: {fileID: 8300000, guid: 46eac75bb3470ae4db51a4bed77c3404, type: 3}
+  - _loc: 0
+    _content: On dirait que Mr. Morel et Mme. Delacroix se connaissent depuis toujours...
+      Pourquoi vouloir les enlever ?
+    _audioClip: {fileID: 8300000, guid: 46eac75bb3470ae4db51a4bed77c3404, type: 3}

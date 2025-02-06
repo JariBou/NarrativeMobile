@@ -39,7 +39,7 @@ namespace _project.Scripts.Menus
 
         private void PlayButtonClicked()
         {
-            throw new NotImplementedException();
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         }
     }
 }

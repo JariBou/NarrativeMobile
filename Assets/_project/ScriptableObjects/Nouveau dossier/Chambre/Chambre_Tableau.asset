@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
+  m_Name: Chambre_Tableau
+  m_EditorClassIdentifier: 
+  _dialogName: chambre_tableau
+  _localisations:
+  - _loc: 1
+    _content: Dude's even got a self-portrait in his room? It looks stangely attached
+    _audioClip: {fileID: 8300000, guid: a82759a902a439c438e2eab4dcfb12f5, type: 3}
+  - _loc: 0
+    _content: "M\xEAme un portrait de lui dans la chambre ? Il a l'air attach\xE9
+      \xE9trangement."
+    _audioClip: {fileID: 8300000, guid: a82759a902a439c438e2eab4dcfb12f5, type: 3}

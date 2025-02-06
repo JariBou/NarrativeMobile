@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
+  m_Name: '[END]P4'
+  m_EditorClassIdentifier: 
+  _dialogName: chambre_photos
+  _localisations:
+  - _loc: 1
+    _content: Do you get it now? Enough with the little masquerade.
+    _audioClip: {fileID: 8300000, guid: 6655f56b2e57c0840a2821898f248f1b, type: 3}
+  - _loc: 0
+    _content: "Alors \xE7a y est, vous saisissez ? Fini la petite mascarade."
+    _audioClip: {fileID: 8300000, guid: 6655f56b2e57c0840a2821898f248f1b, type: 3}

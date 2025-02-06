@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a3f58f4e4807bed4881427053391, type: 3}
+  m_Name: '[END]CHoix1_P1'
+  m_EditorClassIdentifier: 
+  _dialogName: chambre_photos
+  _localisations:
+  - _loc: 1
+    _content: "Now here\u2019s a considered choice, detective. You know where your
+      interest is."
+    _audioClip: {fileID: 8300000, guid: c2a8709c529c6f846a6344238cd9f493, type: 3}
+  - _loc: 0
+    _content: "En voil\xE0 un choix r\xE9fl\xE9chi d\xE9tective. Vous savez o\xF9
+      est votre int\xE9r\xEAt."
+    _audioClip: {fileID: 8300000, guid: c2a8709c529c6f846a6344238cd9f493, type: 3}

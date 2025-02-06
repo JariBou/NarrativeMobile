@@ -1,0 +1,749 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2892175d8a24d80418dfbf7c18a1a156, type: 3}
+  m_Name: EndGraph
+  m_EditorClassIdentifier: 
+  _graphId: 609934ed-4aa2-4521-aee3-809be446d579
+  m_nodes:
+  - rid: 78795522988048539
+  - rid: 78795522988048540
+  - rid: 78795522988048542
+  - rid: 78795522988048543
+  - rid: 78795522988048550
+  - rid: 78795522988048551
+  - rid: 78795522988048553
+  - rid: 78795522988048554
+  - rid: 78795522988048555
+  - rid: 78795522988048556
+  - rid: 78795522988048557
+  - rid: 78795522988048558
+  - rid: 78795522988048559
+  - rid: 78795522988048560
+  - rid: 78795522988048561
+  - rid: 78795522988048562
+  - rid: 78795522988048563
+  - rid: 78795522988048564
+  - rid: 78795522988048565
+  - rid: 78795522988048566
+  - rid: 78795522988048567
+  - rid: 78795522988048568
+  - rid: 78795522988048569
+  - rid: 78795522988048570
+  - rid: 78795522988048571
+  - rid: 78795522988048572
+  - rid: 78795522988048573
+  - rid: 78795522988048574
+  m_connections:
+  - inputPort:
+      nodeId: 1c7d1a86-d228-47e7-8ee2-e101f19f8ba5
+      portIndex: 1
+    outputPort:
+      nodeId: 03997974-6487-461f-a17c-7f3364d0ec02
+      portIndex: 0
+  - inputPort:
+      nodeId: 2fc38214-a461-4c2d-a449-e9a9c7a71175
+      portIndex: 1
+    outputPort:
+      nodeId: 1c7d1a86-d228-47e7-8ee2-e101f19f8ba5
+      portIndex: 0
+  - inputPort:
+      nodeId: 05d254da-8bf3-47a7-ad61-6d30b3303565
+      portIndex: 1
+    outputPort:
+      nodeId: 2fc38214-a461-4c2d-a449-e9a9c7a71175
+      portIndex: 0
+  - inputPort:
+      nodeId: 946f4256-4cd7-4400-85ce-f674bec52cba
+      portIndex: 1
+    outputPort:
+      nodeId: 05d254da-8bf3-47a7-ad61-6d30b3303565
+      portIndex: 0
+  - inputPort:
+      nodeId: 40a293a6-ec13-4dd8-a1b7-34edba584750
+      portIndex: 1
+    outputPort:
+      nodeId: 946f4256-4cd7-4400-85ce-f674bec52cba
+      portIndex: 0
+  - inputPort:
+      nodeId: ebcaee2d-b3ab-4ead-9846-a7b28150a04a
+      portIndex: 1
+    outputPort:
+      nodeId: 40a293a6-ec13-4dd8-a1b7-34edba584750
+      portIndex: 0
+  - inputPort:
+      nodeId: c24bd743-1e3b-4792-ba3d-7114f7b0e7e2
+      portIndex: 1
+    outputPort:
+      nodeId: ebcaee2d-b3ab-4ead-9846-a7b28150a04a
+      portIndex: 0
+  - inputPort:
+      nodeId: 3ce0b44c-b045-4d6a-a80a-056d313481d9
+      portIndex: 1
+    outputPort:
+      nodeId: c24bd743-1e3b-4792-ba3d-7114f7b0e7e2
+      portIndex: 0
+  - inputPort:
+      nodeId: f2bde35a-d3e1-4800-abfd-d2790639d18a
+      portIndex: 1
+    outputPort:
+      nodeId: 3ce0b44c-b045-4d6a-a80a-056d313481d9
+      portIndex: 0
+  - inputPort:
+      nodeId: f104ac51-9bb6-4f38-a4e4-e63c81cb1f36
+      portIndex: 1
+    outputPort:
+      nodeId: 81ed01b9-b5bc-4543-b7bf-ed995ab09577
+      portIndex: 0
+  - inputPort:
+      nodeId: 9763b2a1-6be2-4f61-b604-09ba8f2fb500
+      portIndex: 1
+    outputPort:
+      nodeId: f104ac51-9bb6-4f38-a4e4-e63c81cb1f36
+      portIndex: 0
+  - inputPort:
+      nodeId: b8999765-d377-4ac5-94e3-2c3c77afce70
+      portIndex: 1
+    outputPort:
+      nodeId: 9763b2a1-6be2-4f61-b604-09ba8f2fb500
+      portIndex: 0
+  - inputPort:
+      nodeId: 0be8dbe6-a112-410c-9228-b45334650f5a
+      portIndex: 1
+    outputPort:
+      nodeId: b8999765-d377-4ac5-94e3-2c3c77afce70
+      portIndex: 0
+  - inputPort:
+      nodeId: af5e7951-b206-4e15-a852-6c0f255024cf
+      portIndex: 1
+    outputPort:
+      nodeId: 0be8dbe6-a112-410c-9228-b45334650f5a
+      portIndex: 0
+  - inputPort:
+      nodeId: 29dcbd40-cb29-4536-b8b9-2b70ed91c934
+      portIndex: 1
+    outputPort:
+      nodeId: 6c7ec849-b7e8-465b-a2e9-8d8492949581
+      portIndex: 0
+  - inputPort:
+      nodeId: ccdad1ab-63f3-4a63-9f28-3671daed98b0
+      portIndex: 1
+    outputPort:
+      nodeId: 29dcbd40-cb29-4536-b8b9-2b70ed91c934
+      portIndex: 0
+  - inputPort:
+      nodeId: dc502a0c-f907-4c71-a4af-4a9131543607
+      portIndex: 1
+    outputPort:
+      nodeId: ccdad1ab-63f3-4a63-9f28-3671daed98b0
+      portIndex: 0
+  - inputPort:
+      nodeId: f3cb760b-c9b3-4d6b-8f8d-b981e923712f
+      portIndex: 1
+    outputPort:
+      nodeId: dc502a0c-f907-4c71-a4af-4a9131543607
+      portIndex: 0
+  - inputPort:
+      nodeId: 96fb3d78-c511-4e68-b760-43b3fed6bd80
+      portIndex: 1
+    outputPort:
+      nodeId: f3cb760b-c9b3-4d6b-8f8d-b981e923712f
+      portIndex: 0
+  - inputPort:
+      nodeId: 9ca6d26b-a6af-4107-821e-7f9d833ad386
+      portIndex: 1
+    outputPort:
+      nodeId: 96fb3d78-c511-4e68-b760-43b3fed6bd80
+      portIndex: 0
+  - inputPort:
+      nodeId: 7c414e05-d3c7-4bea-8bd4-3915ac18d3a0
+      portIndex: 1
+    outputPort:
+      nodeId: 9ca6d26b-a6af-4107-821e-7f9d833ad386
+      portIndex: 0
+  - inputPort:
+      nodeId: 33c9e690-836b-45f2-81f5-64d5a4f15e17
+      portIndex: 1
+    outputPort:
+      nodeId: 7c414e05-d3c7-4bea-8bd4-3915ac18d3a0
+      portIndex: 0
+  - inputPort:
+      nodeId: 1637f555-0388-4692-ac6d-ff779f2bf4be
+      portIndex: 1
+    outputPort:
+      nodeId: 33c9e690-836b-45f2-81f5-64d5a4f15e17
+      portIndex: 0
+  - inputPort:
+      nodeId: 6c7ec849-b7e8-465b-a2e9-8d8492949581
+      portIndex: 1
+    outputPort:
+      nodeId: e56f2a01-2cf8-4ed2-aedf-fe8fd1ee9cf3
+      portIndex: 0
+  - inputPort:
+      nodeId: 81ed01b9-b5bc-4543-b7bf-ed995ab09577
+      portIndex: 1
+    outputPort:
+      nodeId: e7baedb5-2e65-4dbc-bfac-b5d7e0caeee7
+      portIndex: 0
+  m_exposedProperties: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 78795522988048539
+      type: {class: StartNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 03997974-6487-461f-a17c-7f3364d0ec02
+        m_position:
+          serializedVersion: 2
+          x: -206.40001
+          y: -168
+          width: 75.20001
+          height: 76.8
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.StartNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+    - rid: 78795522988048540
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: f2bde35a-d3e1-4800-abfd-d2790639d18a
+        m_position:
+          serializedVersion: 2
+          x: 3124.8
+          y: -168
+          width: 235.19995
+          height: 121.6
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: f2bde35a-d3e1-4800-abfd-d2790639d18a
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: 3a58df69-3fa5-4031-b960-0481c693b507
+        state: 1
+    - rid: 78795522988048542
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: e7baedb5-2e65-4dbc-bfac-b5d7e0caeee7
+        m_position:
+          serializedVersion: 2
+          x: 119.2
+          y: 371.2
+          width: 195.20001
+          height: 97.599976
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 909c6d10-aca0-45a8-a61b-2f1441433bed
+    - rid: 78795522988048543
+      type: {class: GameObjectSourceNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: e56f2a01-2cf8-4ed2-aedf-fe8fd1ee9cf3
+        m_position:
+          serializedVersion: 2
+          x: 136
+          y: 126.399994
+          width: 195.2
+          height: 97.600006
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.GameObjectSourceNode, NodeSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_ports: []
+        m_pureExecutionDone: 1
+        Source: 0c12ee9b-31ae-4eff-bd43-445685f5a8b4
+    - rid: 78795522988048550
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 6c7ec849-b7e8-465b-a2e9-8d8492949581
+        m_position:
+          serializedVersion: 2
+          x: 388
+          y: 126.399994
+          width: 235.20001
+          height: 121.600006
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 6c7ec849-b7e8-465b-a2e9-8d8492949581
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: 3a58df69-3fa5-4031-b960-0481c693b507
+        state: 0
+    - rid: 78795522988048551
+      type: {class: SetActiveNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 81ed01b9-b5bc-4543-b7bf-ed995ab09577
+        m_position:
+          serializedVersion: 2
+          x: 351.2
+          y: 371.2
+          width: 235.20001
+          height: 121.599976
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.SetActiveNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: state
+          _ownerId: 81ed01b9-b5bc-4543-b7bf-ed995ab09577
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        Source: 3a58df69-3fa5-4031-b960-0481c693b507
+        state: 0
+    - rid: 78795522988048553
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 1c7d1a86-d228-47e7-8ee2-e101f19f8ba5
+        m_position:
+          serializedVersion: 2
+          x: -91.200005
+          y: -168
+          width: 368.8
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 1c7d1a86-d228-47e7-8ee2-e101f19f8ba5
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 33cdfe5955c03b24babf76aeef3a1f21, type: 2}
+    - rid: 78795522988048554
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 2fc38214-a461-4c2d-a449-e9a9c7a71175
+        m_position:
+          serializedVersion: 2
+          x: 301.6
+          y: -168
+          width: 342.4
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 2fc38214-a461-4c2d-a449-e9a9c7a71175
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 46f2a7d5993609f48a33b8547211ab11, type: 2}
+    - rid: 78795522988048555
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 05d254da-8bf3-47a7-ad61-6d30b3303565
+        m_position:
+          serializedVersion: 2
+          x: 697.60004
+          y: -168
+          width: 412.79993
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 05d254da-8bf3-47a7-ad61-6d30b3303565
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: f550dadffe1a11048a376a5b804897f4, type: 2}
+    - rid: 78795522988048556
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 946f4256-4cd7-4400-85ce-f674bec52cba
+        m_position:
+          serializedVersion: 2
+          x: 1135.2
+          y: -168
+          width: 342.40002
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 946f4256-4cd7-4400-85ce-f674bec52cba
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 6da51cf839213ed448e3bfa81f4e8ede, type: 2}
+    - rid: 78795522988048557
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 40a293a6-ec13-4dd8-a1b7-34edba584750
+        m_position:
+          serializedVersion: 2
+          x: 1532.7999
+          y: -168
+          width: 342.40002
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 40a293a6-ec13-4dd8-a1b7-34edba584750
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 5ce1f1c85e02b0041b5cfc99132f20b6, type: 2}
+    - rid: 78795522988048558
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: ebcaee2d-b3ab-4ead-9846-a7b28150a04a
+        m_position:
+          serializedVersion: 2
+          x: 1929.6
+          y: -168
+          width: 342.40002
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: ebcaee2d-b3ab-4ead-9846-a7b28150a04a
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: b1352e39e68310945b89197f78bda1f3, type: 2}
+    - rid: 78795522988048559
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: c24bd743-1e3b-4792-ba3d-7114f7b0e7e2
+        m_position:
+          serializedVersion: 2
+          x: 2324
+          y: -168
+          width: 342.3999
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: c24bd743-1e3b-4792-ba3d-7114f7b0e7e2
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 054ab999d28fedb4ab7a6c4cfaed579f, type: 2}
+    - rid: 78795522988048560
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 3ce0b44c-b045-4d6a-a80a-056d313481d9
+        m_position:
+          serializedVersion: 2
+          x: 2721.5999
+          y: -168
+          width: 342.40015
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 3ce0b44c-b045-4d6a-a80a-056d313481d9
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 2c1974c4091fe6842bb85519d4cc8625, type: 2}
+    - rid: 78795522988048561
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: f104ac51-9bb6-4f38-a4e4-e63c81cb1f36
+        m_position:
+          serializedVersion: 2
+          x: 623.2
+          y: 371.2
+          width: 342.40002
+          height: 100.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: f104ac51-9bb6-4f38-a4e4-e63c81cb1f36
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: df8b751f36e104e4c94b9ef281b06bcd, type: 2}
+    - rid: 78795522988048562
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 9763b2a1-6be2-4f61-b604-09ba8f2fb500
+        m_position:
+          serializedVersion: 2
+          x: 1080
+          y: 371.2
+          width: 342.3999
+          height: 100.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 9763b2a1-6be2-4f61-b604-09ba8f2fb500
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: d6d828c513a8e574e905ea02f2d0612f, type: 2}
+    - rid: 78795522988048563
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: b8999765-d377-4ac5-94e3-2c3c77afce70
+        m_position:
+          serializedVersion: 2
+          x: 1516.7999
+          y: 371.2
+          width: 342.40002
+          height: 100.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: b8999765-d377-4ac5-94e3-2c3c77afce70
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 69f150f84722d5640b490e6b84d7de89, type: 2}
+    - rid: 78795522988048564
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 0be8dbe6-a112-410c-9228-b45334650f5a
+        m_position:
+          serializedVersion: 2
+          x: 1957.6
+          y: 371.2
+          width: 342.40002
+          height: 100.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 0be8dbe6-a112-410c-9228-b45334650f5a
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: b1d471b3c0ea63449b5347f1f0162ddf, type: 2}
+    - rid: 78795522988048565
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: af5e7951-b206-4e15-a852-6c0f255024cf
+        m_position:
+          serializedVersion: 2
+          x: 2417.5999
+          y: 371.2
+          width: 342.40015
+          height: 100.79999
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: af5e7951-b206-4e15-a852-6c0f255024cf
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: e15624ab0bb50534088998d8238b458e, type: 2}
+    - rid: 78795522988048566
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 29dcbd40-cb29-4536-b8b9-2b70ed91c934
+        m_position:
+          serializedVersion: 2
+          x: 657.60004
+          y: 126.399994
+          width: 342.39996
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 29dcbd40-cb29-4536-b8b9-2b70ed91c934
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 2f859a2bce346fe419f16894c9e351d7, type: 2}
+    - rid: 78795522988048567
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: ccdad1ab-63f3-4a63-9f28-3671daed98b0
+        m_position:
+          serializedVersion: 2
+          x: 1104.7999
+          y: 126.399994
+          width: 342.40002
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: ccdad1ab-63f3-4a63-9f28-3671daed98b0
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: c1514e99f811b964bbdd3adc10287284, type: 2}
+    - rid: 78795522988048568
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: dc502a0c-f907-4c71-a4af-4a9131543607
+        m_position:
+          serializedVersion: 2
+          x: 1543.2
+          y: 126.399994
+          width: 342.40002
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: dc502a0c-f907-4c71-a4af-4a9131543607
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: adf69e8d491a3a744aa954027e1ff8cf, type: 2}
+    - rid: 78795522988048569
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: f3cb760b-c9b3-4d6b-8f8d-b981e923712f
+        m_position:
+          serializedVersion: 2
+          x: 1984
+          y: 126.399994
+          width: 410.3999
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: f3cb760b-c9b3-4d6b-8f8d-b981e923712f
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 7d4047b655dcb6244a8e0a95c1b837e7, type: 2}
+    - rid: 78795522988048570
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 96fb3d78-c511-4e68-b760-43b3fed6bd80
+        m_position:
+          serializedVersion: 2
+          x: 2417.5999
+          y: 126.399994
+          width: 342.40015
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 96fb3d78-c511-4e68-b760-43b3fed6bd80
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 3db78b7cbb7ce734d8f66227ebfeed1c, type: 2}
+    - rid: 78795522988048571
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 9ca6d26b-a6af-4107-821e-7f9d833ad386
+        m_position:
+          serializedVersion: 2
+          x: 2866.4
+          y: 126.399994
+          width: 410.40015
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 9ca6d26b-a6af-4107-821e-7f9d833ad386
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 486017f3b5664f34bb674052965b52dc, type: 2}
+    - rid: 78795522988048572
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 7c414e05-d3c7-4bea-8bd4-3915ac18d3a0
+        m_position:
+          serializedVersion: 2
+          x: 3298.4
+          y: 126.399994
+          width: 342.40015
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 7c414e05-d3c7-4bea-8bd4-3915ac18d3a0
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 0e509b80d24c6d942adbb1753132ca51, type: 2}
+    - rid: 78795522988048573
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 33c9e690-836b-45f2-81f5-64d5a4f15e17
+        m_position:
+          serializedVersion: 2
+          x: 3732.8
+          y: 126.399994
+          width: 342.3999
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 33c9e690-836b-45f2-81f5-64d5a4f15e17
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 769bb01a77611384ca7ccb109a579eab, type: 2}
+    - rid: 78795522988048574
+      type: {class: PlayDialogNode, ns: _project.Scripts.Nodes, asm: Assembly-CSharp}
+      data:
+        m_guid: 1637f555-0388-4692-ac6d-ff779f2bf4be
+        m_position:
+          serializedVersion: 2
+          x: 4178.4004
+          y: 126.399994
+          width: 342.3999
+          height: 100.8
+        m_isPure: 0
+        typename: _project.Scripts.Nodes.PlayDialogNode, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: dialogInfo
+          _ownerId: 1637f555-0388-4692-ac6d-ff779f2bf4be
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        dialogInfo: {fileID: 11400000, guid: 66aaf7584223f8b48a44daa89860c352, type: 2}
