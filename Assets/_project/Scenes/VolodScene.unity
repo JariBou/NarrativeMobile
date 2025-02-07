@@ -15231,7 +15231,8 @@ MonoBehaviour:
   _sceneTransitionSprite: {fileID: 549420185}
   _sceneTransitionImage: {fileID: 737458730}
   _uiBlocker: {fileID: 1036006928}
-  _sceneTransitionTime: 0.5
+  _sceneTransitionTime: 0.25
+  _sceneTransitionSound: {fileID: 8300000, guid: 281f4146321cdb74c824e11270b608f2, type: 3}
   _nextSceneRenderer: {fileID: 263876484}
   _touchInputManager: {fileID: 236282902}
 --- !u!4 &1464954058

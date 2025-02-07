@@ -36,6 +36,7 @@ namespace _project.Scripts
         [SerializeField] private RawImage _sceneTransitionImage;
         [SerializeField] private RawImage _uiBlocker;
         [SerializeField] private float _sceneTransitionTime;
+        [SerializeField] private AudioClip _sceneTransitionSound;
         [SerializeField] private NextSceneRenderer _nextSceneRenderer;
         private Camera _camera;
 
@@ -102,6 +103,7 @@ namespace _project.Scripts
         public bool MoveScene(bool moveLeft)
         {
             if (_currentSceneElement!=null && !_currentSceneElement.IsMainRoom()) return false;
+            // AudioManager.PlaySfx(_sceneTransitionSound);
             int nextIndex = _currentRoomSceneIndex + (moveLeft ? -1 : 1);
             if (nextIndex >= _roomScenes.Count || nextIndex < 0) return false;
         
@@ -201,6 +203,7 @@ namespace _project.Scripts
         private IEnumerator MoveToSceneWithTargetPos(SceneElement sceneElement, Vector3 targetPos)
         {
             _nextSceneRenderer.Render(sceneElement.GetCameraPosition());
+            // AudioManager.PlaySfx(_sceneTransitionSound);
             /*_sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
             _sceneTransitionSprite.color = new Color(1, 1, 1, 0);
             _sceneTransitionSprite.gameObject.SetActive(true);*/
@@ -232,6 +235,7 @@ namespace _project.Scripts
         
         private IEnumerator MoveToScene(SceneElement sceneElement)
         {
+            // AudioManager.PlaySfx(_sceneTransitionSound);
             _nextSceneRenderer.Render(sceneElement.GetCameraPosition());
             /*_sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
             _sceneTransitionSprite.color = new Color(1, 1, 1, 0);
