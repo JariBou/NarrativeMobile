@@ -7662,7 +7662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: _phoneUsers.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: '_phoneUsers.Array.data[0]'
@@ -7671,11 +7671,43 @@ PrefabInstance:
     - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: '_phoneUsers.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 0c11fb5e737a4b74da4842532dcbc144, type: 2}
+      objectReference: {fileID: 11400000, guid: 04aca95e50246b245a4067a6237692ea, type: 2}
     - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: '_phoneUsers.Array.data[2]'
       value: 
       objectReference: {fileID: 11400000, guid: 0c11fb5e737a4b74da4842532dcbc144, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: _initialMessages.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_initialMessages.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ca2bd8c9bd0ff84399e36127a1951fa, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_initialMessages.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a82efba6d7859d545991b538ed913516, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_initialMessages.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 64514437649edde4ab190da677799e68, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_initialMessages.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 7c8c25c0014472348bcce65efdcc75e3, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_initialMessages.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b914000e43887dd4f875df92e563d6bb, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_initialMessages.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fe177a81bbbf654ea5921efa3cb1380, type: 2}
+    - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
+      propertyPath: '_initialMessages.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 29b8b8038a22750478134fdfd7f15869, type: 2}
     - target: {fileID: 9077249661060324339, guid: afe5c662501e5ed47be501f088db3e10, type: 3}
       propertyPath: _phonePullUpAnimTimeCurve.m_Curve.Array.size
       value: 2
@@ -10055,7 +10087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &946377692
 RectTransform:
   m_ObjectHideFlags: 0
