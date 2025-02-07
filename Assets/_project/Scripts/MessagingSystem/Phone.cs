@@ -69,7 +69,8 @@ namespace _project.Scripts.MessagingSystem
             // _scrollRect.normalizedPosition = new Vector2(0, 0);
             _rectTransform = GetComponent<RectTransform>();
             _startPosition = _rectTransform.position;
-            _pulledDownPosition = _startPosition - new Vector3(0, 1092, 0);
+            
+            _pulledDownPosition = _startPosition - new Vector3(0, Camera.main.pixelHeight + 100, 0);
             
             _rectTransform.position = _pulledDownPosition;
             
@@ -129,7 +130,9 @@ namespace _project.Scripts.MessagingSystem
         private bool _isPullUp;
         private float _timer = 1;
         [SerializeField] private float _phonePullUpAnimTime = 2f;
+        [SerializeField] private AnimationCurve _phonePullUpAnimTimeCurve;
         [SerializeField] private float _phonePullDownAnimTime = 1.5f;
+        [SerializeField] private AnimationCurve _phonePullDownAnimTimeCurve;
         private Vector3 _startPosition;
         private Vector3 _pulledDownPosition;
         private RectTransform _rectTransform;
@@ -144,17 +147,15 @@ namespace _project.Scripts.MessagingSystem
                 }
                 return;
             }
-            Vector3 transformPosition = transform.position;
-            
             _timer += Time.deltaTime / ( _isPullUp ? _phonePullUpAnimTime : _phonePullDownAnimTime );
 
             if (_isPullUp)
             {
-                _rectTransform.position = Vector3.Lerp(_rectTransform.position, _startPosition, _timer);
+                _rectTransform.position = Vector3.Lerp(_pulledDownPosition, _startPosition, _phonePullUpAnimTimeCurve.Evaluate(_timer));
             }
             else
             {
-                _rectTransform.position = Vector3.Lerp(_rectTransform.position, _pulledDownPosition, _timer);
+                _rectTransform.position = Vector3.Lerp(_startPosition, _pulledDownPosition, _phonePullDownAnimTimeCurve.Evaluate(_timer));
             }
 
 
