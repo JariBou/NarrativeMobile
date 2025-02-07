@@ -8,7 +8,7 @@ public class NextSceneRenderer : MonoBehaviour
     [SerializeField] private Camera _rendererCamera;
     private RenderTexture _renderTexture;
 
-    private void Awake()
+    private void Start()
     {
         _renderTexture = new RenderTexture(Camera.main.pixelWidth, Camera.main.pixelHeight, 16, RenderTextureFormat.ARGB32);
         _renderTexture.Create();
@@ -16,6 +16,8 @@ public class NextSceneRenderer : MonoBehaviour
         _rendererCamera.rect = new Rect(_rendererCamera.rect.x, _rendererCamera.rect.y, Camera.main.rect.width, Camera.main.rect.height);
         _rawImage.texture = _renderTexture;
         _rawImage.rectTransform.sizeDelta = new Vector2(Camera.main.pixelWidth, Camera.main.pixelHeight);
+        //_rawImage.rectTransform.localScale = Vector3.one * (2.11f/(Camera.main.pixelWidth * 1f/Camera.main.pixelHeight)) / _rawImage.transform.parent.localScale.x;
+        _rawImage.rectTransform.localScale = Vector3.one / _rawImage.transform.parent.localScale.x;
     }
 
     public void Render(Vector3 camPos)
