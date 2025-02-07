@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: Tst Tst Tst, no no no NOT so fast mister detective...
-    _audioClip: {fileID: 0}
+    _audioClip: {fileID: 8300000, guid: 5dee7f0c253df1047b11b7f907d3a00d, type: 3}
   - _loc: 0
     _content: "Tst Tst Tst, non non non PAS si vite monsieur le d\xE9tective\u2026 "
     _audioClip: {fileID: 8300000, guid: 4c419bac8c6905747832aefdfeaa0611, type: 3}

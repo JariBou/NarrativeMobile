@@ -15,8 +15,8 @@ MonoBehaviour:
   _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: "It looks like we\u2019re missing one."
-    _audioClip: {fileID: 0}
+    _content: It looks like one's missing.
+    _audioClip: {fileID: 8300000, guid: 9f679d870a0cb824d9f460f0267f7d87, type: 3}
   - _loc: 0
     _content: On dirait qu'il en manque un.
-    _audioClip: {fileID: 0}
+    _audioClip: {fileID: 8300000, guid: cb73c67eddcf2284c8101497e89e41ed, type: 3}

@@ -18,7 +18,7 @@ MonoBehaviour:
     _content: "You decided to make this choice, to run towards the light, that light
       at the end of the tunnel that tells you to play the hero, to be the number
       one and come back with proof to redeem yourself\u2026"
-    _audioClip: {fileID: 8300000, guid: cb7d2f0c4a5cb8941994e8c5f20be8c1, type: 3}
+    _audioClip: {fileID: 8300000, guid: 74af950fd8d761b41a98b7e8794830be, type: 3}
   - _loc: 0
     _content: "Vous avez d\xE9cid\xE9 de faire ce choix, de courir vers cette lumi\xE8re,
       cette lumi\xE8re au fond du couloir qui vous dit de jouer les h\xE9ros, d\u2019\xEAtre

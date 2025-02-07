@@ -15,8 +15,8 @@ MonoBehaviour:
   _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: Original as a place to hide a key.
-    _audioClip: {fileID: 0}
+    _content: Original place to hide a key.
+    _audioClip: {fileID: 8300000, guid: ff43dae928a5a574a9f3f5782336d700, type: 3}
   - _loc: 0
     _content: "Original comme endroit pour cacher une cl\xE9.\r"
-    _audioClip: {fileID: 0}
+    _audioClip: {fileID: 8300000, guid: ad8fef7a526096643bdf5d7bc3ad5baf, type: 3}

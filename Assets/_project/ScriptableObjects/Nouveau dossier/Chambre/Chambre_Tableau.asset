@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: Dude's even got a self-portrait in his room? It looks stangely attached
-    _audioClip: {fileID: 8300000, guid: a82759a902a439c438e2eab4dcfb12f5, type: 3}
+    _audioClip: {fileID: 8300000, guid: ef19af3a462ac06488285b9de3841040, type: 3}
   - _loc: 0
     _content: "M\xEAme un portrait de lui dans la chambre ? Il a l'air attach\xE9
       \xE9trangement."

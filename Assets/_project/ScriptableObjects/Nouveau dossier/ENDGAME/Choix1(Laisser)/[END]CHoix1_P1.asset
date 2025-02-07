@@ -17,7 +17,7 @@ MonoBehaviour:
   - _loc: 1
     _content: "Now here\u2019s a considered choice, detective. You know where your
       interest is."
-    _audioClip: {fileID: 8300000, guid: c2a8709c529c6f846a6344238cd9f493, type: 3}
+    _audioClip: {fileID: 8300000, guid: c5d1c8c98970a814d9fe95e09fa3a7e7, type: 3}
   - _loc: 0
     _content: "En voil\xE0 un choix r\xE9fl\xE9chi d\xE9tective. Vous savez o\xF9
       est votre int\xE9r\xEAt."

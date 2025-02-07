@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: "Destroy them like we planned\u2026 Or run away with them..."
-    _audioClip: {fileID: 8300000, guid: 275fe6ae8149708478ebb1c47db8797f, type: 3}
+    _audioClip: {fileID: 8300000, guid: f805f12350bb7ae48b7ab43a02737af1, type: 3}
   - _loc: 0
     _content: "Les d\xE9truire comme pr\xE9vu\u2026 Ou de vous enfuir avec\u2026"
     _audioClip: {fileID: 8300000, guid: 275fe6ae8149708478ebb1c47db8797f, type: 3}

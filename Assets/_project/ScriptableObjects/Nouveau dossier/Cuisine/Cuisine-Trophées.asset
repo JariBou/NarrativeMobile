@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: Looks like he's used to be at the 2nd place.
-    _audioClip: {fileID: 8300000, guid: 1e62efdbd829e1146a218b55db5f44bc, type: 3}
+    _audioClip: {fileID: 8300000, guid: 24683cb2830ec9644b976d380c05fbe7, type: 3}
   - _loc: 0
     _content: "On dirait qu\u2019il a l\u2019habitude d\u2019arriver second."
     _audioClip: {fileID: 8300000, guid: 1e62efdbd829e1146a218b55db5f44bc, type: 3}

@@ -17,7 +17,7 @@ MonoBehaviour:
   - _loc: 1
     _content: "Enjoy your new life, detective\u2026 As long as you still have control
       over it."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _audioClip: {fileID: 8300000, guid: 94a6189f8b5698e4a8ffdd3606105f4c, type: 3}
   - _loc: 0
     _content: "Profitez bien de votre nouvelle vie, d\xE9tective\u2026 Tant que vous
       en avez encore le contr\xF4le."
