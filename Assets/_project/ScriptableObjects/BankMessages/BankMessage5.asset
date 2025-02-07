@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3b0c1d459cc4e2cbf2ed435793589e4, type: 3}
-  m_Name: Message_temp
+  m_Name: BankMessage5
   m_EditorClassIdentifier: 
   _sentDateTime:
     _year: 0
@@ -21,7 +21,7 @@ MonoBehaviour:
     _second: 0
   _content:
   - _loc: 0
-    _content: "Votre solde est de: -346.27\u20AC"
+    _content: "Votre solde est de: -165.68\u20AC"
   - _loc: 1
-    _content: "Your account balance is: -346.27\u20AC"
+    _content: "Your account balance is: -165.68\u20AC"
   _user: {fileID: 11400000, guid: 04aca95e50246b245a4067a6237692ea, type: 2}

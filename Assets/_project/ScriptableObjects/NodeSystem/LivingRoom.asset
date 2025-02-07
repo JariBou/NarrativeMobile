@@ -43,6 +43,7 @@ MonoBehaviour:
   - rid: 78795522988048505
   - rid: 78795522988048635
   - rid: 78795522988048636
+  - rid: 299608291738648650
   m_connections:
   - inputPort:
       nodeId: 74128b0f-faec-4926-a757-968ff7885db6
@@ -79,12 +80,6 @@ MonoBehaviour:
       portIndex: 1
     outputPort:
       nodeId: 18bc1a1a-7865-4b6a-aaec-003cf4c7ae5b
-      portIndex: 0
-  - inputPort:
-      nodeId: 2f5a5002-dcde-49e3-bf2c-e35cb0a43389
-      portIndex: 1
-    outputPort:
-      nodeId: 1cdd4908-ad74-4f5d-8885-e120b41b03cf
       portIndex: 0
   - inputPort:
       nodeId: e6a38f35-aa61-4222-8c65-640c9935c92a
@@ -164,6 +159,18 @@ MonoBehaviour:
     outputPort:
       nodeId: f76ebf62-46cb-4224-98f6-33701c508405
       portIndex: 0
+  - inputPort:
+      nodeId: 057f1d23-5982-4d61-9e02-068afcb4d58f
+      portIndex: 1
+    outputPort:
+      nodeId: 1cdd4908-ad74-4f5d-8885-e120b41b03cf
+      portIndex: 0
+  - inputPort:
+      nodeId: 2f5a5002-dcde-49e3-bf2c-e35cb0a43389
+      portIndex: 1
+    outputPort:
+      nodeId: 057f1d23-5982-4d61-9e02-068afcb4d58f
+      portIndex: 0
   m_exposedProperties:
   - PropertyName: New String
     PropertyValue: New Value
@@ -176,10 +183,10 @@ MonoBehaviour:
         m_guid: 1cdd4908-ad74-4f5d-8885-e120b41b03cf
         m_position:
           serializedVersion: 2
-          x: 2.4
-          y: -749.6
-          width: 75.200005
-          height: 76.79999
+          x: -623
+          y: -750
+          width: 74
+          height: 77
         m_isPure: 0
         typename: NodeSystem.Runtime.NodesLibrary.Process.StartNode, NodeSystem,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -813,3 +820,23 @@ MonoBehaviour:
           _portDirection: 1
         m_pureExecutionDone: 1
         dialogInfo: {fileID: 11400000, guid: 26ae6b066edb25d47be24abc870422b5, type: 2}
+    - rid: 299608291738648650
+      type: {class: WaitNode, ns: NodeSystem.Runtime.NodesLibrary.Process, asm: NodeSystem}
+      data:
+        m_guid: 057f1d23-5982-4d61-9e02-068afcb4d58f
+        m_position:
+          serializedVersion: 2
+          x: -379
+          y: -750
+          width: 236
+          height: 101
+        m_isPure: 0
+        typename: NodeSystem.Runtime.NodesLibrary.Process.WaitNode, NodeSystem, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_ports:
+        - _exposedPropertyName: time
+          _ownerId: 057f1d23-5982-4d61-9e02-068afcb4d58f
+          _portIndex: 2
+          _portDirection: 1
+        m_pureExecutionDone: 1
+        time: 2

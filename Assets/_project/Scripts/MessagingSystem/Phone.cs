@@ -24,6 +24,8 @@ namespace _project.Scripts.MessagingSystem
         
         [SerializeField] private List<GameObject> _phoneAppPanels = new();
         [SerializeField] private List<Sprite> _bgSprites;
+        
+        [SerializeField] private List<Message> _initialMessages = new();
 
         private bool _hasNotification;
         private string _selectedConv;
@@ -67,6 +69,12 @@ namespace _project.Scripts.MessagingSystem
             // MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
             // messageScript.SetText("AAAAAAA this is some test shit (but sent by me)", TextAnchor.MiddleRight);
             // _scrollRect.normalizedPosition = new Vector2(0, 0);
+
+            foreach (Message message in _initialMessages)
+            {
+                AddMessage(message, message.User.UserId, false);
+            }
+            
             _rectTransform = GetComponent<RectTransform>();
             _startPosition = _rectTransform.position;
             
