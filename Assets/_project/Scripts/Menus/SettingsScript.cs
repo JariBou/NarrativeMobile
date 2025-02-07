@@ -11,6 +11,7 @@ namespace _project.Scripts.Menus
     public class SettingsScript : MonoBehaviour
     {
         [SerializeField] private SliderBoxScript _masterSliderBox;
+        [SerializeField] private SliderBoxScript _musicSliderBox;
         [SerializeField] private SliderBoxScript _sfxSliderBox;
         [SerializeField] private SliderBoxScript _voicesSliderBox;
         [SerializeField] private TMP_Dropdown _languageDropdown;
@@ -27,18 +28,23 @@ namespace _project.Scripts.Menus
         private void Awake()
         {
             _masterSliderBox.Init(PlayerPrefs.GetFloat("volume_master"));
-            float val = -80 + _masterSliderBox.GetValue() * 80;
+            float val = _masterSliderBox.GetMixerValue();
             Mixer.SetFloat("volume_master", val);
             
+            _musicSliderBox.Init(PlayerPrefs.GetFloat("volume_music"));
+            val = _musicSliderBox.GetMixerValue();
+            Mixer.SetFloat("volume_music", val);
+            
             _sfxSliderBox.Init(PlayerPrefs.GetFloat("volume_sfx"));
-            val = -80 + _sfxSliderBox.GetValue() * 80;
+            val = _sfxSliderBox.GetMixerValue();
             Mixer.SetFloat("volume_sfx", val);
             
             _voicesSliderBox.Init(PlayerPrefs.GetFloat("volume_voices"));
-            val = -80 + _voicesSliderBox.GetValue() * 80;
+            val = _voicesSliderBox.GetMixerValue();
             Mixer.SetFloat("volume_voices", val);
             
             _masterSliderBox.AddListener(MasterSliderValueChanged);
+            _musicSliderBox.AddListener(MusicSliderValueChanged);
             _sfxSliderBox.AddListener(SfxSliderValueChanged);
             _voicesSliderBox.AddListener(VoicesSliderValueChanged);
             
@@ -69,6 +75,7 @@ namespace _project.Scripts.Menus
         private void OnDestroy()
         {
             _masterSliderBox.ClearListener();
+            _musicSliderBox.ClearListener();
             _sfxSliderBox.ClearListener();
             _voicesSliderBox.ClearListener();
             GameSettings.OnLocChanged -= OnGameSettingsLocChanged;
@@ -90,13 +97,19 @@ namespace _project.Scripts.Menus
                     throw new ArgumentOutOfRangeException();
             }
         }
-
-
+        
         private void MasterSliderValueChanged(float value)
         {
             float val = -80 + value * 80;
             PlayerPrefs.SetFloat("volume_master", value);
             Mixer.SetFloat("volume_master", val);
+        }
+        
+        private void MusicSliderValueChanged(float value)
+        {
+            float var = -80 + value * 80;
+            PlayerPrefs.SetFloat("volume_music", value);
+            Mixer.SetFloat("volume_music", var);
         }
 
         private void SfxSliderValueChanged(float value)

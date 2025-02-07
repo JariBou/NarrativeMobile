@@ -50,5 +50,10 @@ namespace _project.Scripts.Menus
         {
             return _slider.value;
         }
+
+        public float GetMixerValue()
+        {
+            return -80 + GetValue() * 80;
+        }
     }
 }
