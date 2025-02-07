@@ -19,6 +19,11 @@ namespace _project.Scripts
             return transform.position;
         }
 
+        public Vector3 GetCameraPosition()
+        {
+            return new Vector3(transform.position.x, transform.position.y, -10);
+        }
+
         private void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();

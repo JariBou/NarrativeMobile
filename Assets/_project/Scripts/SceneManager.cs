@@ -33,8 +33,13 @@ namespace _project.Scripts
         
         [Header("Scene Transition")]
         [SerializeField] private SpriteRenderer _sceneTransitionSprite;
+        [SerializeField] private RawImage _sceneTransitionImage;
+        [SerializeField] private RawImage _uiBlocker;
         [SerializeField] private float _sceneTransitionTime;
+        [SerializeField] private NextSceneRenderer _nextSceneRenderer;
         private Camera _camera;
+
+        [SerializeField] private TouchInputManager _touchInputManager;
         
 
         public void ClosePhone()
@@ -104,15 +109,16 @@ namespace _project.Scripts
             if (roomScene.CanAccess())
             {
                 //Change Scene Animation
-            
+                StartCoroutine(MoveToScene(roomScene.SceneElement));
+                /*
                 Vector3 targetPos = roomScene.SceneElement.GetPosition();
                 _camera.transform.position = new Vector3(targetPos.x, targetPos.y, _camera.transform.position.z);
                 Debug.Log(roomScene.SceneName);
-            
+
                 _currentRoomSceneIndex = nextIndex;
                 _currentSceneElement = roomScene.SceneElement;
                 _currentSceneElement.EnterRoom();
-                if (_sceneUI != null) _sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);
+                if (_sceneUI != null) _sceneUI.UpdateCurrentRoomUI(_currentRoomSceneIndex);*/
                 return true;
             }
             else
@@ -194,9 +200,14 @@ namespace _project.Scripts
         //Move to Scene Animation
         private IEnumerator MoveToSceneWithTargetPos(SceneElement sceneElement, Vector3 targetPos)
         {
-            _sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
+            _nextSceneRenderer.Render(sceneElement.GetCameraPosition());
+            /*_sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
             _sceneTransitionSprite.color = new Color(1, 1, 1, 0);
-            _sceneTransitionSprite.gameObject.SetActive(true);
+            _sceneTransitionSprite.gameObject.SetActive(true);*/
+            _sceneTransitionImage.gameObject.SetActive(true);
+            _uiBlocker.gameObject.SetActive(true);
+            _touchInputManager.SetCheckingTouchDetection(false);
+            _sceneTransitionImage.color = new Color(1, 1, 1, 0);
             float defaultOrthSize = _camera.orthographicSize;
             Vector3 defaultCamPos = _camera.transform.position;
             for (int i = 0; i < _sceneTransitionTime * 100f; i++)
@@ -204,31 +215,43 @@ namespace _project.Scripts
                 float alpha = i / (_sceneTransitionTime * 100f - 1);
                 _camera.orthographicSize = Mathf.Lerp(defaultOrthSize, defaultOrthSize * 0.5f, alpha);
                 _camera.transform.position = Vector3.Lerp(defaultCamPos, targetPos, alpha);
-                _sceneTransitionSprite.transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 0.5f, alpha); ;
-                _sceneTransitionSprite.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);
+                /*_sceneTransitionSprite.transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 0.5f, alpha); ;
+                _sceneTransitionSprite.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);*/
+                _sceneTransitionImage.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);
                 yield return new WaitForSeconds(0.01f);
             }
             yield return new WaitForSeconds(_sceneTransitionTime/10f);
             MoveTo(sceneElement);
             _camera.orthographicSize = defaultOrthSize;
-            _sceneTransitionSprite.transform.localScale = Vector3.one;
-            _sceneTransitionSprite.gameObject.SetActive(false);
+            _sceneTransitionImage.gameObject.SetActive(false);
+            _uiBlocker.gameObject.SetActive(false);
+            _touchInputManager.SetCheckingTouchDetection(true);
+            /*_sceneTransitionSprite.transform.localScale = Vector3.one;
+            _sceneTransitionSprite.gameObject.SetActive(false);*/
         }
         
         private IEnumerator MoveToScene(SceneElement sceneElement)
         {
-            _sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
+            _nextSceneRenderer.Render(sceneElement.GetCameraPosition());
+            /*_sceneTransitionSprite.sprite = sceneElement.GetSceneSprite();
             _sceneTransitionSprite.color = new Color(1, 1, 1, 0);
-            _sceneTransitionSprite.gameObject.SetActive(true);
+            _sceneTransitionSprite.gameObject.SetActive(true);*/
+            _sceneTransitionImage.gameObject.SetActive(true);
+            _uiBlocker.gameObject.SetActive(true);
+            _touchInputManager.SetCheckingTouchDetection(false);
             for (int i = 0; i < _sceneTransitionTime * 100f; i++)
             {
                 float alpha = i / (_sceneTransitionTime * 100f - 1);
-                _sceneTransitionSprite.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);
+                //_sceneTransitionSprite.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);
+                _sceneTransitionImage.color = Color.Lerp(new Color(1,1,1,0), Color.white, alpha);
                 yield return new WaitForSeconds(0.01f);
             }
             yield return new WaitForSeconds(_sceneTransitionTime/10f);
             MoveTo(sceneElement);
-            _sceneTransitionSprite.gameObject.SetActive(false);
+            //_sceneTransitionSprite.gameObject.SetActive(false);
+            _sceneTransitionImage.gameObject.SetActive(false);
+            _uiBlocker.gameObject.SetActive(false);
+            _touchInputManager.SetCheckingTouchDetection(true);
         }
         
         #endregion
