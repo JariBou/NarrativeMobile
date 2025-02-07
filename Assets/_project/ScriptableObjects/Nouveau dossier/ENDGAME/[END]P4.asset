@@ -18,5 +18,5 @@ MonoBehaviour:
     _content: Do you get it now? Enough with the little masquerade.
     _audioClip: {fileID: 8300000, guid: 6655f56b2e57c0840a2821898f248f1b, type: 3}
   - _loc: 0
-    _content: "Alors \xE7a y est, vous saisissez ? Fini la petite mascarade."
+    _content: "Alors \xE7a y est, vous saisissez ? Finis la petite mascarade."
     _audioClip: {fileID: 8300000, guid: 6655f56b2e57c0840a2821898f248f1b, type: 3}

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -66,6 +67,13 @@ namespace _project.Scripts.MessagingSystem
             // MessageScript messageScript = Instantiate(_messagePrefab, _contentPanel).GetComponent<MessageScript>();
             // messageScript.SetText("AAAAAAA this is some test shit (but sent by me)", TextAnchor.MiddleRight);
             // _scrollRect.normalizedPosition = new Vector2(0, 0);
+            _rectTransform = GetComponent<RectTransform>();
+            _startPosition = _rectTransform.position;
+            
+            _pulledDownPosition = _startPosition - new Vector3(0, Camera.main.pixelHeight + 100, 0);
+            
+            _rectTransform.position = _pulledDownPosition;
+            
             if (_conversationDictionnary.Count > 0)
             {
                 OnContactClicked(_conversationDictionnary.Keys.ElementAt(0));
@@ -119,15 +127,57 @@ namespace _project.Scripts.MessagingSystem
             return true;
         }
 
+        private bool _isPullUp;
+        private float _timer = 1;
+        [SerializeField] private float _phonePullUpAnimTime = 2f;
+        [SerializeField] private AnimationCurve _phonePullUpAnimTimeCurve;
+        [SerializeField] private float _phonePullDownAnimTime = 1.5f;
+        [SerializeField] private AnimationCurve _phonePullDownAnimTimeCurve;
+        private Vector3 _startPosition;
+        private Vector3 _pulledDownPosition;
+        private RectTransform _rectTransform;
+
+        private void Update()
+        {
+            if (_timer >= 1)
+            {
+                if (!_isPullUp)
+                {
+                    gameObject.SetActive(false);
+                }
+                return;
+            }
+            _timer += Time.deltaTime / ( _isPullUp ? _phonePullUpAnimTime : _phonePullDownAnimTime );
+
+            if (_isPullUp)
+            {
+                _rectTransform.position = Vector3.Lerp(_pulledDownPosition, _startPosition, _phonePullUpAnimTimeCurve.Evaluate(_timer));
+            }
+            else
+            {
+                _rectTransform.position = Vector3.Lerp(_startPosition, _pulledDownPosition, _phonePullDownAnimTimeCurve.Evaluate(_timer));
+            }
+
+
+        }
+
         public void OnPhonePullUp()
         {
+            _timer = 0;
+            _isPullUp = true;
             _hasNotification = false;
             if (_selectedConv != null && _conversationDictionnary.ContainsKey(_selectedConv)) _conversationDictionnary[_selectedConv].RefreshSizes();
             else if (_selectedConv == null && _conversationDictionnary.Count > 0)
             {
                 OnContactClicked(_conversationDictionnary.Keys.ElementAt(0));
             }
-            
+        }
+
+        public void PullPhoneDown()
+        {
+            if (!_isPullUp && _timer < 1) return;
+            _timer = 0;
+            _isPullUp = false;
         }
 
         public void OnContactClicked(string userId)

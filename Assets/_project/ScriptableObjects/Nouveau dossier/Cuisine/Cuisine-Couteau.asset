@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: "It looks like we\u2019re missing one."
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _audioClip: {fileID: 0}
   - _loc: 0
     _content: On dirait qu'il en manque un.
-    _audioClip: {fileID: 8300000, guid: 3d24a436ffe2d6043aaf3fa640c7dede, type: 3}
+    _audioClip: {fileID: 0}

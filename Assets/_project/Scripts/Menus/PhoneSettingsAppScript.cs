@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using _project.Scripts.Localisation;
 using TMPro;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace _project.Scripts.Menus
         // [SerializeField] private Slider _masterSlider;
         [SerializeField] private SliderBoxScript _masterSliderScript;
         // [SerializeField] private Slider _sfxSlider;
+        [SerializeField] private SliderBoxScript _musicSliderBox;
         [SerializeField] private SliderBoxScript _sfxSliderScript;
         // [SerializeField] private Slider _voicesSlider;
         [SerializeField] private SliderBoxScript _voicesSliderScript;
@@ -27,24 +29,37 @@ namespace _project.Scripts.Menus
         private void Awake()
         {
             _masterSliderScript.Init(PlayerPrefs.GetFloat("volume_master"));
-            float val = -80 + _masterSliderScript.GetValue() * 80;
+            float val = _masterSliderScript.GetMixerValue();
             Mixer.SetFloat("volume_master", val);
             
+            _musicSliderBox.Init(PlayerPrefs.GetFloat("volume_music"));
+            val = _musicSliderBox.GetMixerValue();
+            Mixer.SetFloat("volume_music", val);
+            
             _sfxSliderScript.Init(PlayerPrefs.GetFloat("volume_sfx"));
-            val = -80 + _sfxSliderScript.GetValue() * 80;
+            val = _sfxSliderScript.GetMixerValue();
             Mixer.SetFloat("volume_sfx", val);
             
             _voicesSliderScript.Init(PlayerPrefs.GetFloat("volume_voices"));
-            val = -80 + _voicesSliderScript.GetValue() * 80;
+            val = _voicesSliderScript.GetMixerValue();
             Mixer.SetFloat("volume_voices", val);
             
             _masterSliderScript.AddListener(MasterSliderValueChanged);
+            _musicSliderBox.AddListener(MusicSliderValueChanged);
             _sfxSliderScript.AddListener(SfxSliderValueChanged);
             _voicesSliderScript.AddListener(VoicesSliderValueChanged);
             
             _settingsText.text = GetTextFor(GameSettings.Instance.loc, _settingsTranslations);
             _userText.text = GetTextFor(GameSettings.Instance.loc, _userTranslations);
             GameSettings.OnLocChanged += GameSettingsLocChanged;
+        }
+
+        private void OnDestroy()
+        {
+            _masterSliderScript.ClearListener();
+            _musicSliderBox.ClearListener();
+            _sfxSliderScript.ClearListener();
+            _voicesSliderScript.ClearListener();
         }
 
         private void GameSettingsLocChanged(Loc loc)
@@ -58,6 +73,13 @@ namespace _project.Scripts.Menus
             float val = -80 + value * 80;
             PlayerPrefs.SetFloat("volume_master", value);
             Mixer.SetFloat("volume_master", val);
+        }
+        
+        private void MusicSliderValueChanged(float value)
+        {
+            float var = -80 + value * 80;
+            PlayerPrefs.SetFloat("volume_music", value);
+            Mixer.SetFloat("volume_music", var);
         }
 
         private void SfxSliderValueChanged(float value)
