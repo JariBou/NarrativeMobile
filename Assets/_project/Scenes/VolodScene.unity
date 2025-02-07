@@ -10055,7 +10055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &946377692
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10072,8 +10072,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66.43999, y: 67.74011}
-  m_SizeDelta: {x: 67.0645, y: 67.0645}
+  m_AnchoredPosition: {x: 66.4, y: 67}
+  m_SizeDelta: {x: 69.5352, y: 69.5352}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &946377693
 MonoBehaviour:
@@ -13425,7 +13425,7 @@ MonoBehaviour:
   _animSpeed: 0.6
   _notifIconAnimator: {fileID: 946377695}
   _phoneGameobject: {fileID: 687117186}
-  _notifSound: {fileID: 0}
+  _notifSound: {fileID: 8300000, guid: de49ffb9d0817d74c8cbac23ec2484f9, type: 3}
 --- !u!1 &1346842344
 GameObject:
   m_ObjectHideFlags: 0
@@ -15231,7 +15231,8 @@ MonoBehaviour:
   _sceneTransitionSprite: {fileID: 549420185}
   _sceneTransitionImage: {fileID: 737458730}
   _uiBlocker: {fileID: 1036006928}
-  _sceneTransitionTime: 0.5
+  _sceneTransitionTime: 0.25
+  _sceneTransitionSound: {fileID: 8300000, guid: 281f4146321cdb74c824e11270b608f2, type: 3}
   _nextSceneRenderer: {fileID: 263876484}
   _touchInputManager: {fileID: 236282902}
 --- !u!4 &1464954058

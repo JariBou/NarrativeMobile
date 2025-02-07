@@ -15,8 +15,8 @@ MonoBehaviour:
   _dialogName: chambre_photos
   _localisations:
   - _loc: 1
-    _content: "But I promise I always come back\u2026 just for you. "
-    _audioClip: {fileID: 8300000, guid: 94d822a01c0baa745897fd03092ee6c3, type: 3}
+    _content: "But I promise, I always come back\u2026 just for you. "
+    _audioClip: {fileID: 8300000, guid: d4736b096b418194f91f55751bddabd4, type: 3}
   - _loc: 0
     _content: "Mais je vous fais la promesse que je reviendrai\u2026 Juste pour vous. "
     _audioClip: {fileID: 8300000, guid: 94d822a01c0baa745897fd03092ee6c3, type: 3}

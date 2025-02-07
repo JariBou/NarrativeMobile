@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: "You understand what you see before you\u2026 What they mean\u2026"
-    _audioClip: {fileID: 8300000, guid: 35906800329347b45bc3b1644a76703c, type: 3}
+    _audioClip: {fileID: 8300000, guid: 1d9dcf6ef2972a24196e05b57ff1a142, type: 3}
   - _loc: 0
     _content: "Vous comprenez ce que vous avez sous les yeux\u2026 Ce qu\u2019elles
       signifient\u2026"

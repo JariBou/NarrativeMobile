@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: "You\u2019ve made your choice, detective. Now, live with the consequences."
-    _audioClip: {fileID: 8300000, guid: 1d41ef4989729d744b365730baa9c85c, type: 3}
+    _audioClip: {fileID: 8300000, guid: 496369544fb090c4cbc52e6aedbc98fb, type: 3}
   - _loc: 0
     _content: "Vous avez fait votre choix, d\xE9tective. Maintenant, assumez-en les
       cons\xE9quences."

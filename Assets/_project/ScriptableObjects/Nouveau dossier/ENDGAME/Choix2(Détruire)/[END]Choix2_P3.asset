@@ -17,7 +17,7 @@ MonoBehaviour:
   - _loc: 1
     _content: "You FOOL ! Go ! It\u2019s nothing\u2026 YOU\u2019re not worth anything\u2026
       not even first place!"
-    _audioClip: {fileID: 8300000, guid: 4ad051b9213e6df4cac55607eeda8c4d, type: 3}
+    _audioClip: {fileID: 8300000, guid: 5f70b43ea3691fc4cb6aaf11f7a4d9ff, type: 3}
   - _loc: 0
     _content: "IMB\xC9CILE ! Partez ! \xC7a ne fait rien\u2026VOUS ne valez rien\u2026
       M\xEAme pas la place du n\xB01 !"

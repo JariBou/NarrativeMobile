@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: "Besides, we don\u2019t need that anymore..."
-    _audioClip: {fileID: 0}
+    _audioClip: {fileID: 8300000, guid: b2ea81031621dc345bae283d6f41ad56, type: 3}
   - _loc: 0
     _content: D'ailleurs, nous n'avons plus besoin de cela...
     _audioClip: {fileID: 8300000, guid: a9b55b232a54ae24bb5128d6ecaf6561, type: 3}

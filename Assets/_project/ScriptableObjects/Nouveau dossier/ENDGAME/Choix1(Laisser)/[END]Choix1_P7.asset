@@ -17,7 +17,7 @@ MonoBehaviour:
   - _loc: 1
     _content: "You\u2019re clever. Discreet. You know to follow orders without asking
       any questions."
-    _audioClip: {fileID: 8300000, guid: e64492f87bea04d4a87d85d884095463, type: 3}
+    _audioClip: {fileID: 8300000, guid: 9a8ec4e76b31e03449e3801296194609, type: 3}
   - _loc: 0
     _content: "Vous \xEAtes malin. Discret. Vous savez suivre les ordres sans poser
       de questions."

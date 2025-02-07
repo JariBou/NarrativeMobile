@@ -16,7 +16,7 @@ MonoBehaviour:
   _localisations:
   - _loc: 1
     _content: Looks like he kept those masks from the living room painting
-    _audioClip: {fileID: 8300000, guid: 35a298a021911d64d8e089d34c92b82d, type: 3}
+    _audioClip: {fileID: 8300000, guid: 24e4da33d29481f4eb563ecc4c87af65, type: 3}
   - _loc: 0
     _content: "Tiens, on dirait qu'il a gard\xE9 les masques du tableau du salon."
     _audioClip: {fileID: 8300000, guid: 35a298a021911d64d8e089d34c92b82d, type: 3}
