@@ -25,6 +25,10 @@ public class CreditsManager : MonoBehaviour
             Debug.Log(alpha);
             yield return new WaitForSeconds(0.01f);
         }
+        GoBackMainMenu();
+    }
+    
+    public void GoBackMainMenu(){
         SceneManager.LoadScene(_mainMenuScene);
     }
 }
