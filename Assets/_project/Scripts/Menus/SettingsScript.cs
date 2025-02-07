@@ -14,7 +14,8 @@ namespace _project.Scripts.Menus
         [SerializeField] private SliderBoxScript _musicSliderBox;
         [SerializeField] private SliderBoxScript _sfxSliderBox;
         [SerializeField] private SliderBoxScript _voicesSliderBox;
-        [SerializeField] private TMP_Dropdown _languageDropdown;
+        //[SerializeField] private TMP_Dropdown _languageDropdown;
+        [SerializeField] private LanguageOptionMenu _languageOptionMenu;
         [SerializeField] private Button _backButton;
         [SerializeField] private TranslatedButtonScript _backButtonScript;
         [SerializeField] private MainMenuScript _menuScript;
@@ -48,18 +49,26 @@ namespace _project.Scripts.Menus
             _sfxSliderBox.AddListener(SfxSliderValueChanged);
             _voicesSliderBox.AddListener(VoicesSliderValueChanged);
             
+            /*
             _languageDropdown.options.Clear();
             _languageDropdown.options.Add(new TMP_Dropdown.OptionData("French"));
             _languageDropdown.options.Add(new TMP_Dropdown.OptionData("English"));
             _languageDropdown.value = (int)GameSettings.Instance.loc;
             
-            _languageDropdown.onValueChanged.AddListener(DropdownValueChanged);
+            _languageDropdown.onValueChanged.AddListener(DropdownValueChanged);*/
+
+            _languageOptionMenu.OnLanguageChanged += LanguageChanged;
             
             _backButtonScript.AddOnClick(_menuScript.SettingsButtonClicked);
 
             _titleText.text = GetTitleTextForLoc(GameSettings.Instance.loc);
             
             GameSettings.OnLocChanged += OnGameSettingsLocChanged;
+        }
+
+        private void LanguageChanged(Loc loc)
+        {
+            GameSettings.SetLoc(loc);
         }
 
         private void OnGameSettingsLocChanged(Loc loc)
