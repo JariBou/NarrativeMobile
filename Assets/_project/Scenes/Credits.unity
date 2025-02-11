@@ -386,7 +386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751699049383922165, guid: d3dd2122787fb064ab26031f7c36263b, type: 3}
       propertyPath: m_text
-      value: F_A_M
+      value: F-A.M
       objectReference: {fileID: 0}
     - target: {fileID: 7751699049383922165, guid: d3dd2122787fb064ab26031f7c36263b, type: 3}
       propertyPath: m_fontSize
