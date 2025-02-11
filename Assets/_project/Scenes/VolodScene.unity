@@ -15260,6 +15260,8 @@ MonoBehaviour:
   _fadeBlackSprite: {fileID: 763265617}
   _fadeToBlackDuration: 1
   _timeBeforeFadeBlack: 3
+  _phoneRingSound: {fileID: 8300000, guid: d17836df3b07d3844a831ef2ffa38313, type: 3}
+  _phoneAnswerSound: {fileID: 8300000, guid: 1b94492e34144ab4696c3c9978c03bec, type: 3}
   _sceneTransitionSprite: {fileID: 549420185}
   _sceneTransitionImage: {fileID: 737458730}
   _uiBlocker: {fileID: 1036006928}

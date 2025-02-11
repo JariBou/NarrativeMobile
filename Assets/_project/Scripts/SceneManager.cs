@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using _project.Scripts.Nodes;
 using _project.Scripts.UI_Script;
 using GraphicsLabor.Scripts.Attributes.LaborerAttributes.InspectedAttributes;
 using JetBrains.Annotations;
@@ -29,6 +30,8 @@ namespace _project.Scripts
         [SerializeField] private Image _fadeBlackSprite;
         [SerializeField] private float _fadeToBlackDuration;
         [SerializeField] private float _timeBeforeFadeBlack;
+        [SerializeField] private AudioClip _phoneRingSound;
+        [SerializeField] private AudioClip _phoneAnswerSound;
         private bool _hasSeenProof;
         
         [Header("Scene Transition")]
@@ -42,6 +45,7 @@ namespace _project.Scripts
 
         [SerializeField] private TouchInputManager _touchInputManager;
         
+
 
         public void ClosePhone()
         {
@@ -269,7 +273,9 @@ namespace _project.Scripts
             float opacity = 0f;
             _startedEnding?.Invoke();
             _fadeBlackSprite.gameObject.SetActive(true);
+            AudioManager.PlaySfx(_phoneRingSound);
             yield return new WaitForSeconds(_timeBeforeFadeBlack);
+            AudioManager.PlaySfx(_phoneAnswerSound);
             for (int i = 0; i < _fadeToBlackDuration/0.1f; i++)
             {
                 opacity += 0.1f/_fadeToBlackDuration;
